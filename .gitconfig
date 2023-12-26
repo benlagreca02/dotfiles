@@ -2,5 +2,5 @@
 	email = benlagreca02@gmail.com
 	name = Benjamin LaGreca
 [credential "https://github.com"]
-	helper = 
+    helper = 
 	helper = !/usr/bin/gh auth git-credential
