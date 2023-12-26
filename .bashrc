@@ -127,4 +127,4 @@ export PICO_EXTRAS_PATH=/home/ben/pico/pico-extras
 export PICO_PLAYGROUND_PATH=/home/ben/pico/pico-playground
 
 # git alias to headless repo for dotfile management
-alias config='/usr/bin/git --git-dir=/home/ben/.gitDotfileConfig --work-tree=/home/ben'
+alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
