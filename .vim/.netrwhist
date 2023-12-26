@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/media/ben/Barney/MOVIES_AND_TV'
+let g:netrw_dirhist_0='/media/ben/Barney/MOVIES_AND_TV/Bohemian Rhapsody'
+let g:netrw_dirhist_9='/media/ben/Barney/MOVIES_AND_TV/Laputa - Castle in the Sky'
+let g:netrw_dirhist_8='/home/ben/.vim'
+let g:netrw_dirhist_7='/home/ben'
+let g:netrw_dirhist_6='/home/ben/tex'
+let g:netrw_dirhist_5='/home/ben'
+let g:netrw_dirhist_4='/home/ben/.config/suckless'
+let g:netrw_dirhist_3='/home/ben/dotfiles/dotfiles'
+let g:netrw_dirhist_2='/home/ben/dotfiles'
