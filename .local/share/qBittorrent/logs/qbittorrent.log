@@ -1,0 +1,460 @@
+(N) 2022-06-29T21:04:06 - qBittorrent v4.4.1 started
+(N) 2022-06-29T21:04:06 - Using config directory: /home/ben/.config/qBittorrent
+(I) 2022-06-29T21:04:07 - Trying to listen on: 0.0.0.0:45244,[::]:45244
+(N) 2022-06-29T21:04:07 - Peer ID: -qB4410-
+(N) 2022-06-29T21:04:07 - HTTP User-Agent is 'qBittorrent/4.4.1'
+(I) 2022-06-29T21:04:07 - DHT support [ON]
+(I) 2022-06-29T21:04:07 - Local Peer Discovery support [ON]
+(I) 2022-06-29T21:04:07 - PeX support [ON]
+(I) 2022-06-29T21:04:07 - Anonymous mode [OFF]
+(I) 2022-06-29T21:04:07 - Encryption support [ON]
+(I) 2022-06-29T21:04:07 - UPnP / NAT-PMP support [ON]
+(W) 2022-06-29T21:04:07 - Couldn't load IP geolocation database. Reason: No such file or directory
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: 127.0.0.1, port: TCP/45244
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: 127.0.0.1, port: UTP/45244
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: 10.0.1.95, port: TCP/45244
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: 10.0.1.95, port: UTP/45244
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: ::1, port: TCP/45244
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: ::1, port: UTP/45244
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: TCP/45244
+(I) 2022-06-29T21:04:07 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: UTP/45244
+(I) 2022-06-29T21:04:07 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-06-29T21:04:07 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-06-29T21:04:08 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Tue May 31 20:25:04 2022.
+(I) 2022-06-29T21:04:08 - Successfully updated IP geolocation database.
+(I) 2022-06-29T21:04:08 - Detected external IP: 8.9.85.158
+(N) 2022-06-29T21:04:33 - qBittorrent v4.4.1 started
+(N) 2022-06-29T21:04:33 - Using config directory: /home/ben/.config/qBittorrent
+(N) 2022-06-29T21:05:54 - 'Minions 2015 1080p BluRay x264 AC3-JYK' added to download list.
+(W) 2022-06-29T21:05:55 - File error alert. Torrent: "Minions 2015 1080p BluRay x264 AC3-JYK". File: "/media/ben/SharedData/Minions 2015 1080p BluRay x264 AC3-JYK/Minions 2015 1080p BluRay x264 AC3-JYK.mkv". Reason: Minions 2015 1080p BluRay x264 AC3-JYK mkdir (/media/ben/SharedData/Minions 2015 1080p BluRay x264 AC3-JYK/Minions 2015 1080p BluRay x264 AC3-JYK.mkv) error: Read-only file system
+(W) 2022-06-29T21:06:09 - File error alert. Torrent: "Minions 2015 1080p BluRay x264 AC3-JYK". File: "/media/ben/SharedData/Minions 2015 1080p BluRay x264 AC3-JYK/Minions 2015 1080p BluRay x264 AC3-JYK.mkv". Reason: Minions 2015 1080p BluRay x264 AC3-JYK mkdir (/media/ben/SharedData/Minions 2015 1080p BluRay x264 AC3-JYK/Minions 2015 1080p BluRay x264 AC3-JYK.mkv) error: Read-only file system
+(N) 2022-06-29T21:06:19 - 'Minions 2015 1080p BluRay x264 AC3-JYK' was removed from the transfer list.
+(C) 2022-06-29T21:06:43 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(C) 2022-06-29T21:06:43 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(N) 2022-06-29T21:06:43 - qBittorrent v4.4.1 started
+(N) 2022-06-29T21:06:43 - Using config directory: /home/ben/.config/qBittorrent
+(N) 2022-06-29T21:07:11 - 'Minions 2015 1080p BluRay x264 AC3-JYK' added to download list.
+(I) 2022-06-29T21:07:16 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:17 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:18 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:19 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:20 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:21 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:22 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:23 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:24 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:25 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:26 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:27 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:28 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:28 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:29 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:29 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:30 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:30 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:31 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:32 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:33 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:34 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:35 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:36 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:37 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:38 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:39 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:40 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:41 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:42 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:43 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:44 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:45 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:46 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:47 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:48 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:49 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:50 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:51 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:52 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:53 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:54 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:55 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:56 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:57 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:58 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:07:59 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:00 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:01 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:02 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:03 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:04 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:05 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:06 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:07 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:08 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:09 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:10 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:11 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:12 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:13 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:14 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:15 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:16 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:17 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:18 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:19 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:19 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:20 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:21 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:22 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:23 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:24 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:25 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:26 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:27 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:28 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:29 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:30 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:31 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:32 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:32 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:33 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:33 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:34 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:34 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:35 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:35 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:36 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:36 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:37 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:37 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:38 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:38 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:39 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:39 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:40 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:40 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:41 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:41 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:42 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:42 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:43 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:43 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:44 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:45 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:46 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:47 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(I) 2022-06-29T21:08:48 - Performance alert: Minions 2015 1080p BluRay x264 AC3-JYK: performance warning: max outstanding piece requests reached
+(N) 2022-06-29T21:09:04 - 'Minions 2015 1080p BluRay x264 AC3-JYK' was removed from the transfer list.
+(I) 2022-06-29T21:49:07 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-06-29T21:49:07 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-06-29T22:34:07 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-06-29T22:34:07 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-06-30T18:34:40 - System network status changed to OFFLINE
+(I) 2022-06-30T18:34:40 - Successfully listening on IP: 10.0.1.95, port: TCP/45244
+(I) 2022-06-30T18:34:40 - Successfully listening on IP: 10.0.1.95, port: UTP/45244
+(I) 2022-06-30T18:34:40 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-06-30T18:34:40 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-06-30T18:34:41 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: TCP/45244
+(I) 2022-06-30T18:34:41 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: UTP/45244
+(I) 2022-06-30T18:34:46 - System network status changed to ONLINE
+(C) 2022-06-30T18:37:16 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(C) 2022-06-30T18:37:16 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(I) 2022-06-30T19:00:44 - System network status changed to OFFLINE
+(I) 2022-06-30T19:00:48 - Successfully listening on IP: 10.0.1.95, port: TCP/45244
+(I) 2022-06-30T19:00:48 - Successfully listening on IP: 10.0.1.95, port: UTP/45244
+(I) 2022-06-30T19:00:48 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-06-30T19:00:48 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-06-30T19:00:49 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: TCP/45244
+(I) 2022-06-30T19:00:49 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: UTP/45244
+(I) 2022-06-30T19:00:54 - System network status changed to ONLINE
+(C) 2022-06-30T19:03:24 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(C) 2022-06-30T19:03:24 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(I) 2022-07-01T22:32:22 - System network status changed to OFFLINE
+(I) 2022-07-01T22:32:25 - Successfully listening on IP: 10.0.1.95, port: TCP/45244
+(I) 2022-07-01T22:32:25 - Successfully listening on IP: 10.0.1.95, port: UTP/45244
+(I) 2022-07-01T22:32:25 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-07-01T22:32:25 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-07-01T22:32:27 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: TCP/45244
+(I) 2022-07-01T22:32:27 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: UTP/45244
+(I) 2022-07-01T22:32:32 - System network status changed to ONLINE
+(C) 2022-07-01T22:35:01 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(C) 2022-07-01T22:35:01 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(I) 2022-07-01T23:17:25 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-07-01T23:17:25 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-07-02T14:35:16 - System network status changed to OFFLINE
+(I) 2022-07-02T14:35:19 - Successfully listening on IP: 10.0.1.95, port: TCP/45244
+(I) 2022-07-02T14:35:19 - Successfully listening on IP: 10.0.1.95, port: UTP/45244
+(I) 2022-07-02T14:35:19 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-07-02T14:35:19 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-07-02T14:35:20 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: TCP/45244
+(I) 2022-07-02T14:35:20 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: UTP/45244
+(I) 2022-07-02T14:35:26 - System network status changed to ONLINE
+(C) 2022-07-02T14:37:55 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(C) 2022-07-02T14:37:55 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.95]: no router found
+(I) 2022-07-02T14:42:33 - UPnP / NAT-PMP support [OFF]
+(N) 2022-07-02T14:48:11 - qBittorrent v4.4.1 started
+(N) 2022-07-02T14:48:11 - Using config directory: /home/ben/.config/qBittorrent
+(I) 2022-07-02T14:48:11 - Trying to listen on: 0.0.0.0:45244,[::]:45244
+(N) 2022-07-02T14:48:11 - Peer ID: -qB4410-
+(N) 2022-07-02T14:48:11 - HTTP User-Agent is 'qBittorrent/4.4.1'
+(I) 2022-07-02T14:48:11 - DHT support [ON]
+(I) 2022-07-02T14:48:11 - Local Peer Discovery support [ON]
+(I) 2022-07-02T14:48:11 - PeX support [ON]
+(I) 2022-07-02T14:48:11 - Anonymous mode [OFF]
+(I) 2022-07-02T14:48:11 - Encryption support [ON]
+(I) 2022-07-02T14:48:11 - UPnP / NAT-PMP support [ON]
+(I) 2022-07-02T14:48:11 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Tue May 31 20:25:04 2022.
+(I) 2022-07-02T14:48:12 - Successfully listening on IP: 127.0.0.1, port: TCP/45244
+(I) 2022-07-02T14:48:12 - Successfully listening on IP: 127.0.0.1, port: UTP/45244
+(I) 2022-07-02T14:48:12 - Successfully listening on IP: ::1, port: TCP/45244
+(I) 2022-07-02T14:48:12 - Successfully listening on IP: ::1, port: UTP/45244
+(W) 2022-07-02T14:48:12 - Couldn't download IP geolocation database file. Reason: The remote host name was not found (invalid hostname)
+(I) 2022-07-02T14:48:12 - Successfully listening on IP: 10.0.1.95, port: TCP/45244
+(I) 2022-07-02T14:48:12 - Successfully listening on IP: 10.0.1.95, port: UTP/45244
+(I) 2022-07-02T14:48:12 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: TCP/45244
+(I) 2022-07-02T14:48:12 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.95 external port: UDP/45244
+(I) 2022-07-02T14:48:13 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: TCP/45244
+(I) 2022-07-02T14:48:13 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: UTP/45244
+(I) 2022-07-02T14:48:22 - System network status changed to ONLINE
+(I) 2022-07-02T14:48:24 - UPnP / NAT-PMP support [OFF]
+(N) 2022-07-03T21:09:43 - qBittorrent v4.4.1 started
+(N) 2022-07-03T21:09:43 - Using config directory: /home/ben/.config/qBittorrent
+(I) 2022-07-03T21:09:43 - Trying to listen on: 0.0.0.0:45244,[::]:45244
+(N) 2022-07-03T21:09:43 - Peer ID: -qB4410-
+(N) 2022-07-03T21:09:43 - HTTP User-Agent is 'qBittorrent/4.4.1'
+(I) 2022-07-03T21:09:43 - DHT support [ON]
+(I) 2022-07-03T21:09:43 - Local Peer Discovery support [ON]
+(I) 2022-07-03T21:09:43 - PeX support [ON]
+(I) 2022-07-03T21:09:43 - Anonymous mode [OFF]
+(I) 2022-07-03T21:09:43 - Encryption support [ON]
+(I) 2022-07-03T21:09:43 - UPnP / NAT-PMP support [ON]
+(I) 2022-07-03T21:09:43 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Tue May 31 20:25:04 2022.
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: 127.0.0.1, port: TCP/45244
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: 127.0.0.1, port: UTP/45244
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: 10.0.1.100, port: TCP/45244
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: 10.0.1.100, port: UTP/45244
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: ::1, port: TCP/45244
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: ::1, port: UTP/45244
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: TCP/45244
+(I) 2022-07-03T21:09:43 - Successfully listening on IP: fe80::577c:6ff8:3e70:615%wlp58s0, port: UTP/45244
+(I) 2022-07-03T21:09:43 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.100 external port: TCP/45244
+(I) 2022-07-03T21:09:43 - UPnP/NAT-PMP: Port mapping successful, message: successfully mapped port using NAT-PMP. local: 10.0.1.100 external port: UDP/45244
+(I) 2022-07-03T21:09:44 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Jun 30 20:23:19 2022.
+(I) 2022-07-03T21:09:44 - Successfully updated IP geolocation database.
+(I) 2022-07-03T21:09:44 - Detected external IP: 8.9.82.255
+(N) 2022-07-03T21:11:18 - 'Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]' added to download list.
+(I) 2022-07-03T21:12:03 - Detected external IP: 8.9.81.184
+(C) 2022-07-03T21:12:19 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.100]: no router found
+(C) 2022-07-03T21:12:19 - UPnP/NAT-PMP: Port mapping failure, message: could not map port using UPnP[10.0.1.100]: no router found
+(I) 2022-07-03T21:13:36 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:13:37 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:13:38 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:13:39 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:13:40 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:37 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:47 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:48 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:49 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:50 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:51 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:52 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:53 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:54 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:55 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:56 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:57 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:57 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:58 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:58 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:59 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:15:59 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:00 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:00 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:01 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:01 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:02 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:02 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:03 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:03 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:04 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:04 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:05 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:05 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:06 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:06 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:07 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:07 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:08 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:08 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:09 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:09 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:10 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:10 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:11 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:11 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:12 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:12 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:13 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:13 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:14 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:14 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:15 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:15 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:16 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:16 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:17 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:17 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:18 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:18 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:19 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:19 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:20 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:20 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:21 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:21 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:22 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:22 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:23 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:23 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:24 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:24 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:25 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:25 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:26 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:26 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:27 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:27 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:28 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:28 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:29 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:29 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:30 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:30 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:31 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:31 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:32 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:32 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:33 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:33 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:34 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:34 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:35 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:35 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:36 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:36 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:37 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:37 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:38 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:38 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:39 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:39 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:40 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:40 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:41 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:41 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:42 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:42 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:43 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:43 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:44 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:44 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:45 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:45 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:46 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:46 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:47 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:47 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:48 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:48 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:49 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:49 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:50 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:50 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:51 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:51 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:52 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:52 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:53 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:53 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:54 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:54 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:55 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:55 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:56 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:56 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:57 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:57 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:58 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:58 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:59 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:16:59 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:00 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:00 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:01 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:01 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:02 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:02 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:03 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:04 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:05 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:06 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:07 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:08 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:09 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:10 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:11 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:12 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:13 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:14 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:15 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:16 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:17 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:18 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:19 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:20 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:21 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:22 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:23 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:24 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:25 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:26 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:27 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:28 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:29 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:29 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:30 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:30 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:31 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:31 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:32 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:32 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:33 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:34 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:35 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:36 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:37 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:38 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:39 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:40 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:41 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:41 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:42 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:42 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:43 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:43 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:44 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:44 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:45 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:46 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:47 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:48 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:17:49 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:09 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:10 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:11 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:12 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:13 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:14 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:15 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(I) 2022-07-03T21:19:16 - Performance alert: Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]: performance warning: max outstanding piece requests reached
+(N) 2022-07-03T21:25:36 - 'Despicable Me (2010) [2160p] [4K] [BluRay] [5.1] [YTS.MX]' was removed from the transfer list.
+(I) 2022-07-03T21:29:29 - UPnP / NAT-PMP support [OFF]
