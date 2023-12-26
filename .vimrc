@@ -33,6 +33,7 @@ call plug#begin()
 call plug#end()
 
 
+" custom escape remaps
 inoremap jk <ESC>
 inoremap Jk <ESC>
 inoremap JK <ESC>
