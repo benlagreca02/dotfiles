@@ -20,9 +20,10 @@ call plug#begin()
     Plug 'vim-airline/vim-airline'
 
     Plug 'SirVer/ultisnips'
-        let g:UltiSnipsExpandTrigger='<tab>'
-        let g:UltiSnipsJumpForwardTrigger='<c-j>'
+        let g:UltiSnipsExpandTrigger='<tab>'  " tab to complete, like normal tabcomplete
+        let g:UltiSnipsJumpForwardTrigger='<c-j>'  " ctrl + j to jump  forwards in autocomplete spaces
         let g:UltiSnipsJumpBackwardsTrigger='<c-s-tab>'
+        let g:UltiSnipsEditSplit="horizontal"
 
     Plug 'lervag/vimtex'
 
@@ -31,6 +32,8 @@ call plug#begin()
     Plug 'preservim/nerdtree'
 
 call plug#end()
+
+
 
 
 " custom escape remaps
