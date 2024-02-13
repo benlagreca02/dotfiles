@@ -41,3 +41,4 @@ inoremap jk <ESC>
 inoremap Jk <ESC>
 inoremap JK <ESC>
 
+colorscheme koehler

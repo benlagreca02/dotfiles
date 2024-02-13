@@ -128,3 +128,9 @@ export PICO_PLAYGROUND_PATH=/home/ben/pico/pico-playground
 
 # git alias to headless repo for dotfile management
 alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
+
+# Source ROS so we can actually run ROS stuff
+source /opt/ros/humble/setup.bash
+
+# sources Xilinx so I can launch Vivado
+source /tools/Xilinx/Vivado/2019.1/settings64.sh
