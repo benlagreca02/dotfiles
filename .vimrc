@@ -9,6 +9,7 @@ set hlsearch
 set autoindent
 set incsearch
 set textwidth=80
+set nowrap
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
