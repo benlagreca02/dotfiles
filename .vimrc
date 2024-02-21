@@ -27,6 +27,7 @@ call plug#begin()
         let g:UltiSnipsEditSplit="horizontal"
 
     Plug 'lervag/vimtex'
+        let g:vimtex_view_method = 'zathura'
 
     Plug 'tpope/vim-fugitive'
 
@@ -41,5 +42,3 @@ call plug#end()
 inoremap jk <ESC>
 inoremap Jk <ESC>
 inoremap JK <ESC>
-
-colorscheme koehler
