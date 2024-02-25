@@ -16,16 +16,13 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=5000
+HISTFILESIZE=10000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-#shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -40,28 +37,21 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
-force_color_prompt=yes
-
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
+# This was here by default, I took out the "if force color prompt" around it
+if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+    color_prompt=yes
+else
+    color_prompt=
 fi
 
+# if we can do a color prompt, do my prompt
 if [ "$color_prompt" = yes ]; then
     PS1="\[\033[38;5;46m\]\u@\H\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
-unset color_prompt force_color_prompt
+
+unset color_prompt 
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -76,31 +66,21 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
+# include external aliases from ~/.bash_aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -118,7 +98,7 @@ fi
 
 
 # just a funny thing for startup
-figlet terminal go brr | cowsay -f stegosaurus -n | lolcat
+echo "wenk wenk" | cowsay -f tux | lolcat
 
 # PICO SDK path stuff
 export PICO_SDK_PATH=/home/ben/pico/pico-sdk
@@ -129,8 +109,15 @@ export PICO_PLAYGROUND_PATH=/home/ben/pico/pico-playground
 # git alias to headless repo for dotfile management
 alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
 
+
+# NOTE: sourcing these filles GREATLY slows down how fast bash boots up
 # Source ROS so we can actually run ROS stuff
-source /opt/ros/humble/setup.bash
+# source /opt/ros/humble/setup.bash
 
 # sources Xilinx so I can launch Vivado
-source /tools/Xilinx/Vivado/2019.1/settings64.sh
+# source /tools/Xilinx/Vivado/2019.1/settings64.sh
+# make vivado work with DWM, https://support.xilinx.com/s/question/0D52E00006iHs04SAC/vivado-hangs-forever-with-white-window-during-startup-linux?language=en_US
+# export _JAVA_AWT_WM_NONREPARENTING=1
+
+# for fancy spotify theme, still figuring out
+# export PATH=$PATH:/home/ben/.spicetify
