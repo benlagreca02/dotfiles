@@ -110,6 +110,9 @@ export PICO_PLAYGROUND_PATH=/home/ben/pico/pico-playground
 alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
 
 
+# Add all directories in `~/.local/bin` to $PATH
+export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
+
 # NOTE: sourcing these filles GREATLY slows down how fast bash boots up
 # Source ROS so we can actually run ROS stuff
 # source /opt/ros/humble/setup.bash
