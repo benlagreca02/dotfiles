@@ -1,0 +1,2 @@
+# when copying, copy to the system clipboard
+set selection-clipboard clipboard
