@@ -2,6 +2,14 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+
+# NOTE: this may be slowing down volume changing in DWM
+# Add all directories in `~/.local/bin` to $PATH
+# must do this BEFORE next "if not interactive" check 
+# in case a script is being run autonomously, like in the case of 
+# DWM Blocks in statusbar
+export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
