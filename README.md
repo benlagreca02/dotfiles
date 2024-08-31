@@ -2,7 +2,11 @@
 These are my typical configs for various programs. I usually daily drive Kubuntu (KDE on Ubuntu) and I haven't committed those configurations and settings yet purely because I haven't gotten around to hunting down the files I need to commit, although I know this would probably solved by googling around.
 
 ## Pulling in the dotfiles.
-I did this according to [this guide](https://www.atlassian.com/git/tutorials/dotfiles), and it's worked pretty well for me so far. In short to install these dotfiles on a new machine, do the folowing
+I did this according to [this guide](https://www.atlassian.com/git/tutorials/dotfiles), and it's worked pretty well for me so far.
+
+Doing this will pull down the README.md file to your home directory, I just delete it, and don't commit the fact that I deleted it.
+
+To install these dotfiles on a new machine, do the folowing
 
 Make a folder called .cfg, this is where the headless git repo will store its files
 ```bash
