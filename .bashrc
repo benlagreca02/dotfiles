@@ -32,7 +32,7 @@ fi
 if [ "$color_prompt" = yes ]; then
     PS1="\[\033[38;5;46m\]\u@\H\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 else
-    # Arch default
+    # Arch default, I just think its a nice plain one
     PS1='[\u@\h \W]\$'
 fi
 
@@ -60,6 +60,7 @@ alias l='ls -CF'
 echo "wenk wenk" | cowsay -f tux | lolcat
 
 # PICO SDK path stuff
+# For rasberry pi pico development work
 # export PICO_SDK_PATH=/home/ben/pico/pico-sdk
 # export PICO_EXAMPLES_PATH=/home/ben/pico/pico-examples
 # export PICO_EXTRAS_PATH=/home/ben/pico/pico-extras
