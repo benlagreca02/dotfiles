@@ -34,3 +34,16 @@ Don't show files that aren't a part of the repo, you'll want this unless you wan
 ```bash
 config config --local status.showUntrackedFiles no
 ```
+
+TLDR do this
+```bash
+mkdir ~/.cfg
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+echo ".cfg" >> .gitignore
+git clone --bare https://github.com/benlagreca02/dotfiles.git $HOME/.cfg
+config checkout
+```
+At this point you'll probably need to delete existing configs, then...
+```bash
+config config --local status.showUntrackedFiles no
+```
