@@ -45,5 +45,6 @@ config checkout
 ```
 At this point you'll probably need to delete existing configs, then...
 ```bash
+config checkout
 config config --local status.showUntrackedFiles no
 ```
