@@ -69,7 +69,13 @@ echo "wenk wenk" | cowsay -f tux | lolcat
 # git alias to headless repo for dotfile management
 alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
 
-
 # ROS base layer source, for ROS development
 # source /opt/ros/humble/setup.bash
 
+
+# ARCH SPECIFIC
+alias pacman='sudo pacman'
+
+# from calling `pipx ensurepath`
+# Created by `pipx` on 2024-12-21 16:38:46
+export PATH="$PATH:/home/ben/.local/bin"
