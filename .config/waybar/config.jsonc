@@ -22,9 +22,14 @@
         "spacing": 10
     },
     "clock": {
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // "format-alt": "{:%Y-%m-%d}"
-		// "on-click": "cal"
+        "format": "{:%I:%M %p  %a %D}",
+        "calendar": {
+            "mode" : "month",
+            "format":{
+                 "today":"<span color='#00ccff'><b>{}</b></span>"
+            } 
+        },
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
     },
 
     "pulseaudio": {
@@ -48,8 +53,7 @@
 
     // Doesn't do anything atm
 	"custom/power": {
-		"format": " ",
+		"format": " "
 		// "on-click": "wlogout"
-	},
-
+	}
 }
