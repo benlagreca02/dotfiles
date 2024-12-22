@@ -67,11 +67,22 @@ pacman -S otf-font-awesome
 ```
 
 ## TODO
+This is a list of things I'd like to do/update to the config/rice
+
+### Functional
+- [ ] Add battery "charging" indication somehow
 - [ ] Backup system (figure it out)
 - [ ] Manage packages and see how to get dependencies for scripts (?)
 - [ ] screen brightness keys
-- [ ] break hyprland config into folder and smaller files
-- [ ] Look into [pywal](https://github.com/dylanaraps/pywal)
-- [x] Fix waybar calendar to highlight the current day
+- [ ] rice vim airline bar to have more info I care about
 - [x] auto-reload for waybar
+- [x] Add battery state to waybar
 - [x] Volume Control keys
+
+### Aesthetics
+
+- [ ] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color
+  theming based on wallpaper
+- [ ] break hyprland config into folder and smaller files
+- [ ] See if waybar's colors can be influenced by pywal
+- [x] Fix waybar calendar to highlight the current day
