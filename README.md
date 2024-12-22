@@ -67,14 +67,11 @@ pacman -S otf-font-awesome
 ```
 
 ## TODO
-[x] auto-reload for waybar
-
-[x] Volume Control keys
-
-[ ] Backup system (figure it out)
-
-[ ] Manage packages and see how to get dependencies for scripts (?)
-
-[ ] screen brightness keys
-
-[ ] break hyprland config into folder and smaller files
+-[ ] Backup system (figure it out)
+-[ ] Manage packages and see how to get dependencies for scripts (?)
+-[ ] screen brightness keys
+-[ ] break hyprland config into folder and smaller files
+-[ ] Look into [pywal](https://github.com/dylanaraps/pywal)
+-[x] Fix waybar calendar to highlight the current day
+-[x] auto-reload for waybar
+-[x] Volume Control keys
