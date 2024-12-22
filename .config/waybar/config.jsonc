@@ -1,7 +1,11 @@
 {
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"],
+    "modules-right": ["pulseaudio", "custom/power"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}"
+    },
 
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
@@ -14,14 +18,15 @@
         "on-click": "kitty -e 'nmtui'"
     },
     "tray": {
-        "icon-size": 15,
+        "icon-size": 10,
         "spacing": 10
     },
     "clock": {
         // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // "format-alt": "{:%Y-%m-%d}"
-		"on-click": "gnome-calendar"
+		// "on-click": "cal"
     },
+
     "pulseaudio": {
         "format": "{volume}% {icon} ",
         "format-bluetooth": "{volume}% {icon} {format_source}",
@@ -40,17 +45,11 @@
         },
         "on-click": "pavucontrol"
     },
+
+    // Doesn't do anything atm
 	"custom/power": {
 		"format": " ",
-		"on-click": "wlogout"
+		// "on-click": "wlogout"
 	},
-    "custom/scratchpad-indicator": {
-        "format-text": "{}hi",
-        "return-type": "json",
-        "interval": 3,
-        "exec": "~/.local/bin/scratchpad-indicator 2> /dev/null",
-        "exec-if": "exit 0",
-        "on-click": "swaymsg 'scratchpad show'",
-        "on-click-right": "swaymsg 'move scratchpad'"
-    }
+
 }

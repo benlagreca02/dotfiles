@@ -48,3 +48,16 @@ At this point you'll probably need to delete existing configs, then...
 config checkout
 config config --local status.showUntrackedFiles no
 ```
+
+## ARCH
+
+This is my Arch linux, hyprland rice, and it is still HEAVILY in development. I
+just work on this when I have time.
+
+As of 12/21/24, it is extremely minimal, and really only has volume control, and
+some very simple keybinds I'm too lazy to document right now.
+
+For waybar's icons you need to install font awesome
+```
+pacman -S otf-font-awesome
+```
