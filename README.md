@@ -70,17 +70,31 @@ pacman -S otf-font-awesome
 This is a list of things I'd like to do/update to the config/rice
 
 ### Functional
-- [ ] Add battery "charging" indication somehow
-- [ ] Backup system (figure it out)
-- [ ] Manage packages and see how to get dependencies for scripts (?)
-- [ ] screen brightness keys
+These are the ones that will acutally impact the performance of the system. I
+still need to do some of these before I declare this system "useable". I have
+thought about switching my normal DE to be hyprland, but I use ubuntu for
+stabliity most often (and ROS support). I don't have plans to full-time switch
+to Arch (yet) but I have considered it.
+
+- [ ] Manage packages and see how to get dependencies for scripts (?), also
+  install dependencies on pull-down of config repo possibly
+- [ ] Backup system (pacakges and system, not just dotfiles)
 - [ ] rice vim airline bar to have more info I care about
+- [x] Add screen brightness info to waybar
+- [x] Add network info to waybar
+- [x] screen brightness keys
 - [x] auto-reload for waybar
 - [x] Add battery state to waybar
 - [x] Volume Control keys
+- [x] Add battery "charging" indication somehow
+
 
 ### Aesthetics
+These are the unimportant for functionallity, pretty, and overall not-needed
+things. They make it look really cool, but you don't need them.
 
+- [ ] Get hyprland config syntax hilighting in vim
+- [ ] fine tune the css for waybar
 - [ ] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color
   theming based on wallpaper
 - [ ] break hyprland config into folder and smaller files

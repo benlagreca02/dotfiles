@@ -4,6 +4,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Fetch the operating system
+# This is for doing ARCH vs UBUNTU things
+# Usually just arch things
+os=$(cat /etc/os-release | grep -o -m 1 "Arch")
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=5000
 HISTFILESIZE=10000
@@ -56,8 +61,13 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# just a funny thing for startup
-echo "wenk wenk" | cowsay -f tux | lolcat
+if [ "$os" == "Arch" ]; then   
+    # just a funny thing for startup
+    echo "I use arch btw" | cowsay -f tux | lolcat
+else
+    echo "wenk wenk" | cowsay -f tux | lolcat
+fi
+
 
 # PICO SDK path stuff
 # For rasberry pi pico development work
@@ -69,13 +79,27 @@ echo "wenk wenk" | cowsay -f tux | lolcat
 # git alias to headless repo for dotfile management
 alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
 
-# ROS base layer source, for ROS development
-# source /opt/ros/humble/setup.bash
-
-
-# ARCH SPECIFIC
-alias pacman='sudo pacman'
 
 # from calling `pipx ensurepath`
 # Created by `pipx` on 2024-12-21 16:38:46
 export PATH="$PATH:/home/ben/.local/bin"
+
+
+# ROS base layer source, for ROS development
+# source /opt/ros/humble/setup.bash
+
+# ARCH SPECIFIC
+if [ "$os" == "Arch" ]; then   
+  alias pacman='sudo pacman'
+
+  # FOR NOW, I'm not gonna load py-wal things
+  # The wallpaper I have has colors too muted 
+  # and too simmilar to themselves, makes 
+  # coding impossible, so I'll tweak it later
+ 
+  # Import colorscheme from 'wal' asynchronously
+  # &   # Run the process in the background.
+  # ( ) # Hide shell job control messages.
+  # Not supported in the "fish" shell.
+  # (cat ~/.cache/wal/sequences &)
+fi

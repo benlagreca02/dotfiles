@@ -1,7 +1,12 @@
 {
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["clock"],
-    "modules-right": ["battery", "pulseaudio", "custom/power"],
+    "modules-right": ["network", "backlight", "battery", "pulseaudio", "custom/power"],
+
+    "tray": {
+        "icon-size": 10,
+        "spacing": 10
+    },
 
     "hyprland/workspaces": {
         "format": "{icon}"
@@ -10,17 +15,20 @@
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
+
+
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": " ",
         "format-ethernet": "{ifname} ",
         "format-disconnected": "", 
         "max-length": 50,
+        "tooltip-format-wifi": "{ipaddr}/{cidr} {essid}",
+        // TODO should probably access the terminal
+        // from some kind of macro incase I don't use kitty
+        // Could change this but I don't care yet
         "on-click": "kitty -e 'nmtui'"
     },
-    "tray": {
-        "icon-size": 10,
-        "spacing": 10
-    },
+
     "clock": {
         "format": "{:%I:%M %p  %a %D}",
         "calendar": {
@@ -30,6 +38,12 @@
             } 
         },
         "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+
+
+    "backlight": {
+        "format": "{icon}  {percent}%",
+        "format-icons": ["○","◔","◑","◕","●"]
     },
 
 
@@ -43,18 +57,18 @@
               "critical": 20
         },
 
-        "format": "{icon}   {capacity}%",
-        "format-good": "{icon}   {capacity}%", 
+        "format": "{icon} {capacity}%",
+        "format-good": "{icon} {capacity}%", 
         "format-full": "   {capacity}%",
         "format-icons": ["", "", "", "", ""],
         "interval": 30
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} ",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon}{volume}%  {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "0% {icon} ",
+        "format-muted": "{icon} 0%",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
