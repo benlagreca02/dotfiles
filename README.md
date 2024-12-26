@@ -80,6 +80,7 @@ to Arch (yet) but I have considered it.
   install dependencies on pull-down of config repo possibly
 - [ ] Backup system (pacakges and system, not just dotfiles)
 - [ ] rice vim airline bar to have more info I care about
+- [x] In waybar, highlight active window number
 - [x] Add screen brightness info to waybar
 - [x] Add network info to waybar
 - [x] screen brightness keys
@@ -95,7 +96,7 @@ These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
 - [ ] Get hyprland config syntax hilighting in vim
-- [ ] fine tune the css for waybar
+- [x] fine tune the css for waybar (mostly color)
 - [x] change border colors in hyprland
 - [x] Fix waybar calendar to highlight the current day
 - [x] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color
