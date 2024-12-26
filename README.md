@@ -87,6 +87,7 @@ to Arch (yet) but I have considered it.
 - [x] Add battery state to waybar
 - [x] Volume Control keys
 - [x] Add battery "charging" indication somehow
+- [x] break hyprland config into folder and smaller files
 
 
 ### Aesthetics
@@ -95,8 +96,8 @@ things. They make it look really cool, but you don't need them.
 
 - [ ] Get hyprland config syntax hilighting in vim
 - [ ] fine tune the css for waybar
-- [ ] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color
-  theming based on wallpaper
-- [ ] break hyprland config into folder and smaller files
-- [ ] See if waybar's colors can be influenced by pywal
+- [x] change border colors in hyprland
 - [x] Fix waybar calendar to highlight the current day
+- [x] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color
+  theming based on wallpaper (I don't like it)
+- [x] See if waybar's colors can be influenced by pywal (I don't care that much)
