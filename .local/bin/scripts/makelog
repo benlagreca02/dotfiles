@@ -19,11 +19,11 @@ file_path="$target_dir/${current_date}.md"
 if [[ ! -f "$file_path" ]]; then
   touch "$file_path"
   echo "'$file_path' created successfully."
-  echo "# $formatted_date" > $file_path
+  echo "# $formatted_date\n" > $file_path
 else
   echo "'$file_path' already exists."
 fi
 
-# Open the file in vim
-vim "$file_path"
+# Open the file in vim, + indicates to open with cursor at last line
+vim + "$file_path"
 
