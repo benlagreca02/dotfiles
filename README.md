@@ -97,6 +97,7 @@ thought about switching my normal DE to be hyprland, but I use ubuntu for
 stabliity most often (and ROS support). I don't have plans to full-time switch
 to Arch (yet) but I have considered it.
 
+- [ ] Make waybar power button actually do something
 - [ ] "Night light" for red light at night (red shift or whatever you wanna call it)
 - [ ] Hyprland add keybind to move a window up/down the stack
 - [ ] Manage packages and see how to get dependencies for scripts (?), also
@@ -105,6 +106,9 @@ to Arch (yet) but I have considered it.
 - [ ] rice vim airline bar to have more info I care about
 - [ ] Get dunst or some other notificaiton daemon confirmed working
 - [ ] document keybindings for everything
+- [ ] Consider looking into Dmenu or simmilar for app launching
+- [ ] Make a "go to hyprland config folder" alias of some kind?
+- [ ] Make hyprlock actually lock on close and time out of inactivity
 - [x] Set up a "locking" or idle manager (hyprlock)
 - [x] In waybar, highlight active window number
 - [x] Add screen brightness info to waybar
