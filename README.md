@@ -97,15 +97,14 @@ thought about switching my normal DE to be hyprland, but I use ubuntu for
 stabliity most often (and ROS support). I don't have plans to full-time switch
 to Arch (yet) but I have considered it.
 
+- [ ] Get dunst or some other notificaiton daemon confirmed working (CRITICAL FOR DISCORD TO NOT CRASH)
+
 - [ ] Make waybar power button actually do something
 - [ ] "Night light" for red light at night (red shift or whatever you wanna call it)
 - [ ] Hyprland add keybind to move a window up/down the stack
-- [ ] Manage packages and see how to get dependencies for scripts (?), also
-  install dependencies on pull-down of config repo possibly
+- [ ] Manage packages and see how to get dependencies for scripts (?), also install dependencies on pull-down of config repo possibly
 - [ ] Backup system (pacakges and system, not just dotfiles)
-- [ ] rice vim airline bar to have more info I care about
-- [ ] Get dunst or some other notificaiton daemon confirmed working
-- [ ] document keybindings for everything
+- [ ] document keybindings for everything better
 - [ ] Consider looking into Dmenu or simmilar for app launching
 - [ ] Make a "go to hyprland config folder" alias of some kind?
 - [ ] Make hyprlock actually lock on close and time out of inactivity
@@ -126,6 +125,7 @@ These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
 - [ ] Custom VIM colorscheme (?)
+- [ ] rice vim airline bar to have more info I care about
 - [x] Make some kind of readme for where to edit colors per wallpaper
 - [x] Get hyprland config syntax hilighting in vim (Its already there silly!)
 - [x] fine tune the css for waybar (mostly color)
