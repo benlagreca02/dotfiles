@@ -84,6 +84,12 @@ alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
 # Created by `pipx` on 2024-12-21 16:38:46
 export PATH="$PATH:/home/ben/.local/bin"
 
+# to source my scripts
+export PATH="$PATH:/home/ben/.local/bin/scripts"
+
+# Assumes you have miniconda installed
+alias condatime='source ~/.miniconda3/bin/activate'
+
 
 # ROS base layer source, for ROS development
 # source /opt/ros/humble/setup.bash
@@ -91,15 +97,4 @@ export PATH="$PATH:/home/ben/.local/bin"
 # ARCH SPECIFIC
 if [ "$os" == "Arch" ]; then   
   alias pacman='sudo pacman'
-
-  # FOR NOW, I'm not gonna load py-wal things
-  # The wallpaper I have has colors too muted 
-  # and too simmilar to themselves, makes 
-  # coding impossible, so I'll tweak it later
- 
-  # Import colorscheme from 'wal' asynchronously
-  # &   # Run the process in the background.
-  # ( ) # Hide shell job control messages.
-  # Not supported in the "fish" shell.
-  # (cat ~/.cache/wal/sequences &)
 fi
