@@ -43,7 +43,7 @@ fi
 
 unset color_prompt 
 
-# enable color support of ls and others
+# enable color support of ls and other simmilar
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -56,10 +56,14 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# ls aliases, I don't like the default ones ubuntu puts in here
+# g: don't print owner
+# G: don't print GROUP owner
+# t: sort by time
+# r: reverse (newest file at BOTTOM of output)
+# A: all files (without . and ..)
+# l: long list
+alias lt='ls -lrAht'  # "List Time"
 
 # Git aliases
 alias gs='git status'
@@ -67,6 +71,8 @@ alias gd='git diff'
 
 # git alias to headless repo for dotfile management
 alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
+
+alias vf='vim $(fzf)'
 
 
 # just a funny thing for startup
@@ -102,6 +108,7 @@ alias condatime='source ~/.miniconda3/bin/activate'
 # =========== ROS =========== 
 # ROS base layer source, for ROS development
 source /opt/ros/humble/setup.bash
+source ~/projects/ws_moveit/install/setup.bash
 alias sisb='source install/setup.bash'
 # Gazebo source
 # source /usr/share/gazebo/setup.sh
