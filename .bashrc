@@ -35,7 +35,7 @@ fi
 
 # if we can do a color prompt, do my crazy prompt
 if [ "$color_prompt" = yes ]; then
-    PS1="\[\033[38;5;46m\]\u@\H\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
+    PS1="\[\033[38;5;45m\]\u@\H\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 else
     # Arch default, I just think its a nice plain one
     PS1='[\u@\h \W]\$'
@@ -43,7 +43,7 @@ fi
 
 unset color_prompt 
 
-# enable color support of ls and others
+# enable color support of ls and other simmilar
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -56,18 +56,32 @@ fi
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# ls aliases, I don't like the default ones ubuntu puts in here
+# g: don't print owner
+# G: don't print GROUP owner
+# t: sort by time
+# r: reverse (newest file at BOTTOM of output)
+# A: all files (without . and ..)
+# l: long list
+alias lt='ls -lrAht'  # "List Time"
 
+# Git aliases
+alias gs='git status'
+alias gd='git diff'
+
+# git alias to headless repo for dotfile management
+alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
+
+alias vf='vim $(fzf)'
+
+
+# just a funny thing for startup
 if [ "$os" == "Arch" ]; then   
-    # just a funny thing for startup
+    # Just to verify its loading the right settings
     echo "I use arch btw" | cowsay -f tux | lolcat
 else
     echo "wenk wenk" | cowsay -f tux | lolcat
 fi
-
 
 # PICO SDK path stuff
 # For rasberry pi pico development work
@@ -75,9 +89,6 @@ fi
 # export PICO_EXAMPLES_PATH=/home/ben/pico/pico-examples
 # export PICO_EXTRAS_PATH=/home/ben/pico/pico-extras
 # export PICO_PLAYGROUND_PATH=/home/ben/pico/pico-playground
-
-# git alias to headless repo for dotfile management
-alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
 
 
 # from calling `pipx ensurepath`
@@ -87,12 +98,21 @@ export PATH="$PATH:/home/ben/.local/bin"
 # to source my scripts
 export PATH="$PATH:/home/ben/.local/bin/scripts"
 
+# Rust something (minimap for vim I think?)
+export PATH="$PATH:/home/ben/.cargo/bin"
+
+
 # Assumes you have miniconda installed
 alias condatime='source ~/.miniconda3/bin/activate'
 
-
+# =========== ROS =========== 
 # ROS base layer source, for ROS development
-# source /opt/ros/humble/setup.bash
+source /opt/ros/humble/setup.bash
+source ~/projects/ws_moveit/install/setup.bash
+alias sisb='source install/setup.bash'
+# Gazebo source
+# source /usr/share/gazebo/setup.sh
+
 
 # ARCH SPECIFIC
 if [ "$os" == "Arch" ]; then   
