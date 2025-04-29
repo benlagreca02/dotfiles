@@ -19,7 +19,7 @@ file_path="$target_dir/${current_date}.md"
 if [[ ! -f "$file_path" ]]; then
   touch "$file_path"
   echo "'$file_path' created successfully."
-  echo "# $formatted_date\n" > $file_path
+  printf "# $formatted_date\n" > $file_path
 else
   echo "'$file_path' already exists."
 fi
