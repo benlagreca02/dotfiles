@@ -10,8 +10,8 @@
 os=$(cat /etc/os-release | grep -o -m 1 "Arch")
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=5000
-HISTFILESIZE=10000
+HISTSIZE=50000
+HISTFILESIZE=100000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -43,7 +43,9 @@ fi
 
 unset color_prompt 
 
-# enable color support of ls and other simmilar
+
+# TODO break aliases into their own file
+# enable color support of ls and other simmilar by default
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -65,13 +67,16 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # l: long list
 alias lt='ls -lrAht'  # "List Time"
 
-# Git aliases
+# Git aliases for general purpose
+# Shouldn't interfere with anything
 alias gs='git status'
 alias gd='git diff'
+alias gl='git log'
 
 # git alias to headless repo for dotfile management
-alias config='/usr/bin/git --git-dir=/home/ben/.cfg --work-tree=/home/ben'
+alias config='/usr/bin/git --git-dir=/home/$USER/.cfg --work-tree=/home/$USER'
 
+# Super awesome alias, 
 alias vf='vim $(fzf)'
 
 
@@ -95,10 +100,10 @@ fi
 # Created by `pipx` on 2024-12-21 16:38:46
 export PATH="$PATH:/home/ben/.local/bin"
 
-# to source my scripts
+# source my scripts
 export PATH="$PATH:/home/ben/.local/bin/scripts"
 
-# Rust something (minimap for vim I think?)
+# Rust something (minimap for vim needed this)
 export PATH="$PATH:/home/ben/.cargo/bin"
 
 
@@ -108,13 +113,11 @@ alias condatime='source ~/.miniconda3/bin/activate'
 # =========== ROS =========== 
 # ROS base layer source, for ROS development
 source /opt/ros/humble/setup.bash
+# ROS moveit source, for when I'm doing something with servoing
 source ~/projects/ws_moveit/install/setup.bash
 alias sisb='source install/setup.bash'
-# Gazebo source
-# source /usr/share/gazebo/setup.sh
 
-
-# ARCH SPECIFIC
+# ARCH SPECIFIC SETTINGS
 if [ "$os" == "Arch" ]; then   
   alias pacman='sudo pacman'
 fi
