@@ -18,20 +18,29 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin()
+    " Bar at the bottom of vim, I want to customize this one day
     Plug 'vim-airline/vim-airline'
 
+    " Ultisnips, snippits, I don't use this a ton, but its really handy for LaTeX
     Plug 'SirVer/ultisnips'
         let g:UltiSnipsExpandTrigger='<tab>'  " tab to complete, like normal tabcomplete
         let g:UltiSnipsJumpForwardTrigger='<c-j>'  " ctrl + j to jump  forwards in autocomplete spaces
         let g:UltiSnipsJumpBackwardsTrigger='<c-s-tab>'
         let g:UltiSnipsEditSplit="horizontal"
 
+    " VimTex, Vim LaTeX plugin, friggin awesome
     Plug 'lervag/vimtex'
+        let g:vimtex_version_check = 0
         let g:vimtex_view_method = 'zathura'
 
+    " Git plugin, I never use this 
     Plug 'tpope/vim-fugitive'
 
+    " NerdTree, better file explorer
     Plug 'preservim/nerdtree'
+
+    " Minimap for vim
+    Plug 'wfxr/minimap.vim'
 
 call plug#end()
 
