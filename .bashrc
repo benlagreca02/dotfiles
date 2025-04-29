@@ -1,12 +1,13 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-# Most of these were the "ubuntu default", but I pruned away many of them
 
-# If not running interactively, don't do anything
+# source my scripts, do this BEFORE interactive check, to make sure that I can
+# call scripts from other scripts
+export PATH="$PATH:/home/$USER/.local/bin/scripts"
+
+# If NOT running interactively, stop here!
 [[ $- != *i* ]] && return
 
-# Fetch the operating system
-# This is for doing ARCH vs UBUNTU things
-# Usually just arch things
+# Fetch the OS "Arch" or "Ubuntu"
 os=$(cat /etc/os-release | grep -o -m 1 "Arch")
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
@@ -40,9 +41,8 @@ else
     # Arch default, I just think its a nice plain one
     PS1='[\u@\h \W]\$'
 fi
-
+# cleanup variable 
 unset color_prompt 
-
 
 # TODO break aliases into their own file
 # enable color support of ls and other simmilar by default
@@ -90,31 +90,28 @@ fi
 
 # PICO SDK path stuff
 # For rasberry pi pico development work
-# export PICO_SDK_PATH=/home/ben/pico/pico-sdk
-# export PICO_EXAMPLES_PATH=/home/ben/pico/pico-examples
-# export PICO_EXTRAS_PATH=/home/ben/pico/pico-extras
-# export PICO_PLAYGROUND_PATH=/home/ben/pico/pico-playground
+# export PICO_SDK_PATH=/home/$USER/pico/pico-sdk
+# export PICO_EXAMPLES_PATH=/home/$USER/pico/pico-examples
+# export PICO_EXTRAS_PATH=/home/$USER/pico/pico-extras
+# export PICO_PLAYGROUND_PATH=/home/$USER/pico/pico-playground
 
 
 # from calling `pipx ensurepath`
 # Created by `pipx` on 2024-12-21 16:38:46
-export PATH="$PATH:/home/ben/.local/bin"
+export PATH="$PATH:/home/$USER/.local/bin"
 
-# source my scripts
-export PATH="$PATH:/home/ben/.local/bin/scripts"
 
 # Rust something (minimap for vim needed this)
-export PATH="$PATH:/home/ben/.cargo/bin"
-
+export PATH="$PATH:/home/$USER/.cargo/bin"
 
 # Assumes you have miniconda installed
 alias condatime='source ~/.miniconda3/bin/activate'
 
 # =========== ROS =========== 
 # ROS base layer source, for ROS development
-source /opt/ros/humble/setup.bash
+# source /opt/ros/humble/setup.bash
 # ROS moveit source, for when I'm doing something with servoing
-source ~/projects/ws_moveit/install/setup.bash
+# source ~/projects/ws_moveit/install/setup.bash
 alias sisb='source install/setup.bash'
 
 # ARCH SPECIFIC SETTINGS
