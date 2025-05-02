@@ -1,0 +1,44 @@
+#!/bin/bash 
+
+# This script will unpack all .tar files in the current directory into
+# separate directories, this is really just for whne I was grading for the
+# Applied programming in C class, but I like to keep it around for the memories
+
+for file in *.tar; do
+  # Check if there are any .tar files
+  if [ -f "$file" ]; then
+    dirname="${file%.tar}"  # Remove .tar extension to create the directory name
+    mkdir -p "$dirname"     # Create the directory if it doesn't exist
+    tar -xf "$file" -C "$dirname"  # Extract the .tar file into the directory
+    echo "$file unpacked into $dirname"
+  else
+    echo "No .tar files found in the current directory."
+    break
+  fi
+done
+
+
+
+#!/bin/bash
+
+# Loop through each item in the current directory
+for item in ./*
+do
+    # Check if the item is a directory
+    if [ -d "$item" ]; then
+        # Extract the folder name
+        folder_name=$(basename "$item")
+
+        # Use parameter expansion to remove numbers and hyphens from the beginning of the folder name
+        new_name="${folder_name#* - }"
+
+        # Rename the folder
+        mv "$item" "./$new_name"
+    fi
+done
+
+
+rm -f index.html
+
+mkdir ./tars
+mv *.tar ./tars/
