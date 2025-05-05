@@ -4,15 +4,17 @@ drive Kubuntu (KDE on Ubuntu) and I haven't committed those configurations and
 settings yet purely because I haven't gotten around to hunting down the files I
 need to commit, although I know this would probably solved by googling around.
 
-I've also been working on a Arch linux based, Hyprland setup, and have
-considered switching my ubuntu setup to be 
+I've also been working on a Arch linux based, Hyprland setup. This has mostly
+just been for fun in my freetime. 
 
 ## Pulling in the dotfiles.
-I did this according to [this guide](https://www.atlassian.com/git/tutorials/dotfiles), and it's worked pretty well for me so far.
+If *you* want to use my dotffiles (yes you!) this is the subsection for you.
 
-Doing this will pull down the README.md file to your home directory, I just delete it, and don't commit the fact that I deleted it.
-
-To install these dotfiles on a new machine, do the folowing
+I did this according to [this
+guide](https://www.atlassian.com/git/tutorials/dotfiles), and it's worked pretty
+well for me so far.  Doing this will pull down the README.md file to your home
+directory, I just delete it, and don't commit the fact that I deleted it.  To
+install these dotfiles on a new machine, do the folowing
 
 Make a folder called .cfg, this is where the headless git repo will store its files
 ```bash
@@ -62,17 +64,16 @@ config checkout
 config config --local status.showUntrackedFiles no
 ```
 
+One day I'll script this somehow...
+
 # ARCH
 
 This includes my Arch linux, hyprland rice, and it is still in development, and I
 don't consider it complete. I just work on this when I have time.
 
-As of 1/9/25, it is pretty robust, and I can get a good chunk of things done,
-but I really need to add a program launcher, and some other pretty important
-things, but its coming along quite well. The hardest part is figuring out what
-programs I actually need, but I can usually figure it out by googling what
-functionallity I want, then figuring out the program after. (I googled "locking
-in hyprland", and discovered hyprlock)
+As of 5/4/25, it is pretty robust. Most key, critical things are there, with the
+biggest missing link being some kind of program launcher (so I don't have to
+open terminals and fork constantly)
 
 For waybar's icons you need to install font awesome
 ```
@@ -84,7 +85,8 @@ Right now, I assume a single wallpaper, and only have one "colorscheme" for
 hyprland and waybar configured in their respective config files. I used pywal to
 get a rough sense of the colors, but thats not really my focus right now, I'm
 more focused on getting everything "functional", then I'll go and get colors
-working much fancier.
+working much fancier later. I might do alternate "palletes" somehow, but thats
+for later. Function > fashion.
 
 ## TODO
 This is a list of things I'd like to do/update to the config/rice. This is
@@ -98,16 +100,19 @@ stabliity most often (and ROS support). I don't have plans to full-time switch
 to Arch (yet) but I have considered it.
 
 - [ ] Get dunst or some other notificaiton daemon confirmed working (CRITICAL FOR DISCORD TO NOT CRASH)
-
-- [ ] Make waybar power button actually do something
-- [ ] "Night light" for red light at night (red shift or whatever you wanna call it)
-- [ ] Hyprland add keybind to move a window up/down the stack
-- [ ] Manage packages and see how to get dependencies for scripts (?), also install dependencies on pull-down of config repo possibly
-- [ ] Backup system (pacakges and system, not just dotfiles)
-- [ ] document keybindings for everything better
 - [ ] Consider looking into Dmenu or simmilar for app launching
+- [ ] Make discord not blurry by default (weird aliases?)
+- [ ] screen rotation in tablet mode potentially?
+- [ ] Make waybar power button actually do something
+- [ ] Add bluetooth button in waybar
+- [ ] add gammastep button to waybar (manual toggle)
+- [ ] Default package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
+- [ ] Learn how to backup system (pacakges and system, not just dotfiles)
+- [ ] document keybindings for everything better
+- [ ] Make some kind of a "print current keybind options" keybind?
 - [ ] Make a "go to hyprland config folder" alias of some kind?
-- [ ] Make hyprlock actually lock on close and time out of inactivity
+- [x] Make hyprlock actually lock on close and time out of inactivity
+- [x] red light at night (using [gammastep](https://man.archlinux.org/man/gammastep.1.en)
 - [x] Set up a "locking" or idle manager (hyprlock)
 - [x] In waybar, highlight active window number
 - [x] Add screen brightness info to waybar
@@ -131,6 +136,5 @@ things. They make it look really cool, but you don't need them.
 - [x] fine tune the css for waybar (mostly color)
 - [x] change border colors in hyprland
 - [x] Fix waybar calendar to highlight the current day
-- [x] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color
-  theming based on wallpaper (I don't like it)
+- [x] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color theming based on wallpaper (I don't like it)
 - [x] See if waybar's colors can be influenced by pywal (I don't care that much)
