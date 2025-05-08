@@ -92,25 +92,30 @@ for later. Function > fashion.
 This is a list of things I'd like to do/update to the config/rice. This is
 mostly specific to the Arch Hyprland setup.
 
-### Functional
-These are the ones that will acutally impact the performance of the system. I
-still need to do some of these before I declare this system "useable". I have
-thought about switching my normal DE to be hyprland, but I use ubuntu for
-stabliity most often (and ROS support). I don't have plans to full-time switch
-to Arch (yet) but I have considered it.
+### Functional 
 
-- [ ] Get dunst or some other notificaiton daemon confirmed working (CRITICAL FOR DISCORD TO NOT CRASH)
-- [ ] Consider looking into Dmenu or simmilar for app launching
+These are the ones that will acutally impact the performance, and
+quality of life of the system. I still need to do some of these before I declare
+this system 100% "useable", thought it is getting pretty close.  I have thought
+about switching my DE to be hyprland, but Ubuntu doesn't support it officially.
+(Well, ubuntu 22 that is, which I needed for ROS2 Humble for school, but thats
+not an issue any more!) I don't have plans to full-time switch to Arch (yet) but
+I have considered it. 
+
+- [ ] Figure out how to *really* use Rofi
+- [ ] Make rofi not blurry
 - [ ] Make discord not blurry by default (weird aliases?)
 - [ ] screen rotation in tablet mode potentially?
 - [ ] Make waybar power button actually do something
 - [ ] Add bluetooth button in waybar
-- [ ] add gammastep button to waybar (manual toggle)
-- [ ] Default package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
+- [ ] add gammastep button to waybar (manual toggle for night shift))
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] document keybindings for everything better
 - [ ] Make some kind of a "print current keybind options" keybind?
+- [ ] Default package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
 - [ ] Make a "go to hyprland config folder" alias of some kind?
+- [x] Consider looking into Dmenu or simmilar for app launching (Using ROFI)
+- [x] Get dunst or some other notificaiton daemon confirmed working (CRITICAL FOR DISCORD TO NOT CRASH)
 - [x] Make hyprlock actually lock on close and time out of inactivity
 - [x] red light at night (using [gammastep](https://man.archlinux.org/man/gammastep.1.en)
 - [x] Set up a "locking" or idle manager (hyprlock)
@@ -129,6 +134,7 @@ to Arch (yet) but I have considered it.
 These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
+- [ ] Rice Dunst so it doesn't just have the default configuration
 - [ ] Custom VIM colorscheme (?)
 - [ ] rice vim airline bar to have more info I care about
 - [x] Make some kind of readme for where to edit colors per wallpaper

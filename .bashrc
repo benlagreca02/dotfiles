@@ -117,4 +117,6 @@ alias sisb='source install/setup.bash'
 # ARCH SPECIFIC SETTINGS
 if [ "$os" == "Arch" ]; then   
   alias pacman='sudo pacman'
+  # discord has fractional scaling issues
+  alias discord='discord --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto'
 fi
