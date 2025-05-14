@@ -1,0 +1,9 @@
+/* Same as myColors.conf, but with CSS variables */
+
+/* Made originally for waybar, which is secretly GTK? */
+@define-color HIGHLIGHT_COLOR #f4ba51; 
+
+@define-color MAIN_COLOR #33bbff;
+
+@define-color MODULE_BACKGROUND rgba(0,43,51,0.85);
+

@@ -157,3 +157,5 @@ configuration {
       sorting-method:    "name";
   }
 }
+
+@theme "./myTheme.rasi"

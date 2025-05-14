@@ -21,7 +21,7 @@
         "format-wifi": " ",
         "format-ethernet": "{ifname} ",
         "format-disconnected": "", 
-        "max-length": 50,
+        "max-length": 30,
         "tooltip-format-wifi": "{ipaddr}/{cidr} {essid}",
         // TODO should probably access the terminal
         // from some kind of macro incase I don't use kitty
@@ -30,7 +30,7 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p  %a %D}",
+        "format": "{:%I:%M %p\t%a %D}",
         "calendar": {
             "mode" : "month",
             "format":{
@@ -54,14 +54,14 @@
               "good": 98,
               "normal": 98,
               "warning": 20,
-              "critical": 20
+              "critical": 10
         },
 
         "format": "{icon} {capacity}%",
         "format-good": "{icon} {capacity}%", 
         "format-full": "   {capacity}%",
         "format-icons": ["", "", "", "", ""],
-        "interval": 30
+        "interval": 20
     },
 
     "pulseaudio": {

@@ -105,15 +105,22 @@ I have considered it.
 - [ ] Figure out how to *really* use Rofi
 - [ ] Make rofi not blurry
 - [ ] Make discord not blurry by default (weird aliases?)
-- [ ] screen rotation in tablet mode potentially?
 - [ ] Make waybar power button actually do something
 - [ ] Add bluetooth button in waybar
 - [ ] add gammastep button to waybar (manual toggle for night shift))
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
-- [ ] document keybindings for everything better
-- [ ] Make some kind of a "print current keybind options" keybind?
 - [ ] Default package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
+
+#### silly functionaly
+These aren't nearly as important, and aren't strictly necessary
+
+- [ ] screen rotation in tablet mode potentially?
+- [ ] document keybindings for everything better
+- [ ] rice vim airline bar to have more info I care about
+- [ ] Make some kind of a "print current keybind options" keybind?
 - [ ] Make a "go to hyprland config folder" alias of some kind?
+
+#### done 
 - [x] Consider looking into Dmenu or simmilar for app launching (Using ROFI)
 - [x] Get dunst or some other notificaiton daemon confirmed working (CRITICAL FOR DISCORD TO NOT CRASH)
 - [x] Make hyprlock actually lock on close and time out of inactivity
@@ -135,8 +142,9 @@ These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
 - [ ] Rice Dunst so it doesn't just have the default configuration
+- [ ] Rice ROFI
+- [ ] Make scripts for color scheme changes (?)
 - [ ] Custom VIM colorscheme (?)
-- [ ] rice vim airline bar to have more info I care about
 - [x] Make some kind of readme for where to edit colors per wallpaper
 - [x] Get hyprland config syntax hilighting in vim (Its already there silly!)
 - [x] fine tune the css for waybar (mostly color)

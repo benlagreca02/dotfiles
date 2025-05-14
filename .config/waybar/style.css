@@ -1,33 +1,37 @@
+@import '../theme/waybarColors.css';
+
 * {
     border: none;
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 12px;
     color: #ffffff;
-    border-radius: 20px;
+    border-radius: 15px;
 }
+
 
 window {
 	/*font-weight: bold;*/
 }
 window#waybar {
+    /* Transparent background */
     background: rgba(0, 0, 0, 0);
 }
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(0,43,51,0.85);
+	background-color: @MODULE_BACKGROUND;
     margin: 2px 10px 0 0;
 }
 .modules-center {
-	background-color: rgba(0,43,51,0.85);
+	background-color: @MODULE_BACKGROUND;
     margin: 2px 0 0 0;
 }
 .modules-left {
     margin: 2px 0 0 5px;
-	background-color: rgba(0,43,51,0.85);
+	background-color: @MODULE_BACKGROUND;
 }
 /*-----modules indv----*/
 #workspaces button {
-    padding: 1px 5px;
+    padding: 0px 5px;
     background-color: transparent;
 }
 #workspaces button:hover {
@@ -40,7 +44,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: rgba(244, 186, 81, 0.8);
+    background-color: @HIGHLIGHT_COLOR;
 }
 
 #clock,
@@ -63,8 +67,8 @@ window#waybar {
     font-weight: bold;
 }
 #custom-power {
-    background-color: rgba(244, 186, 81, 0.8);
-    border-radius: 100px;
+    background-color: @HIGHLIGHT_COLOR;
+    border-radius: 15px;
     margin: 5px 5px;
     padding: 1px 1px 1px 6px;
 }
