@@ -5,5 +5,6 @@
 
 @define-color MAIN_COLOR #33bbff;
 
+/* Genaric dark background color */
 @define-color MODULE_BACKGROUND rgba(0,43,51,0.85);
 
