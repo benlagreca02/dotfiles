@@ -5,7 +5,8 @@ settings yet purely because I haven't gotten around to hunting down the files I
 need to commit, although I know this would probably solved by googling around.
 
 I've also been working on a Arch linux based, Hyprland setup. This has mostly
-just been for fun in my freetime. 
+just been for fun in my freetime, but I'm *really* considering switching to
+usign arch full time.
 
 ## Pulling in the dotfiles.
 If *you* want to use my dotffiles (yes you!) this is the subsection for you.
@@ -71,11 +72,11 @@ One day I'll script this somehow...
 This includes my Arch linux, hyprland rice, and it is still in development, and I
 don't consider it complete. I just work on this when I have time.
 
-As of 5/4/25, it is pretty robust. Most key, critical things are there, with the
-biggest missing link being some kind of program launcher (so I don't have to
-open terminals and fork constantly)
+As of 5/16/25, it is really getting there. Its so close to being something I
+call "done enough" to make a "release" but its really getting somewhere.
 
 For waybar's icons you need to install font awesome
+
 ```
 pacman -S otf-font-awesome
 ```
@@ -88,9 +89,18 @@ more focused on getting everything "functional", then I'll go and get colors
 working much fancier later. I might do alternate "palletes" somehow, but thats
 for later. Function > fashion.
 
+The "dream" is to have a set of wallpapers, and on changing them, all colors get
+updated to match: BUT I have those colors custom defined. I don't like that
+pywall changes the colors of terminal and vim stuff by default. Errors should
+_always_ be red, and successes should _always_ be green, I don't want PyWal to
+make them blue, and darker blue. 
+
+This goal would take a lot of scripting, but I need to learn anyways, so I'll
+do it one day hopefully.
+
 ## TODO
 This is a list of things I'd like to do/update to the config/rice. This is
-mostly specific to the Arch Hyprland setup.
+almost entirely for the Arch-linux Hyprland "rice".
 
 ### Functional 
 
@@ -102,13 +112,12 @@ my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
 any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
-- [ ] Make waybar power button actually do something
 - [ ] Add bluetooth button in waybar
 - [ ] add gammastep button to waybar (manual toggle for night shift))
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 
 #### Lower Priority
-- [ ] Fix Rofi SSHing
+- [ ] Fix Rofi SSHing (idk if I care that much atm) (may just do a dmenu selector script)
 - [ ] Rofi website bookmark loading (type github and it opens firefox to GH)
 - [ ] screen rotation in tablet mode potentially?
 - [ ] document keybindings for everything better
@@ -118,6 +127,7 @@ considered it.
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
 
 #### Done 
+- [x] Make waybar power button actually do something
 - [x] Make rofi not blurry
 - [x] Make discord not blurry (xwayland setting in main hyprland config)
 - [x] Consider looking into Dmenu or simmilar for app launching (Using ROFI)
@@ -141,9 +151,9 @@ These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
 - [ ] Rice Dunst so it doesn't just have the default configuration
-- [ ] Rice ROFI (Could use a bit more)
 - [ ] Make scripts for color scheme changes (?)
 - [ ] Custom VIM colorscheme (?)
+- [x] Rice ROFI (Its good enough as is right now
 - [x] Make some kind of readme for where to edit colors per wallpaper
 - [x] Get hyprland config syntax hilighting in vim (Its already there silly!)
 - [x] fine tune the css for waybar (mostly color)

@@ -7,35 +7,49 @@
     foreground:                  @myPrimary;
     normal-foreground:           @myPrimary;
     border-color:                @myPrimary;
-    selected-normal-foreground:  rgba ( 2, 20, 63, 100 % );
-    alternate-normal-background: rgba ( 0, 0, 0, 0 % );
-    selected-urgent-foreground:  rgba ( 2, 20, 63, 100 % );
-    urgent-foreground:           rgba ( 255, 129, 255, 100 % );
-    alternate-urgent-background: rgba ( 0, 0, 0, 0 % );
-    active-foreground:           rgba ( 138, 196, 255, 100 % );
-    selected-active-foreground:  rgba ( 2, 20, 63, 100 % );
-    alternate-active-background: rgba ( 0, 0, 0, 0 % );
-    alternate-normal-foreground: @foreground;
-    normal-background:           rgba ( 0, 0, 208, 0 % );
-    selected-normal-background:  rgba ( 219, 223, 188, 100 % );
-    spacing:                     3;
-    separatorcolor:              rgba ( 219, 223, 188, 100 % );
+    background-color:            @background;
+
+    /* Color (and alternate color) */
+    normal-background:           rgba (0,0,0,0%);
+    alternate-normal-background: rgba (0,0,0,0%);
+
+    selected-active-background:  rgba ( 138, 196, 255, 100 % );
+
+    /* ? */
+    active-background:           red;
+    selected-active-background:  cyan;
+
+    /* Current selected background */
+    selected-normal-background:  @selected;
+
     urgent-background:           rgba ( 0, 0, 208, 0 % );
     selected-urgent-background:  rgba ( 255, 129, 127, 100 % );
+    alternate-urgent-background: rgba ( 0, 0, 0, 0 % );
+    alternate-active-background: rgba ( 0, 0, 0, 0 % );
+    alternate-active-background: rgba ( 0, 0, 0, 0 % );
+
+    selected-normal-foreground:  rgba ( 2, 20, 63, 100 % );
+    selected-urgent-foreground:  rgba ( 2, 20, 63, 100 % );
+    urgent-foreground:           rgba ( 255, 129, 255, 100 % );
+    active-foreground:           rgba ( 138, 196, 255, 100 % );
+    selected-active-foreground:  rgba ( 2, 20, 63, 100 % );
+    alternate-normal-foreground: @foreground;
     alternate-urgent-foreground: @urgent-foreground;
-    background-color:            rgba ( 0, 0, 0, 0 % );
     alternate-active-foreground: @active-foreground;
-    active-background:           rgba ( 0, 0, 208, 0 % );
-    selected-active-background:  rgba ( 138, 196, 255, 100 % );
+
+    spacing:                     2;
+    separatorcolor:              @highlight;
+
 }
 window {
-    background-color: @background;
-    border:           2;
-    border-radius: 15px;
-    padding:          15;
-    margin: 2;
+    background-color:   @background;
+    border:             2;
+    border-radius:      15px;
+    padding:            15;
+    margin:             2;
 }
 mainbox {
+    background-color: rgba (0,0,0,0%);
     border:  0;
     padding: 0;
 }
@@ -48,6 +62,8 @@ textbox {
     text-color: @foreground;
 }
 listview {
+    /* The list view adds a slight background color by default */
+    background-color: rgba (0,0,0,0%);
     fixed-height: 0;
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
@@ -104,7 +120,12 @@ scrollbar {
     border:       0;
     handle-width: 8px ;
     padding:      0;
+    background-color: rgba (0,0,0,0%);
+
+    /* I just want to change the actual color */
+    /* background-color: @highlight; */
 }
+    /* background-color: rgba (0,0,0,0%); */
 mode-switcher {
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
@@ -114,19 +135,25 @@ button.selected {
     text-color:       @selected-normal-foreground;
 }
 inputbar {
+    background-color: rgba (0,0,0,0%);
     spacing:    0;
     text-color: @normal-foreground;
     padding:    1px ;
+    background-color: rgba (0,0,0,0%);
 }
 case-indicator {
+    /* Very far right of text box*/
     spacing:    0;
     text-color: @normal-foreground;
+    background-color: rgba (0,0,0,0%);
 }
 entry {
     spacing:    0;
     text-color: @normal-foreground;
+    background-color: rgba (0,0,0,0%);
 }
 prompt, button{
+    background-color: rgba (0,0,0,0%);
     spacing:    0;
     text-color: @normal-foreground;
 }
@@ -134,6 +161,7 @@ inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
 }
 textbox-prompt-colon {
+    background-color: rgba (0,0,0,0%);
     expand:     false;
     str:        ":";
     margin:     0px 0.3em 0em 0em ;

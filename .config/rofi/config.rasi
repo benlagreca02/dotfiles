@@ -1,8 +1,8 @@
 /* Default configuration */
 
 configuration {
-    modes: "drun,run,ssh,filebrowser";
-/*	font: "mono 12";*/
+    modes: "drun,run,ssh,filebrowser,combi";
+    combi-modes: "drun";
     font: "Adwaita Mono 18";
 /*	location: 0;*/
 /*	yoffset: 0;*/
@@ -36,7 +36,6 @@ configuration {
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
-    combi-modes: "ssh,run";
 /*	matching: "normal";*/
 /*	tokenize: true;*/
 /*	m: "-5";*/

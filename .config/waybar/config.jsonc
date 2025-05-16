@@ -30,11 +30,11 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p\t%a %D}",
+        "format": "{:%I:%M %p   %a %D}",
         "calendar": {
             "mode" : "month",
             "format":{
-                 "today":"<span color='#00ccff'><b>{}</b></span>"
+                 "today":"<span color='#00ccff'><b><i>{}</i></b></span>"
             } 
         },
         "tooltip-format": "<tt><small>{calendar}</small></tt>"
@@ -42,7 +42,7 @@
 
 
     "backlight": {
-        "format": "{icon}  {percent}%",
+        "format": "{percent:3}% {icon} ",
         "format-icons": ["○","◔","◑","◕","●"]
     },
 
@@ -57,18 +57,18 @@
               "critical": 10
         },
 
-        "format": "{icon} {capacity}%",
-        "format-good": "{icon} {capacity}%", 
-        "format-full": "   {capacity}%",
+        "format": "{capacity:3}% {icon}",
+        "format-good": "{capacity:3}% {icon}", 
+        "format-full": "{capacity:3}% ",
         "format-icons": ["", "", "", "", ""],
         "interval": 20
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon}{volume}%  {format_source}",
+        "format": "{volume:3}% {icon}",
+        "format-bluetooth": "{icon}{volume:3}%  {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "{icon} 0%",
+        "format-muted": "   0% {icon}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -78,15 +78,16 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            // TODO find monospace version of these, and maybe more of them
+            "default": [" ", " ", ""]
         },
         "on-click": "pavucontrol"
     },
 
 
-    // Doesn't do anything atm
 	"custom/power": {
-		"format": " "
-		// "on-click": "wlogout"
+		"format": " ",
+        "tooltip-format": "linux is kil?",
+		"on-click": "prompt_logoff"
 	}
 }

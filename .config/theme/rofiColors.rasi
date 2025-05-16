@@ -3,9 +3,11 @@
 * {
     myPrimary: #33bbffff;
     mySecondary: #ffba51ff;
+    dimSecondary: #ffba5188;
     /* Highlight as you search */
     highlight: @mySecondary;
     foreground: @myPrimary;
-    background: rgba (0,0,0, 25%);
+    selected: @dimSecondary;
+    background: rgba (0,0,0, 50%);
 }
 

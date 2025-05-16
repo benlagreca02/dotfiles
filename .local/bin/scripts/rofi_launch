@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# This is a REALLY unnecassry script...
+# But it works and allows change later
+rofi -show drun 
