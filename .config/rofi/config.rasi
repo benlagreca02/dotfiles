@@ -1,8 +1,9 @@
 /* Default configuration */
 
 configuration {
-/*	modes: "window,drun,run,ssh";*/
+    modes: "drun,run,ssh,filebrowser";
 /*	font: "mono 12";*/
+    font: "Adwaita Mono 18";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -10,8 +11,8 @@ configuration {
 /*	show-icons: false;*/
 /*	preview-cmd: ;*/
 	terminal: "kitty";
-/*	ssh-client: "ssh";*/
-/*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
+	ssh-client: "kitten ssh";
+	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
 /*	run-shell-command: "{terminal} -e {cmd}";*/

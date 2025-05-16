@@ -94,33 +94,32 @@ mostly specific to the Arch Hyprland setup.
 
 ### Functional 
 
-These are the ones that will acutally impact the performance, and
-quality of life of the system. I still need to do some of these before I declare
-this system 100% "useable", thought it is getting pretty close.  I have thought
-about switching my DE to be hyprland, but Ubuntu doesn't support it officially.
-(Well, ubuntu 22 that is, which I needed for ROS2 Humble for school, but thats
-not an issue any more!) I don't have plans to full-time switch to Arch (yet) but
-I have considered it. 
+These are things that will acutally impact the quality of life of using the
+system. I still need to do some of these before I declare this system 100%
+"useable", thought it is getting pretty close.  I have thought about switching
+my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
+22 that is, which I needed for ROS2 Humble for school, but thats not an issue
+any more!) I don't have plans to full-time switch to Arch (yet) but I have
+considered it. 
 
-- [ ] Figure out how to *really* use Rofi
-- [ ] Make rofi not blurry
-- [ ] Make discord not blurry by default (weird aliases?)
 - [ ] Make waybar power button actually do something
 - [ ] Add bluetooth button in waybar
 - [ ] add gammastep button to waybar (manual toggle for night shift))
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
-- [ ] Default package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
 
-#### silly functionaly
-These aren't nearly as important, and aren't strictly necessary
-
+#### Lower Priority
+- [ ] Fix Rofi SSHing
+- [ ] Rofi website bookmark loading (type github and it opens firefox to GH)
 - [ ] screen rotation in tablet mode potentially?
 - [ ] document keybindings for everything better
 - [ ] rice vim airline bar to have more info I care about
 - [ ] Make some kind of a "print current keybind options" keybind?
-- [ ] Make a "go to hyprland config folder" alias of some kind?
+- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim)
+- [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
 
-#### done 
+#### Done 
+- [x] Make rofi not blurry
+- [x] Make discord not blurry (xwayland setting in main hyprland config)
 - [x] Consider looking into Dmenu or simmilar for app launching (Using ROFI)
 - [x] Get dunst or some other notificaiton daemon confirmed working (CRITICAL FOR DISCORD TO NOT CRASH)
 - [x] Make hyprlock actually lock on close and time out of inactivity
@@ -142,7 +141,7 @@ These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
 - [ ] Rice Dunst so it doesn't just have the default configuration
-- [ ] Rice ROFI
+- [ ] Rice ROFI (Could use a bit more)
 - [ ] Make scripts for color scheme changes (?)
 - [ ] Custom VIM colorscheme (?)
 - [x] Make some kind of readme for where to edit colors per wallpaper
