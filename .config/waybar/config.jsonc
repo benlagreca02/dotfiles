@@ -1,7 +1,15 @@
 {
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["clock"],
-    "modules-right": ["network", "backlight", "battery", "pulseaudio", "custom/power"],
+    "modules-right": [
+        "network",
+        "bluetooth",
+        // "custom/gammastep", // Not really happy with it yet
+        "backlight",
+        "battery",
+        "pulseaudio",
+        "custom/power"
+    ],
 
     "tray": {
         "icon-size": 10,
@@ -89,5 +97,23 @@
 		"format": " ",
         "tooltip-format": "linux is kil?",
 		"on-click": "prompt_logoff"
-	}
+	},
+
+    // TODO this needs quite a bit of work yet
+	"custom/gammastep": {
+        "tooltip-format": "{text}",
+        // "exec": "gammastep -p",
+        // TODO make this button actaully change icons
+        "format": "{icon}",
+        "format-source": "{icon} ",
+        "format-icons": ["🌣 ", "⏾ "],
+        "exec": "get_curr_screen_temp", // custom script
+        // "restart-interval": 600,  // every 5 minutes
+    },
+
+    // TODO
+    // https://man.archlinux.org/man/extra/waybar/waybar-bluetooth.5.en
+    "bluetooth":{
+        "on-click": "blueman-manager"
+    }
 }

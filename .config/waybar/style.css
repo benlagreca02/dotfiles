@@ -105,3 +105,6 @@ window#waybar {
 #temperature.critical {
     color: #cc3436;
 }
+
+#custom-gammastep {
+}

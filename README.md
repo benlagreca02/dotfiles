@@ -66,6 +66,8 @@ config config --local status.showUntrackedFiles no
 ```
 
 One day I'll script this somehow...
+## Future scripting
+Arch may need a `systemctl start example.service` (5/17/25)
 
 # ARCH
 
@@ -112,10 +114,9 @@ my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
 any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
-- [ ] Add bluetooth button in waybar
-- [ ] add gammastep button to waybar (manual toggle for night shift))
+- [ ] Configure Bluetooth button in waybar
+- [x] Add bluetooth button in waybar (and get bluetooth working)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
-
 #### Lower Priority
 - [ ] Fix Rofi SSHing (idk if I care that much atm) (may just do a dmenu selector script)
 - [ ] Rofi website bookmark loading (type github and it opens firefox to GH)
@@ -125,6 +126,8 @@ considered it.
 - [ ] Make some kind of a "print current keybind options" keybind?
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim)
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
+- [ ] add gammastep button to waybar (manual toggle for night shift))
+- [ ] Make gammastep button icon change with time, and on manual change
 
 #### Done 
 - [x] Make waybar power button actually do something
