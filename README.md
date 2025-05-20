@@ -8,28 +8,30 @@ I've also been working on a Arch linux based, Hyprland setup. This has mostly
 just been for fun in my freetime, but I'm *really* considering switching to
 usign arch full time.
 
-## Pulling in the dotfiles.
-If *you* want to use my dotffiles (yes you!) this is the subsection for you.
+## Pulling in the dotfiles.  
+If *you* want to use my dotffiles and scripts (yes you!) this is the subsection
+for you.
 
-I did this according to [this
-guide](https://www.atlassian.com/git/tutorials/dotfiles), and it's worked pretty
-well for me so far.  Doing this will pull down the README.md file to your home
-directory, I just delete it, and don't commit the fact that I deleted it.  To
-install these dotfiles on a new machine, do the folowing
+For dotfile management, I followed [this
+guide](https://www.atlassian.com/git/tutorials/dotfiles), and it's worked great
+for me so far. Doing this will pull down the README.md file to your home
+directory, I just delete it, and don't commit the fact that I deleted it. 
+
+To install these dotfiles on a new machine, do the folowing:
 
 Make a folder called .cfg, this is where the headless git repo will store its files
 ```bash
 mkdir ~/.cfg
 ```
 Alias "config", this makes a short hand for "git but from the .cfg folder we
-just created, and the 'working tree' will be the home directory"
-This alias will later be defined in the `.bashrc`, so you only have to do this
-once to pull down the files initially
+just created, and the 'working tree' will be the home directory" This alias will
+later be defined in the `.bashrc` once you pull down the files , so you only
+have to do this once to pull down the files initially.
 ```bash
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ```
 The tutorial I'm stealing from says to do this command to prevent recursion
-problems, but you may be able to skip it?
+problems, but you may be able to skip it? I don't think I've ever done it
 ```bash
 echo ".cfg" >> .gitignore
 ```
@@ -37,20 +39,22 @@ Clone the repo, just pulls down info about files, not the actual files
 ```bash
 git clone --bare https://github.com/benlagreca02/dotfiles.git $HOME/.cfg
 ```
-Pull down the actual dotfiles
+
+Next, pull down the actual dotfiles.  There's a good chance this line will yell
+at you warning that you will overwrite some files (usually `.bashrc`), so delete
+the files so you can pull down mine.
 ```bash
 config checkout
 ```
-There's a good chance this line will yell at you warning that you're gonna
-overwrite some files (usually `.bashrc`), so delete the files so you can pull
-down mine.
 
-Don't show files that aren't a part of the repo, you'll want this unless you
-want to see _every_ file in your home directory as "untracked file" 
+Hide files in your home directory that _aren't_ a part of the repo. You totally
+want this, otherwise everything will be shown as "untracked file".
 ```bash
 config config --local status.showUntrackedFiles no 
 ```
 
+
+TL;DR
 For all of it in one clean copypaste, do this!
 ```bash
 mkdir ~/.cfg
@@ -59,22 +63,27 @@ echo ".cfg" >> .gitignore
 git clone --bare https://github.com/benlagreca02/dotfiles.git $HOME/.cfg
 config checkout
 ```
-At this point you'll probably need to delete existing configs, then...
+It will most likely yell at your for existing configs, delete them and then...
 ```bash
 config checkout
 config config --local status.showUntrackedFiles no
 ```
 
 One day I'll script this somehow...
+
 ## Future scripting
-Arch may need a `systemctl start example.service` (5/17/25)
+
+- [ ] Arch may need a `systemctl start example.service` (5/17/25) for bluetooth
+  and a few other things
+- [ ] Could make a "download and install" script at some point. Arch could
+  install things like hyprland, font-awesome, rofi, etc.
 
 # ARCH
 
 This includes my Arch linux, hyprland rice, and it is still in development, and I
 don't consider it complete. I just work on this when I have time.
 
-As of 5/16/25, it is really getting there. Its so close to being something I
+As of 5/20/25, it is really getting there. Its so close to being something I
 call "done enough" to make a "release" but its really getting somewhere.
 
 For waybar's icons you need to install font awesome
@@ -115,9 +124,11 @@ any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
 - [ ] Configure Bluetooth button in waybar
-- [x] Add bluetooth button in waybar (and get bluetooth working)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
+- [ ] Look into power management stuff (better performance vs battery modes)
+
 #### Lower Priority
+- [ ] Clean out home dir, (Move configs to XDG\_CONFIG)
 - [ ] Fix Rofi SSHing (idk if I care that much atm) (may just do a dmenu selector script)
 - [ ] Rofi website bookmark loading (type github and it opens firefox to GH)
 - [ ] screen rotation in tablet mode potentially?
@@ -129,7 +140,19 @@ considered it.
 - [ ] add gammastep button to waybar (manual toggle for night shift))
 - [ ] Make gammastep button icon change with time, and on manual change
 
-#### Done 
+### Aesthetics
+These are the unimportant for functionallity, pretty, and overall not-needed
+things. They make it look really cool, but you don't need them.
+
+- [ ] Rice Dunst so it doesn't just have the default configuration
+- [ ] Rice Discord somehow
+- [ ] Rice spotify somehow (spicefify)
+- [ ] Custom VIM colorscheme (?)
+- [ ] Make scripts for color scheme changes (?) (HARD)
+
+### Done 
+- [x] Get bluetooth working for real
+- [x] Add bluetooth button in waybar (and get bluetooth working)
 - [x] Make waybar power button actually do something
 - [x] Make rofi not blurry
 - [x] Make discord not blurry (xwayland setting in main hyprland config)
@@ -147,15 +170,6 @@ considered it.
 - [x] Volume Control keys
 - [x] Add battery "charging" indication somehow
 - [x] break hyprland config into folder and smaller files
-
-
-### Aesthetics
-These are the unimportant for functionallity, pretty, and overall not-needed
-things. They make it look really cool, but you don't need them.
-
-- [ ] Rice Dunst so it doesn't just have the default configuration
-- [ ] Make scripts for color scheme changes (?)
-- [ ] Custom VIM colorscheme (?)
 - [x] Rice ROFI (Its good enough as is right now
 - [x] Make some kind of readme for where to edit colors per wallpaper
 - [x] Get hyprland config syntax hilighting in vim (Its already there silly!)

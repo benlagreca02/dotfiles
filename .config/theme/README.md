@@ -1,5 +1,10 @@
 # Theme
 
+THIS ISN'T IMPLEMENTED THE WAY I WANT TO YET
+
+One day, I want to write a script to change themes and go though wallpapers, but
+thats in the distant future
+
 This is all of the config files for editing the current "theme" These are just
 the values that should be changed when theme is changed.  I want py-wal like
 functionallity, but with way more control, and with added control, is added
@@ -27,3 +32,22 @@ is an extremely low priority, and will probably be more work than its worth.
   necessary config files in this folder.
 
   Its only two "todo" items, but it won't be easy...
+
+## Programs
+hyprlandColors.conf 
+    : The colors in hyprland
+
+hyprlandThemeConstants.conf 
+    : I should get rid of this one and move it back to hyprland the idea was
+    that if I wanted to change corner rounding I could do it in one place, but
+    its just too much
+
+rofiColors.rasi
+    : Application launcher
+    
+waybarColors.css
+    : Colors across top bar
+
+../dunst/dunstrc
+    : Can't import config from other file, could do a symlink if I really wanted
+    to, we'll see though

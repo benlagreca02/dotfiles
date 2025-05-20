@@ -6,11 +6,12 @@ target_dir=~/Documents/myLogs
 # Ensure the target directory exists
 mkdir -p "$target_dir"
 
-# Get the current date in YEAR-MONTH-DAY format
-current_date=$(date +%Y-%m-%d)
+# Get current date, for checking filename
+current_date=$(date +%F)
 
-formatted_date=$(date +"%A %B %-d, %Y") 
-echo "$formatted_date"
+# Get date and time, for putting at top of file
+formatted_date=$(date +"%A %B %-d, %Y. %l:%S") 
+# echo "$formatted_date"
 
 # Create the full path for the file
 file_path="$target_dir/${current_date}.md"
@@ -19,10 +20,11 @@ file_path="$target_dir/${current_date}.md"
 if [[ ! -f "$file_path" ]]; then
   touch "$file_path"
   echo "'$file_path' created successfully."
-  printf "# $formatted_date\n" > $file_path
+  printf "# $formatted_date\n\n" > $file_path
 else
   echo "'$file_path' already exists."
 fi
+
 
 # Open the file in vim, + indicates to open with cursor at last line
 vim + "$file_path"
