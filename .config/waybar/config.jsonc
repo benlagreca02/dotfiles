@@ -4,7 +4,7 @@
     "modules-right": [
         "network",
         "bluetooth",
-        // "custom/gammastep", // Not really happy with it yet
+        "custom/gammastep", // Not really happy with it yet
         "backlight",
         "battery",
         "pulseaudio",
@@ -100,13 +100,14 @@
 	},
 
     // TODO this needs quite a bit of work yet
+    // Could combine with the brightness one?
 	"custom/gammastep": {
         "tooltip-format": "{text}",
         // "exec": "gammastep -p",
         // TODO make this button actaully change icons
         "format": "{icon}",
         "format-source": "{icon} ",
-        "format-icons": ["🌣 ", "⏾ "],
+        "format-icons": [" ", " "],
         "exec": "get_curr_screen_temp", // custom script
         // "restart-interval": 600,  // every 5 minutes
     },
@@ -114,6 +115,13 @@
     // TODO
     // https://man.archlinux.org/man/extra/waybar/waybar-bluetooth.5.en
     "bluetooth":{
-        "on-click": "blueman-manager"
+        "on-click": "blueman-manager",
+        // 
+        "min-length": 3,
+        "format-off": "<span color=\"red\">X </span>",
+        "format-disabled": "<span color=\"red\">X </span>",
+        "format-on": " ",
+        "format-connected": "<span color=\"green\">{status} </span>", 
+        "tooltip-format": "Status:\t{status}\nCon'd:\t{num_connections}\n{device_enumerate}",
     }
 }
