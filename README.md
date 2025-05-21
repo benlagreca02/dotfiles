@@ -123,34 +123,36 @@ my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
 any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
-- [ ] Configure Bluetooth button in waybar
+- [ ] Fix gammastep button icon change with time, and on manual change
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] Look into power management stuff (better performance vs battery modes)
-
-#### Lower Priority
 - [ ] Clean out home dir, (Move configs to XDG\_CONFIG)
-- [ ] Fix Rofi SSHing (idk if I care that much atm) (may just do a dmenu selector script)
 - [ ] Rofi website bookmark loading (type github and it opens firefox to GH)
-- [ ] screen rotation in tablet mode potentially?
-- [ ] document keybindings for everything better
-- [ ] rice vim airline bar to have more info I care about
-- [ ] Make some kind of a "print current keybind options" keybind?
-- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim)
+- [ ] Rofi/Dmenu script for selecting common SSH clients somehow
+- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, luke smith inspired)
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
-- [ ] add gammastep button to waybar (manual toggle for night shift))
-- [ ] Make gammastep button icon change with time, and on manual change
+
+#### Maybe one day
+- [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)
+- [ ] document keybindings for everything better 
+- [ ] Make some kind of a "print current keybind options" keybind? 
 
 ### Aesthetics
 These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
-- [ ] Rice Dunst so it doesn't just have the default configuration
+- [ ] rice vim airline bar to have more info I care about
+- [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
 - [ ] Rice Discord somehow
 - [ ] Rice spotify somehow (spicefify)
 - [ ] Custom VIM colorscheme (?)
 - [ ] Make scripts for color scheme changes (?) (HARD)
 
 ### Done 
+- [x] add gammastep button to waybar (manual toggle for night shift))
+- [ ] Fix some spacing in waybar (volume at 100 vs 3 is different width)
+- [x] Rice Dunst so it doesn't just have the default configuration
+- [x] Configure Bluetooth button in waybar
 - [x] Get bluetooth working for real
 - [x] Add bluetooth button in waybar (and get bluetooth working)
 - [x] Make waybar power button actually do something

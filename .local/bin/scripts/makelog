@@ -10,7 +10,7 @@ mkdir -p "$target_dir"
 current_date=$(date +%F)
 
 # Get date and time, for putting at top of file
-formatted_date=$(date +"%A %B %-d, %Y. %l:%S") 
+formatted_date=$(date +"%A %B %-d, %Y. %l:%S %P") 
 # echo "$formatted_date"
 
 # Create the full path for the file
@@ -20,12 +20,12 @@ file_path="$target_dir/${current_date}.md"
 if [[ ! -f "$file_path" ]]; then
   touch "$file_path"
   echo "'$file_path' created successfully."
-  printf "# $formatted_date\n\n" > $file_path
+  printf "# $formatted_date \n\n" > $file_path
 else
   echo "'$file_path' already exists."
 fi
 
 
 # Open the file in vim, + indicates to open with cursor at last line
-vim + "$file_path"
+vim -c 'startinsert' + "$file_path"
 

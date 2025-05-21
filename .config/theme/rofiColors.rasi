@@ -3,7 +3,7 @@
 * {
     myPrimary: #33bbffff;
     mySecondary: #ffba51ff;
-    dimSecondary: #ffba5188;
+    dimSecondary: #bf8b3dff; 
     /* Highlight as you search */
     highlight: @mySecondary;
     foreground: @myPrimary;
