@@ -17,7 +17,7 @@
     },
 
     "hyprland/workspaces": {
-        "format": " {icon}<sup> {windows}</sup> ",
+        "format": " {icon}<sup>{windows}</sup> ",
         "window-rewrite-default": "?",
         "window-rewrite": {
             "class<firefox>": "", // Windows whose classes are "firefox"
@@ -25,9 +25,11 @@
             "title<.*Reddit.*>": "",  // Doesn't work...
             "class<discord>": "", 
             "class<spotify>": "", 
-            "class<kitty>": "",  // CAN'T for the Life of me get terminal icon working
-            "class<steam>": "",
-            // "class<Dolphin>": "", // don't know why, doesn't work
+            // CAN'T for the Life of me get terminal icon working, so I'll use
+            // this one
+            "class<kitty>": "",  
+            "class<steam>": "", // unverified
+            "title<.*Dolphin.*>": "" 
         }
     },
 
@@ -37,7 +39,7 @@
 
 
     "network": {
-        "format-wifi": " ",
+        "format-wifi": "",
         "format-ethernet": "{ifname} ",
         "format-disconnected": "", 
         "max-length": 30,
@@ -118,8 +120,8 @@
         // TODO make this button actaully change icons
         "format": "{icon}",
         "format-source": "{icon} ",
-        "format-icons": [" ", " "],
-        "exec": "get_curr_screen_temp", // custom script
+        "format-icons": ["", ""],
+        "exec": "get_curr_screen_temp" // custom script
         // "restart-interval": 600,  // every 5 minutes
     },
 
