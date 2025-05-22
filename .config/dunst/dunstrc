@@ -270,8 +270,8 @@
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
  
-    # NO IDEA why this works, it *should* be 15?
-    corner_radius = 20
+    # NO IDEA why this works, looks like it needs to be N+5
+    corner_radius = 15
 
     # Define which corners to round when drawing the window. If the corner radius
     # is set to 0 this option will be ignored.

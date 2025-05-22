@@ -17,7 +17,18 @@
     },
 
     "hyprland/workspaces": {
-        "format": "{icon}"
+        "format": " {icon}<sup> {windows}</sup> ",
+        "window-rewrite-default": "?",
+        "window-rewrite": {
+            "class<firefox>": "", // Windows whose classes are "firefox"
+            "title<.*youtube.*>": "",
+            "title<.*Reddit.*>": "",  // Doesn't work...
+            "class<discord>": "", 
+            "class<spotify>": "", 
+            "class<kitty>": "",  // CAN'T for the Life of me get terminal icon working
+            "class<steam>": "",
+            // "class<Dolphin>": "", // don't know why, doesn't work
+        }
     },
 
     "hyprland/submap": {

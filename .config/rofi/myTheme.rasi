@@ -44,7 +44,7 @@
 window {
     background-color:   @background;
     border:             2;
-    border-radius:      15px;
+    border-radius:      10px;
     padding:            15;
     margin:             2;
 }
