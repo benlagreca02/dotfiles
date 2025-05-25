@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+# One day, if I get bored, I may "optimize" to make this be a pure shell script
 
 # Define the target directory
 target_dir=~/Documents/myLogs
@@ -17,13 +18,31 @@ formatted_date=$(date +"%A %B %-d, %Y. %l:%M %P")
 file_path="$target_dir/${current_date}.md"
 
 # If the file doesn't exist, create it
+freshFile=False
 if [ ! -f "$file_path" ]; then
   touch "$file_path"
   echo "'$file_path' created successfully."
   printf "# $formatted_date \n\n" > $file_path
-else
-  echo "'$file_path' already exists."
+  freshFile=True
 fi
+
+# This is HIDEOUS to me
+# If you're seeing this, just know that at the time of writing, I'm very new to
+# shell scripting
+# parse command line args
+# only parse these if its NOT a new file
+# While there are >= one argument
+if [[ $# -gt 0 && "$freshFile" ]]; then
+    case $1 in
+        -t|--time)
+            currTime=$(date +"%l:%M %P")
+            # VERY IMPORTANT to append
+            printf "\n## $currTime\n\n" >> $file_path
+            ;;
+    esac
+fi
+
+
 
 
 # Open the file in vim, + indicates to open with cursor at last line
