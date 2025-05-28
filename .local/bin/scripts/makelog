@@ -22,7 +22,7 @@ freshFile=False
 if [ ! -f "$file_path" ]; then
   touch "$file_path"
   echo "'$file_path' created successfully."
-  printf "# $formatted_date \n\n" > $file_path
+  printf "# $formatted_date" > $file_path
   freshFile=True
 fi
 
@@ -31,18 +31,18 @@ fi
 # shell scripting
 # parse command line args
 # only parse these if its NOT a new file
-# While there are >= one argument
+# if there is >= 0 args, and file isn't new
 if [[ $# -gt 0 && "$freshFile" ]]; then
     case $1 in
         -t|--time)
             currTime=$(date +"%l:%M %P")
             # VERY IMPORTANT to append
-            printf "\n## $currTime\n\n" >> $file_path
+            printf "\n## $currTime" >> $file_path
             ;;
     esac
 fi
 
-
+printf "\n\n" >> $file_path
 
 
 # Open the file in vim, + indicates to open with cursor at last line
