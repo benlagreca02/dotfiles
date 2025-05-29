@@ -42,7 +42,7 @@ if [[ $# -gt 0 && "$freshFile" ]]; then
     esac
 fi
 
-printf "\n\n" >> $file_path
+printf "\n" >> $file_path
 
 
 # Open the file in vim, + indicates to open with cursor at last line
