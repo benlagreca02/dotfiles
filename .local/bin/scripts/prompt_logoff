@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-options="Shutdown\nRestart\nSuspend"
+options="Shutdown\nRestart\nSuspend\nExit Hyprland"
 
 # -e is "interpret backslashes"
 # -i is case insensitive
@@ -11,8 +11,11 @@ case $(echo -e $options | rofi -i -dmenu) in
         systemctl reboot;;
     "Suspend")
         systemctl suspend;;
+    "Exit Hyprland")
+        hyprctl dispatch exit
+        ;;
     *)
-        # Do nothing
+        # Do nothing, exit silently
         ;;
 esac
 

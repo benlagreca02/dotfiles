@@ -123,11 +123,10 @@ my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
 any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
-- [ ] Fix gammastep button icon change with time, and on manual change
+- [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] Look into power management stuff (better performance vs battery modes)
-- [ ] Clean out home dir, (Move configs to XDG\_CONFIG)
-- [ ] Rofi website bookmark loading (type github and it opens firefox to GH)
+- [ ] Rofi website bookmark loading (type github and it opens firefox to GH) (ctrl shift w?)
 - [ ] Rofi/Dmenu script for selecting common SSH clients somehow
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, luke smith inspired)
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
@@ -149,8 +148,9 @@ things. They make it look really cool, but you don't need them.
 - [ ] Make scripts for color scheme changes (?) (HARD)
 
 ### Done 
+- [x] Clean out home dir, (Move configs to XDG\_CONFIG)
 - [x] add gammastep button to waybar (manual toggle for night shift))
-- [ ] Fix some spacing in waybar (volume at 100 vs 3 is different width)
+- [x] Fix some spacing in waybar (volume at 100 vs 3 is different width)
 - [x] Rice Dunst so it doesn't just have the default configuration
 - [x] Configure Bluetooth button in waybar
 - [x] Get bluetooth working for real
