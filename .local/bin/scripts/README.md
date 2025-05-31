@@ -2,4 +2,5 @@
 
 This is where all of my local scripts live!
 
-I don't have a lot here, but I'm sure there will be more in the future.
+Mosst of these are pretty specific to me and my workflow, and not many are
+"novel" in any way.

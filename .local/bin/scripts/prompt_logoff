@@ -5,11 +5,11 @@ options="Shutdown\nRestart\nSuspend\nExit Hyprland"
 # -e is "interpret backslashes"
 # -i is case insensitive
 case $(echo -e $options | rofi -i -dmenu) in
-    "Shutdown")
+    Shutdown)
         systemctl poweroff;;
-    "Restart")
+    Restart)
         systemctl reboot;;
-    "Suspend")
+    Suspend)
         systemctl suspend;;
     "Exit Hyprland")
         hyprctl dispatch exit

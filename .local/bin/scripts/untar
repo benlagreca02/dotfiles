@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+# I will probably never use or need this script again
+
 # This script will unpack all .tar files in the current directory into
 # separate directories, this is really just for whne I was grading for the
 # Applied programming in C class, but I like to keep it around for the memories
@@ -16,10 +18,6 @@ for file in *.tar; do
     break
   fi
 done
-
-
-
-#!/bin/bash
 
 # Loop through each item in the current directory
 for item in ./*

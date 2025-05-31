@@ -8,14 +8,13 @@ I've also been working on a Arch linux based, Hyprland setup. This has mostly
 just been for fun in my freetime, but I'm *really* considering switching to
 usign arch full time.
 
-## Pulling in the dotfiles.  
-If *you* want to use my dotffiles and scripts (yes you!) this is the subsection
-for you.
+## Installing my dotfiles.  
 
-For dotfile management, I followed [this
-guide](https://www.atlassian.com/git/tutorials/dotfiles), and it's worked great
-for me so far. Doing this will pull down the README.md file to your home
-directory, I just delete it, and don't commit the fact that I deleted it. 
+I followed [this guide](https://www.atlassian.com/git/tutorials/dotfiles), and
+it's worked great for me so far. Doing this will pull down the README.md file to
+your home directory, I just delete it, and don't commit the fact that I deleted
+it. Its not ideal, but its what I've gotta do, unless I move the headless repo's
+folder.
 
 To install these dotfiles on a new machine, do the folowing:
 
@@ -73,10 +72,8 @@ One day I'll script this somehow...
 
 ## Future scripting
 
-- [ ] Arch may need a `systemctl start example.service` (5/17/25) for bluetooth
-  and a few other things
-- [ ] Could make a "download and install" script at some point. Arch could
-  install things like hyprland, font-awesome, rofi, etc.
+- [ ] Arch may need a `systemctl start example.service` (5/17/25) for bluetooth and a few other things
+- [ ] Could make a "download and install" script at some point. Arch could install things like hyprland, font-awesome, rofi, etc.
 
 # ARCH
 
@@ -124,6 +121,7 @@ any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
 - [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
+- [ ] Set some env variables like $TERMINAL in a better way than I am now (now I'm doing it in hyprland config, but this will break if I'm not using hyprland)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] Look into power management stuff (better performance vs battery modes)
 - [ ] Rofi website bookmark loading (type github and it opens firefox to GH) (ctrl shift w?)

@@ -1,5 +1,8 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
+# Default program sets are done in hyprland conifg file
+# `.config/hypr/configs/programs.conf`
+
 # source my scripts, do this BEFORE interactive check, to make sure that I can
 # call scripts from other scripts
 export PATH="$PATH:/home/$USER/.local/bin/scripts"
@@ -76,7 +79,7 @@ alias gl='git log'
 # git alias to headless repo for dotfile management
 alias config='/usr/bin/git --git-dir=/home/$USER/.cfg --work-tree=/home/$USER'
 
-# Super awesome alias, 
+# Super awesome alias, comes in handy when working in LARGE projects
 alias vf='vim $(fzf)'
 
 
@@ -95,24 +98,20 @@ fi
 # export PICO_EXTRAS_PATH=/home/$USER/pico/pico-extras
 # export PICO_PLAYGROUND_PATH=/home/$USER/pico/pico-playground
 
-
 # from calling `pipx ensurepath`
 # Created by `pipx` on 2024-12-21 16:38:46
 export PATH="$PATH:/home/$USER/.local/bin"
-
-
-# Rust something (minimap for vim needed this)
-export PATH="$PATH:/home/$USER/.cargo/bin"
 
 # Assumes you have miniconda installed
 alias condatime='source ~/.miniconda3/bin/activate'
 
 # =========== ROS =========== 
-# ROS base layer source, for ROS development
+## ROS base layer source, for ROS development
 # source /opt/ros/humble/setup.bash
-# ROS moveit source, for when I'm doing something with servoing
+## ROS moveit source, for if/when I'm doing something with servoing
 # source ~/projects/ws_moveit/install/setup.bash
-alias sisb='source install/setup.bash'
+## Extremely helpful alias
+# alias sisb='source install/setup.bash'
 
 # ARCH SPECIFIC SETTINGS
 if [ "$os" == "Arch" ]; then   
