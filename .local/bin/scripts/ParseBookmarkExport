@@ -41,7 +41,7 @@ echo "Reading from '$INPUT' and writing to '$OUTPUT'..."
     # if (match($0, /<A HREF="(http[s]?:\/\/.*) ADD.*">(.*)<\/A>/g, arr)) {
 awk '{
     if (match($0, /<A HREF="(http[s]?:\/\/.*)" ADD_DATE.*">(.*)<\/A>/, arr)) {
-        print arr[1]"\t"arr[2];
+        print arr[2]"\t"arr[1];
     }
 }' $INPUT > $OUTPUT
 

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Parses the ~/.config/bookmarks/web file, and prompts the user with Rofi
+# (dmenu), and then opens the selected link in $WEB_BROWSER, if $WEB_BROWSER
+# isn't defined, just use firefox (b.c. most linux people have it installed
+
+# I set $WEB_BROWSER in my ~/.bash_profile file
+# I have a script (ParseBookmarkExport) to generate the `web` file, which is the
+# following format:
+#   <Link>\t<Bookmark Name>
+
+# Dependencies:
+#   Rofi (dmenu)
+#   $WEB_BROWSER A web browser (firefox) 
+
+BOOKMARK_FILE="$HOME/.config/bookmarks/web"
+[[ ! -e "$BOOKMARK_FILE" ]] && echo "$BOOKMARK_FILE doesn't exist!" && exit 1
+
+# echo "found bookmark file!"
+# kitten notify Bruh
+SELECTION=$(cat $BOOKMARK_FILE | rofi -i -dmenu)
+# Remove everything from the beginning including the tab (leaves only the hyperlink
+LINK=${SELECTION##*	}  
+# notify-send "Selection: $SELECTION"
+# notify-send "opening $LINK"
+firefox $LINK
