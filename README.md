@@ -124,7 +124,6 @@ considered it.
 - [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] Look into power management stuff (better performance vs battery modes)
-- [ ] Rofi website bookmark loading (type github and it opens firefox to GH) (ctrl shift w?)
 - [ ] Rofi/Dmenu script for selecting common SSH clients somehow
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, luke smith inspired)
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
@@ -146,6 +145,7 @@ things. They make it look really cool, but you don't need them.
 - [ ] Make some kind of a "print current keybind options" keybind? 
 
 ### Done 
+- [x] Rofi website bookmark loading (type github and it opens firefox to GH) (ctrl shift w?)
 - [x] Set some env variables like $TERMINAL in a better way than I am now (now I'm doing it in hyprland config, but this will break if I'm not using hyprland)
 - [x] Clean out home dir, (Move configs to XDG\_CONFIG)
 - [x] add gammastep button to waybar (manual toggle for night shift))

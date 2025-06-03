@@ -19,6 +19,9 @@ BOOKMARK_FILE="$HOME/.config/bookmarks/web"
 # Prompt user with rofi
 SELECTION=$(cat $BOOKMARK_FILE | rofi -i -dmenu)
 
+# If there was no selection, exit cleanly
+[[ -z $SELECTION ]] && exit 0
+
 # File is expected to be of format 
 # NAME \t hyperlink
 
