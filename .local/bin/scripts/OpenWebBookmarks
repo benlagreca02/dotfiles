@@ -14,13 +14,16 @@
 #   $WEB_BROWSER A web browser (firefox) 
 
 BOOKMARK_FILE="$HOME/.config/bookmarks/web"
-[[ ! -e "$BOOKMARK_FILE" ]] && echo "$BOOKMARK_FILE doesn't exist!" && exit 1
+[[ ! -e "$BOOKMARK_FILE" ]] && notify-send "Script Error!" "$BOOKMARK_FILE doesn't exist!" && exit 1
 
-# echo "found bookmark file!"
-# kitten notify Bruh
+# Prompt user with rofi
 SELECTION=$(cat $BOOKMARK_FILE | rofi -i -dmenu)
-# Remove everything from the beginning including the tab (leaves only the hyperlink
+
+# File is expected to be of format 
+# NAME \t hyperlink
+
+# Remove everything from the beginning including the tab (leaves only the hyperlink)
+# THIS IS A TAB IN PREFIX SUBSTITUTION
 LINK=${SELECTION##*	}  
-# notify-send "Selection: $SELECTION"
-# notify-send "opening $LINK"
-firefox $LINK
+
+$WEB_BROWSER $LINK
