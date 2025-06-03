@@ -40,7 +40,7 @@ echo "Reading from '$INPUT' and writing to '$OUTPUT'..."
 # awk 'match($0, /<A HREF="(http[s]?:\/\/.*) ADD.*">(.*)<\/A>/gm, groups) {print "LINK:" groups[1] "NAME:" groups[2]}' $INPUT 
     # if (match($0, /<A HREF="(http[s]?:\/\/.*) ADD.*">(.*)<\/A>/g, arr)) {
 awk '{
-    if (match($0, /<A HREF="(http[s]?:\/\/.*) ADD_DATE.*">(.*)<\/A>/, arr)) {
+    if (match($0, /<A HREF="(http[s]?:\/\/.*)" ADD_DATE.*">(.*)<\/A>/, arr)) {
         print arr[1]"\t"arr[2];
     }
 }' $INPUT > $OUTPUT
