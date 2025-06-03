@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# Parses through an exported bookmarks file and generates another
+# Inputs arguments:
+#       filepath of HTML export from browser
+#       filepath of OUTPUT file, if not specified, defaults to `web`
+# Dependencies:
+
+
+function print_help_exit()
+{
+    printf "\nUsage:\n"
+    printf "  ParseBookmarkExport filepath [outputfile]\n\n"
+    printf "outputfile, if not specified, defaults to 'web'\n\n"
+    exit 1
+}
+
+[[ $# -lt 1 || $# -gt 2 ]] && print_help_exit
+
+INPUT=$1
+
+[[ ! -e $INPUT ]] && echo "File '$INPUT' doesn't exist!" && exit 2
+
+OUTPUT="${2:-"web"}"
+
+echo "Reading from '$INPUT' and writing to '$OUTPUT'..."
+
+# Honestly unnecessary
+# [[ -e $FILEPATH ]] && echo "Warning, overwriting file!"
+
+# ag HREF $INPUT
+# grep '<A HREF=("https://.*")>(.*)</A>' $INPUT > $OUTPUT
+# /<A HREF=("https:\/\/.*")>(.*)<\/A>/gm
+# cat $INPUT | sed 's/<A HREF=("https:\/\/.*")>(.*)<\/A>/\1 \2/gm'
+
+# REGEX: 
+# /<A HREF="(http[s]?:\/\/.*) ADD_DATE.*">(.*)<\/A>/gm
+# Matches link in group 1, and name in group 2 (if there's a name)
+# REALLY not awesome... I'm doing it this way as more practice with RegEx
+# awk 'match($0, /<A HREF="(http[s]?:\/\/.*) ADD.*">(.*)<\/A>/gm, groups) {print "LINK:" groups[1] "NAME:" groups[2]}' $INPUT 
+    # if (match($0, /<A HREF="(http[s]?:\/\/.*) ADD.*">(.*)<\/A>/g, arr)) {
+awk '{
+    if (match($0, /<A HREF="(http[s]?:\/\/.*) ADD_DATE.*">(.*)<\/A>/, arr)) {
+        print arr[1]"\t"arr[2];
+    }
+}' $INPUT > $OUTPUT
+
+echo $OUTPUT generated!
+
+echo Note there may be entires without names if you just have a bookmark as the icon, without any text like I do sometimes...

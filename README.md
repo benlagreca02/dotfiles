@@ -73,7 +73,7 @@ One day I'll script this somehow...
 ## Future scripting
 
 - [ ] Arch may need a `systemctl start example.service` (5/17/25) for bluetooth and a few other things
-- [ ] Could make a "download and install" script at some point. Arch could install things like hyprland, font-awesome, rofi, etc.
+- [ ] Could make a "download and install" script at some point. Arch could install things like hyprland, font-awesome, rofi, iosevka font, etc.
 
 # ARCH
 
@@ -83,10 +83,11 @@ don't consider it complete. I just work on this when I have time.
 As of 5/20/25, it is really getting there. Its so close to being something I
 call "done enough" to make a "release" but its really getting somewhere.
 
-For waybar's icons you need to install font awesome
+For waybar's icons you need to install font awesome, and most of my configs say
+to use `ttc-iosevka`
 
 ```
-pacman -S otf-font-awesome
+pacman -S otf-font-awesome ttc-iosevka
 ```
 
 ## Colors
@@ -121,18 +122,12 @@ any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
 - [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
-- [ ] Set some env variables like $TERMINAL in a better way than I am now (now I'm doing it in hyprland config, but this will break if I'm not using hyprland)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] Look into power management stuff (better performance vs battery modes)
 - [ ] Rofi website bookmark loading (type github and it opens firefox to GH) (ctrl shift w?)
 - [ ] Rofi/Dmenu script for selecting common SSH clients somehow
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, luke smith inspired)
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
-
-#### Maybe one day
-- [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)
-- [ ] document keybindings for everything better 
-- [ ] Make some kind of a "print current keybind options" keybind? 
 
 ### Aesthetics
 These are the unimportant for functionallity, pretty, and overall not-needed
@@ -145,7 +140,13 @@ things. They make it look really cool, but you don't need them.
 - [ ] Custom VIM colorscheme (?)
 - [ ] Make scripts for color scheme changes (?) (HARD)
 
+### Maybe one day
+- [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)
+- [ ] document keybindings for everything better 
+- [ ] Make some kind of a "print current keybind options" keybind? 
+
 ### Done 
+- [x] Set some env variables like $TERMINAL in a better way than I am now (now I'm doing it in hyprland config, but this will break if I'm not using hyprland)
 - [x] Clean out home dir, (Move configs to XDG\_CONFIG)
 - [x] add gammastep button to waybar (manual toggle for night shift))
 - [x] Fix some spacing in waybar (volume at 100 vs 3 is different width)
