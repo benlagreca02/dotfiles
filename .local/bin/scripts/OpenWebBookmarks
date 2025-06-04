@@ -13,11 +13,11 @@
 #   Rofi (dmenu)
 #   $WEB_BROWSER A web browser (firefox) 
 
-BOOKMARK_FILE="$HOME/.config/bookmarks/web"
+BOOKMARK_FILE="$HOME/.local/bookmarks/web"
 [[ ! -e "$BOOKMARK_FILE" ]] && notify-send "Script Error!" "$BOOKMARK_FILE doesn't exist!" && exit 1
 
 # Prompt user with rofi
-SELECTION=$(cat $BOOKMARK_FILE | rofi -i -dmenu)
+SELECTION=$(cat $BOOKMARK_FILE | column -t -s$'\t'  | rofi -i -dmenu)
 
 # If there was no selection, exit cleanly
 [[ -z $SELECTION ]] && exit 0

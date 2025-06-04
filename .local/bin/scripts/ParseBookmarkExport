@@ -5,6 +5,8 @@
 #       filepath of HTML export from browser
 #       filepath of OUTPUT file, if not specified, defaults to `web`
 # Dependencies:
+#       sed
+#       grep
 
 
 function print_help_exit()
