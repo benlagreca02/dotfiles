@@ -27,6 +27,9 @@ SELECTION=$(cat $BOOKMARK_FILE | column -t -s$'\t'  | rofi -i -dmenu)
 
 # Remove everything from the beginning including the tab (leaves only the hyperlink)
 # THIS IS A TAB IN PREFIX SUBSTITUTION
-LINK=${SELECTION##*	}  
+# doesn't work anymore since using column
+# LINK=${SELECTION##* }  
+# THIS IS SCUFFED, but it works I guess
+LINK=${SELECTION##*http}
 
-$WEB_BROWSER $LINK
+$WEB_BROWSER http$LINK
