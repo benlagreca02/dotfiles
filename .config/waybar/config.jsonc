@@ -4,7 +4,7 @@
     "modules-right": [
         "network",
         "bluetooth",
-        "custom/gammastep", // Not really happy with it yet
+        // "custom/gammastep", // Not really happy with it yet
         "backlight",
         "battery",
         "pulseaudio",

@@ -68,23 +68,20 @@ config checkout
 config config --local status.showUntrackedFiles no
 ```
 
-One day I'll script this somehow...
-
 ## Future scripting
 
-- [ ] Arch may need a `systemctl start example.service` (5/17/25) for bluetooth and a few other things
+- [ ] Arch may need a `systemctl start example.service` (5/17/25) for bluetooth and a few other things on first install
 - [ ] Could make a "download and install" script at some point. Arch could install things like hyprland, font-awesome, rofi, iosevka font, etc.
 
 # ARCH
 
-This includes my Arch linux, hyprland rice, and it is still in development, and I
-don't consider it complete. I just work on this when I have time.
-
-As of 5/20/25, it is really getting there. Its so close to being something I
-call "done enough" to make a "release" but its really getting somewhere.
+This repo includes my Arch linux, Hyprland-based
+[rice](https://pesos.github.io/2020/07/14/what-is-ricing.html), and is in my
+opinion, complete enough to get the job done, but I know I can and will tweak
+this ad infinitum.
 
 For waybar's icons you need to install font awesome, and most of my configs say
-to use `ttc-iosevka`
+to use `ttc-iosevka` as the main font.
 
 ```
 pacman -S otf-font-awesome ttc-iosevka
@@ -121,12 +118,12 @@ my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
 any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
-- [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
+- [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
 - [ ] Look into power management stuff (better performance vs battery modes)
-- [ ] Rofi/Dmenu script for selecting common SSH clients somehow
-- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, luke smith inspired)
-- [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs)
+- [ ] Rofi/Dmenu script for selecting common SSH clients somehow (simmilar to web bookmarks potentially)
+- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
+- [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs, like LARBS)
 
 ### Aesthetics
 These are the unimportant for functionallity, pretty, and overall not-needed
@@ -134,10 +131,10 @@ things. They make it look really cool, but you don't need them.
 
 - [ ] rice vim airline bar to have more info I care about
 - [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
-- [ ] Rice Discord somehow
-- [ ] Rice spotify somehow (spicefify)
 - [ ] Custom VIM colorscheme (?)
 - [ ] Make scripts for color scheme changes (?) (HARD)
+- [ ] Rice Discord somehow
+- [ ] Rice spotify somehow (spicefify)
 
 ### Maybe one day
 - [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)
