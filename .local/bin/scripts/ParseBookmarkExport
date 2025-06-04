@@ -45,6 +45,35 @@ awk '{
     }
 }' $INPUT > $OUTPUT
 
-echo $OUTPUT generated!
+echo $OUTPUT generated
 
-echo Note there may be entires without names if you just have a bookmark as the icon, without any text like I do sometimes...
+# echo Note there may be entires without names if you just have a bookmark as the icon, without any text like I do sometimes...
+# check and see if there are any 
+
+# if there are any tab characters at the begining of a line, then there are
+# incomplete entries (enteries without text)
+
+# Look for tabs at the begining of the file
+BAD_ENTRIES=$(grep -P "^\t" $OUTPUT)
+[[  -z "$BAD_ENTRIES" ]] && echo "No nameless bookmarks detected!" && exit 0
+
+printf "Nameless bookmarks detected! Bookmarks:\n$BAD_ENTRIES\n"
+read -p "Interactively fix them? [y/n]: " CHOICE
+# echo $CHOICE
+
+[[ $CHOICE != y ]] && exit 0
+
+printf "\nParsing bad entries...\n"
+
+# some sed garbage here
+
+# FOR LINE IN BAD_ENTRIES
+for LINE in $BAD_ENTRIES; do
+    printf "\nLine:\n$LINE\n\n"
+    read -p "Enter name: " LABEL
+    # echo sed 's/"$LINE"/"$LABEL$LINE"/g' $OUTPUT
+    sed -i "s|\t$LINE|$LABEL\t$LINE|g" $OUTPUT
+    # sed 's|"$LINE"|"$LABEL$LINE"|g' $OUTPUT
+done
+
+echo "All Clean, happy scripting!"
