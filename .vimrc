@@ -11,8 +11,9 @@ set incsearch
 set textwidth=80
 set nowrap
 
-" Insteall plug.vim if its not there
-let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.config/vim/'
+" Install plug.vim if its not there
+" Simply downloads plug.vim script and puts it in ~/.vim/autoload directory
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
     silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
