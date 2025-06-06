@@ -1,10 +1,8 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
-# Default program sets are done in hyprland conifg file
-# `.config/hypr/configs/programs.conf`
-
 # source my scripts, do this BEFORE interactive check, to make sure that I can
 # call scripts from other scripts
+# I could, and should probably put this in the bash_profile file
 export PATH="$PATH:/home/$USER/.local/bin/scripts"
 
 # If NOT running interactively, stop here!
