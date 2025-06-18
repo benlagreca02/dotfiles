@@ -87,6 +87,9 @@ to use `ttc-iosevka` as the main font.
 pacman -S otf-font-awesome ttc-iosevka
 ```
 
+For file previews in [ranger](https://github.com/ranger/ranger) to work, you
+need to install `python-pillow`
+
 ## Colors
 Right now, I assume a single wallpaper, and only have one "colorscheme" for
 hyprland and waybar configured in their respective config files. I used pywal to
