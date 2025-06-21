@@ -1,0 +1,27 @@
+# general settings
+auto-reload yes
+max-items 50
+
+# bind keys - vim style
+bind-key h quit
+bind-key l open
+
+bind-key k up
+bind-key j down
+
+bind-key K prev-feed articlelist
+bind-key J next-feed articlelist
+
+browser "$WEB_BROWSER --new-window"
+
+# Colors
+# color <element> <fg> <bg> [<attributes>]
+
+# Attributes
+# standout underline reverse blink dim bold protect invis 
+
+color listnormal            color8 black dim
+color listnormal_unread     white black bold
+
+color listfocus             color8 blue dim
+color listfocus_unread      white blue bold
