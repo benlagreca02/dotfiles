@@ -20,5 +20,7 @@
 export EDITOR=vim
 export TERMINAL=kitty
 export FILE_MANAGER=dolphin
-export LAUNCHER=rofi_launch
 export WEB_BROWSER=firefox
+# weird hack script
+export FEED_READER=newsboat_launch
+export LAUNCHER=rofi_launch

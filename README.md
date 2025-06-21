@@ -121,6 +121,13 @@ my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
 any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
+- [ ] make seprate "launch" scripts folder, and maybe add notify if not installed?
+- [ ] fix can't open newsboat from rofi
+- [ ] sort and add tags to newsboat RSS feeds
+- [ ] change around keybinds in newsboat some more
+- [ ] Bookmarking in newsboat
+- [ ] waybar newsboat icon for "unread new feeds" maybe?
+
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
 - [ ] Look into power management stuff (better performance vs battery modes)
@@ -132,6 +139,7 @@ considered it.
 These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
+- [ ] Rice newsboat 
 - [ ] rice vim airline bar to have more info I care about
 - [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
 - [ ] Custom VIM colorscheme (?)
