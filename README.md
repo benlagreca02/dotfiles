@@ -187,3 +187,30 @@ things. They make it look really cool, but you don't need them.
 - [x] Fix waybar calendar to highlight the current day
 - [x] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color theming based on wallpaper (I don't like it)
 - [x] See if waybar's colors can be influenced by pywal (I don't care that much)
+
+#### Programs
+hyprland
+kitty
+sudo
+NetworkManager
+git
+waybar
+hyprpaper
+hypridle
+ttc-iosevka
+cowsay 
+lolcat
+rofi
+newsboat
+dolphin
+vlc
+dunst
+inotify-tools
+ttf-font-awesome
+bluez
+man
+blueman
+pulseaudio
+pavucontrol
+brightnessctl
+sof-firmware
