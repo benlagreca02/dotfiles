@@ -214,3 +214,6 @@ pulseaudio
 pavucontrol
 brightnessctl
 sof-firmware
+openssh
+spotify-launcher
+
