@@ -121,36 +121,38 @@ my DE to be hyprland, but Ubuntu doesn't support it officially.  (Well, ubuntu
 any more!) I don't have plans to full-time switch to Arch (yet) but I have
 considered it. 
 
+- [ ] Fix everything to use _just_ the nerdfont version of iosevka
+- [ ] Fix dynamic monitor changes (Laptop docking sucks)
+- [ ] Dunst could use more configuring
 - [ ] make seprate "launch" scripts folder, and maybe add notify if not installed?
+- [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs, like LARBS)
 - [ ] fix can't open newsboat from rofi
 - [ ] sort and add tags to newsboat RSS feeds
 - [ ] change around keybinds in newsboat some more
 - [ ] Bookmarking in newsboat
 - [ ] waybar newsboat icon for "unread new feeds" maybe?
-
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] Fix gammastep button icon change with time, and on manual change (potentially switch to hyprshift?)
 - [ ] Look into power management stuff (better performance vs battery modes)
 - [ ] Rofi/Dmenu script for selecting common SSH clients somehow (simmilar to web bookmarks potentially)
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
-- [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs, like LARBS)
+- [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)
+- [ ] document keybindings for everything better 
+- [ ] Make some kind of a "print current keybind options" keybind? 
 
 ### Aesthetics
 These are the unimportant for functionallity, pretty, and overall not-needed
 things. They make it look really cool, but you don't need them.
 
-- [ ] Rice newsboat 
+- [ ] Play with the animations in Hyprland
+- [ ] Rice newsboat some more
 - [ ] rice vim airline bar to have more info I care about
 - [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
-- [ ] Custom VIM colorscheme (?)
+- [ ] Custom VIM colorscheme maybe
 - [ ] Make scripts for color scheme changes (?) (HARD)
 - [ ] Rice Discord somehow
 - [ ] Rice spotify somehow (spicefify)
 
-### Maybe one day
-- [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)
-- [ ] document keybindings for everything better 
-- [ ] Make some kind of a "print current keybind options" keybind? 
 
 ### Done 
 - [x] Rofi website bookmark loading (type github and it opens firefox to GH) (ctrl shift w?)
@@ -216,4 +218,9 @@ brightnessctl
 sof-firmware
 openssh
 spotify-launcher
-
+github-cli
+gammastep
+hyprlock
+mpv
+yt-dlp
+ttf-iosevka-nerd

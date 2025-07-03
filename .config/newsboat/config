@@ -25,3 +25,6 @@ color listnormal_unread     white black bold
 
 color listfocus             color8 blue dim
 color listfocus_unread      white blue bold
+
+# Open in mpv
+macro v set browser "mpvEnqueue" ; open-in-browser ; set browser "$WEB_BROWSER"

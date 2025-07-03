@@ -25,11 +25,14 @@
             "title<.*Reddit.*>": "",  // Doesn't work...
             "class<discord>": "", 
             "class<spotify>": "", 
+            "class<mpv>": "", 
             // CAN'T for the Life of me get terminal icon working, so I'll use
             // this one
             "class<kitty>": "",  
             "class<steam>": "", // unverified
-            "title<.*Dolphin.*>": "" 
+            "title<.*Dolphin.*>": "",
+            "title<vim>": " ",
+            "title<vf>": " " // because I use my "vf" alias a lot
         }
     },
 

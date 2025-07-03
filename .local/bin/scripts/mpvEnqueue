@@ -1,0 +1,19 @@
+#!/bin/sh
+# Uses MPV's socket thingy to let me 
+
+VIDEO_URL="$1"
+SOCKET="/tmp/mpvsocket"
+
+if [ -S "$SOCKET" ] && ! echo '{"command": ["get_property", "pause"]}' | socat - "$SOCKET" >/dev/null 2>&1; then
+    echo "Stale socket found. Removing..."
+    rm "$SOCKET"
+fi
+
+# If the socket doesn't exist, start MPV with it
+if [ ! -S "$SOCKET" ]; then
+    setsid mpv --no-terminal --input-ipc-server="$SOCKET" "$VIDEO_URL" > /dev/null 2>&1 &
+else
+    # Enqueue video via IPC using JSON command
+    echo '{ "command": ["loadfile", "'"$VIDEO_URL"'", "append-play"] }' | socat - "$SOCKET" > /dev/null 2>&1
+fi
+
