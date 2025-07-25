@@ -191,6 +191,9 @@ things. They make it look really cool, but you don't need them.
 - [x] Look into [pywal](https://github.com/dylanaraps/pywal) for auto color theming based on wallpaper (I don't like it)
 - [x] See if waybar's colors can be influenced by pywal (I don't care that much)
 
+#### One time commands
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+
 #### Programs
 hyprland
 kitty
@@ -231,3 +234,6 @@ steam
 xpad
 noto-fonts-cjk
 the_silver_searcher
+tldr
+calibre
+tmux
