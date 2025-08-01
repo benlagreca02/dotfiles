@@ -237,3 +237,5 @@ tldr
 calibre
 tmux
 ranger
+unzip
+gammastep

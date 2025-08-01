@@ -28,7 +28,7 @@
             "class<mpv>": "", 
             // CAN'T for the Life of me get terminal icon working, so I'll use
             // this one
-            "class<kitty>": " ",  
+            "class<kitty>": "",  
             "class<steam>": "", // unverified
             "title<.*Dolphin.*>": "",
             "title<vim>": " ",  // doesn't really work bc kitty changes into
