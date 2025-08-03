@@ -125,7 +125,6 @@ considered it.
 
 - [ ] When docked and laptop closed, can't wake from suspend
 - [ ] Fix everything to use _just_ the nerdfont version of iosevka, instead of the standalone package
-- [ ] Fix dynamic monitor changes (Laptop docking sucks)
 - [ ] Dunst could use more configuring (Maybe? Can't close notifications sometimes)
 - [ ] make seprate "launch" scripts folder, and maybe add notify if not installed?
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs, like LARBS)
@@ -157,6 +156,7 @@ things. They make it look really cool, but you don't need them.
 
 
 ### Done 
+- [x] Fix dynamic monitor changes (Laptop docking sucks)
 - [x] sort and add tags to newsboat RSS feeds
 - [x] Rofi website bookmark loading (type github and it opens firefox to GH) (ctrl shift w?)
 - [x] Set some env variables like $TERMINAL in a better way than I am now (now I'm doing it in hyprland config, but this will break if I'm not using hyprland)
@@ -239,3 +239,4 @@ tmux
 ranger
 unzip
 gammastep
+kanshi
