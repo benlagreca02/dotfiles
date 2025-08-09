@@ -26,8 +26,6 @@
             "class<discord>": "", 
             "class<spotify>": "", 
             "class<mpv>": "", 
-            // CAN'T for the Life of me get terminal icon working, so I'll use
-            // this one
             "class<kitty>": "",  
             "class<steam>": "", // unverified
             "title<.*Dolphin.*>": "",
@@ -36,21 +34,9 @@
         }
     },
 
+    // I don't use these... yet. I may make some in the future
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
-    },
-
-
-    "network": {
-        "format-wifi": "",
-        "format-ethernet": "{ifname} ",
-        "format-disconnected": "", 
-        "max-length": 30,
-        "tooltip-format-wifi": "{ipaddr}/{cidr} {essid}",
-        // TODO should probably access the terminal
-        // from some kind of macro incase I don't use kitty
-        // Could change this but I don't care yet
-        "on-click": "kitty -e 'nmtui'"
     },
 
     "clock": {
@@ -65,8 +51,35 @@
     },
 
 
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "{ifname} ",
+        "format-disconnected": "", 
+        "max-length": 30,
+        "tooltip-format-wifi": "{ipaddr}/{cidr} {essid}",
+        "on-click": "$TERMINAL -e 'nmtui'"
+    },
+
+
+    // TODO
+    // https://man.archlinux.org/man/extra/waybar/waybar-bluetooth.5.en
+    "bluetooth":{
+        "on-click": "blueman-manager",
+        // 
+        "min-length": 3,
+        "format-off": "<span color=\"red\">X </span>",
+        "format-disabled": "<span color=\"red\">X </span>",
+        "format-on": "",
+        "format-connected": "<span color=\"green\"> </span>", 
+        "tooltip-format": "Status:\t{status}\nCon'd:\t{num_connections}\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias} {device_battery_percentage}%"
+    },
+
+
+
     "backlight": {
-        "format": "{percent:3}% {icon} ",
+        "format": "{percent:3}% {icon}",
         "format-icons": ["○","◔","◑","◕","●"]
     },
 
@@ -74,16 +87,16 @@
     "battery": {
         "bat": "BAT0",
         "states": {
-              "full": 99,
-              "good": 98,
-              "normal": 98,
+              "full": 95,
+              "good": 85,
+              "normal": 65,
               "warning": 20,
               "critical": 10
         },
 
         "format": "{capacity:3}% {icon}",
         "format-good": "{capacity:3}% {icon}", 
-        "format-full": "{capacity:3}% ",
+        // "format-full": "{capacity:3}% ",
         "format-icons": ["", "", "", "", ""],
         "interval": 20
     },
@@ -126,20 +139,6 @@
         "format-icons": ["", ""],
         "exec": "get_curr_screen_temp" // custom script
         // "restart-interval": 600,  // every 5 minutes
-    },
-
-    // TODO
-    // https://man.archlinux.org/man/extra/waybar/waybar-bluetooth.5.en
-    "bluetooth":{
-        "on-click": "blueman-manager",
-        // 
-        "min-length": 3,
-        "format-off": "<span color=\"red\">X </span>",
-        "format-disabled": "<span color=\"red\">X </span>",
-        "format-on": " ",
-        "format-connected": "<span color=\"green\"> </span>", 
-        "tooltip-format": "Status:\t{status}\nCon'd:\t{num_connections}\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}",
-        "tooltip-format-enumerate-connected-battery": "{device_alias} {device_battery_percentage}%"
     }
+
 }

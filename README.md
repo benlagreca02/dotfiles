@@ -19,8 +19,8 @@ config config --local status.showUntrackedFiles no
 You will most likely want to delete the `README.md` file. I'm sure there's a way
 to have the home folder somewhere else, but whatever.
 
-
 [This is the original guide I followed](https://www.atlassian.com/git/tutorials/dotfiles)
+
 
 
 # TODO
@@ -32,17 +32,19 @@ I simply add it to this giant list.
 - [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs, like LARBS)
 - [ ] systemctl setup for arch if needed
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
+- [ ] Look into power management stuff (save power when lid closed etc.)
+- [ ] For laptop docking, find a way to make it more generic
+
 ## Minor
+- [ ] When docked, display brightness leaves weird gap in waybar (not there)
 - [ ] Distch gammastep switch to wlsunset (allows easier scripting for waybar)
-- [ ] When docked and laptop closed, can't wake from suspend
+- [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
 - [ ] Fix everything to use _just_ the nerdfont version of iosevka, instead of the standalone package
 - [ ] Dunst could use more configuring (Maybe? Can't close notifications sometimes, I think b.c. I can't focus them)
 - [ ] make seprate "launch" scripts folder, and maybe add notify if not installed? (Potentially)
 - [ ] fix can't open newsboat from rofi (filepath issue I believe)
 - [ ] change around keybinds in newsboat some more
-- [ ] Bookmarking in newsboat (? what did I mean by this)
 - [ ] waybar newsboat icon for "unread new feeds" maybe?
-- [ ] Look into power management stuff (better performance vs battery modes)
 - [ ] Rofi/Dmenu script for selecting common SSH clients somehow (simmilar to web bookmarks potentially)
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
 - [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)

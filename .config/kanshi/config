@@ -9,6 +9,7 @@ output "AOC 24G4 12VQ7HA012846" {
 
 profile undocked {
   output eDP-1 enable 
+  output $HOME_1 disable
 }
 
 profile docked {
