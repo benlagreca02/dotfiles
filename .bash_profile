@@ -8,11 +8,6 @@
 # If .bashrc exists, execute it here
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-# This isn't what was causing vim issues! Vim 9.0 doesn't check XDG_CONFIG_HOME
-# Because I'm on ubuntu 22 on my normal work machine, its still v9.0. Arch
-# installs v9.1. This is an issue I will work out later, or not at all honestly.
-# I don't plan on ever doing ROS Humble again, so I won't ever need ubuntu 22
-
 export EDITOR=vim
 export TERMINAL=kitty
 export FILE_MANAGER=dolphin

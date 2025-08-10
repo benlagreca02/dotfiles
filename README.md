@@ -26,38 +26,37 @@ to have the home folder somewhere else, but whatever.
 # TODO
 At this point, I've been daily driving the system for months with very few
 issues. Whenver I have an issue, I immediatly address it (if its bad enough) or
-I simply add it to this giant list. 
+I simply add it to this giant list, sorted by vibes
 
 ## Major
-- [ ] essential package install script of some kind (gammastep, Hyprland, waybar etc, things my rice needs, like LARBS)
-- [ ] systemctl setup for arch if needed
+- [ ] Research power management stuff (save power when lid closed etc.)
+- [ ] essential package install script  (like LARBS)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
-- [ ] Look into power management stuff (save power when lid closed etc.)
-- [ ] For laptop docking, find a way to make it more generic
+- [ ] In kanshi, make docking/undocking genaric, for not just my system
+- [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely)
+- [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
 
 ## Minor
+- [ ] Custom VIM colorscheme maybe
 - [ ] When docked, display brightness leaves weird gap in waybar (not there)
 - [ ] Distch gammastep switch to wlsunset (allows easier scripting for waybar)
-- [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
-- [ ] Fix everything to use _just_ the nerdfont version of iosevka, instead of the standalone package
-- [ ] Dunst could use more configuring (Maybe? Can't close notifications sometimes, I think b.c. I can't focus them)
-- [ ] make seprate "launch" scripts folder, and maybe add notify if not installed? (Potentially)
-- [ ] fix can't open newsboat from rofi (filepath issue I believe)
 - [ ] change around keybinds in newsboat some more
+- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
+
+## Very Minor
+- [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
+- [ ] Add screen mirror button  (FN F7)
+- [ ] Make scripts for color scheme changes (?) (HARD)
+- [ ] fix can't open newsboat from rofi (filepath issue I believe)
+- [ ] Fix everything to use _just_ the nerdfont version of iosevka, instead of the standalone package
+- [ ] make seprate "launch" scripts folder, and maybe add notify if not installed? (Potentially)
 - [ ] waybar newsboat icon for "unread new feeds" maybe?
 - [ ] Rofi/Dmenu script for selecting common SSH clients somehow (simmilar to web bookmarks potentially)
-- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
-- [ ] screen rotation in tablet mode potentially? (I hardly use it, so ROI is low)
-- [ ] document keybindings for everything better 
-- [ ] Make some kind of a "print current keybind options" keybind? 
+- [ ] screen rotation in tablet mode potentially?
 - [ ] Play with the animations in Hyprland
-- [ ] Rice newsboat some more
-- [ ] rice vim airline bar to have more info I care about
-- [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
-- [ ] Custom VIM colorscheme maybe
-- [ ] Make scripts for color scheme changes (?) (HARD)
 - [ ] Rice Discord somehow
 - [ ] Rice spotify somehow (spicefify)
+- [ ] Rice newsboat looks
 
 ## Colors 
 PyWal is cool, but I don't like that it overrides your colors.  Errors

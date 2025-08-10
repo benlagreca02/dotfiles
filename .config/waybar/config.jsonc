@@ -67,10 +67,10 @@
         "on-click": "blueman-manager",
         // 
         "min-length": 3,
-        "format-off": "<span color=\"red\">X </span>",
-        "format-disabled": "<span color=\"red\">X </span>",
+        "format-off": "<span color=\"gray\"></span>",
+        "format-disabled": "<span color=\"red\"></span>",
         "format-on": "",
-        "format-connected": "<span color=\"green\"> </span>", 
+        "format-connected": "<span color=\"green\"></span>", 
         "tooltip-format": "Status:\t{status}\nCon'd:\t{num_connections}\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}",
         "tooltip-format-enumerate-connected-battery": "{device_alias} {device_battery_percentage}%"
