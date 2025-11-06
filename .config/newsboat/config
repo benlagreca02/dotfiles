@@ -1,16 +1,21 @@
 # general settings
 auto-reload yes
-max-items 50
+max-items 100
 
 # bind keys - vim style
-bind-key h quit
-bind-key l open
+bind-key h quit  # think going "left" like closing 
+bind-key l open  # think going "right" like opening a folder
 
 bind-key k up
 bind-key j down
 
-bind-key K prev-feed articlelist
-bind-key J next-feed articlelist
+bind-key J toggle-article-read
+bind-key N mark-feed-read
+# bind-key K prev-feed articlelist
+# bind-key J next-feed articlelist
+# macro J mark-read ; next-feed
+
+
 
 browser "$WEB_BROWSER --new-window"
 
@@ -26,5 +31,7 @@ color listnormal_unread     white black bold
 color listfocus             color8 blue dim
 color listfocus_unread      white blue bold
 
-# Open in mpv
+# Open in mpv, this is really janky, and sometimes doesn't donwload it rihgt
+# I really don't use this anymore since setting up hyprland rule for youtube
+# miniplayer window auto-resize
 macro v set browser "mpvEnqueue" ; open-in-browser ; set browser "$WEB_BROWSER"
