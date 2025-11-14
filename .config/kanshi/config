@@ -7,12 +7,12 @@ output "AOC 24G4 12VQ7HA012846" {
 }
 
 
-profile undocked {
-  output eDP-1 enable 
-  output $HOME_1 disable
-}
-
 profile docked {
   output $HOME_1 enable 
   output eDP-1 disable
 }
+
+profile undocked {
+  output eDP-1 enable mode 1920x1080 position 0,0 scale 1
+}
+
