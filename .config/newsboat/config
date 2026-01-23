@@ -9,10 +9,8 @@ bind-key l open  # think going "right" like opening a folder
 bind-key k up
 bind-key j down
 
-bind-key J toggle-article-read
-bind-key N mark-feed-read
-# bind-key K prev-feed articlelist
-# bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key J next-feed articlelist
 # macro J mark-read ; next-feed
 
 
