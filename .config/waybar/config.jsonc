@@ -4,10 +4,10 @@
     "modules-right": [
         "network",
         "bluetooth",
-        // "custom/gammastep", // Not really happy with it yet
         "backlight",
         "battery",
         "pulseaudio",
+        "custom/hyprsunset",
         "custom/power"
     ],
 
@@ -22,14 +22,15 @@
         "window-rewrite": {
             "class<firefox>": "", // Windows whose classes are "firefox"
             "title<.*youtube.*>": "",
-            "title<.*Reddit.*>": "",  // Doesn't work...
+            "title<Picture-in-picture>": "",
+            "title<.*Reddit.*>": "",
             "class<discord>": "", 
             "class<spotify>": "", 
             "class<mpv>": "", 
-            "class<kitty>": "",  
+            "class<kitty>": " ", // Note this doesn't actually match $TERMINAL like it should
             "class<steam>": "", // unverified
             "title<.*Dolphin.*>": "",
-            "title<vim>": " ",  // doesn't really work bc kitty changes into
+            "title<vim>": " ",
             "title<vf>": " " // because I use my "vf" alias a lot
         }
     },
@@ -103,20 +104,21 @@
 
     "pulseaudio": {
         "format": "{volume:3}% {icon}",
-        "format-bluetooth": "{icon}{volume:3}%  {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-bluetooth": "{volume:3}% {icon} {format_source}",
+        "format-bluetooth-muted": "{volume:3}%  {format_source}",
         "format-muted": "   0% {icon}",
-        "format-source": "{volume}% ",
+        "format-source": "",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
+            /* "headphone": "",
             "hands-free": "",
             "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
+            */
             // TODO find monospace version of these, and maybe more of them
-            "default": [" ", " ", ""]
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
@@ -129,15 +131,16 @@
 	},
 
     // TODO this needs quite a bit of work yet
+            // "6000": "", 
+            // "default": ""
     // Could combine with the brightness one?
-	"custom/gammastep": {
-        "tooltip-format": "{text}",
-        // "exec": "gammastep -p",
-        // TODO make this button actaully change icons
-        "format": "{icon}",
-        "format-source": "{icon} ",
-        "format-icons": ["", ""],
-        "exec": "get_curr_screen_temp" // custom script
+	"custom/hyprsunset": {
+        "tooltip-format": "click to toggle",
+        "exec": "waybar-screentemp",
+        "interval": 5,
+        "format": "{}",
+        "on-click": "toggle_nightlight"
+        // "exec": "get_curr_screen_temp" // custom script NEEDS REWRITE
         // "restart-interval": 600,  // every 5 minutes
     }
 

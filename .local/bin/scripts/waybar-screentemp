@@ -1,0 +1,11 @@
+#!/bin/sh
+
+temp=$(screentemp)
+
+if [ "$temp" -lt 6000 ]; then
+    echo 
+else
+    echo 
+fi
+
+

@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Get the current temp
+# if its warm, make it not
+# if its not, make it warm
+
+# normal temp is 6000
+normal=6000
+temp=$(hyprctl hyprsunset temperature)
+
+# if any "warm" at all
+if (( "$temp" < "$normal" )); then
+    # get rid of ANY temperature
+    # on next hyprland release, change this to reset
+    hyprctl hyprsunset temperature 6000
+else
+    # if there is no warm at all, make it warm
+    hyprctl hyprsunset temperature 2000
+fi
+
+

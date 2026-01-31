@@ -35,13 +35,12 @@ I simply add it to this giant list, sorted by vibes
 - [ ] In kanshi, make docking/undocking genaric, for not just my system
 - [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely)
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
+- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
 
 ## Minor
 - [ ] Custom VIM colorscheme maybe
 - [ ] When docked, display brightness leaves weird gap in waybar (not there)
-- [ ] Distch gammastep switch to wlsunset (allows easier scripting for waybar)
 - [ ] change around keybinds in newsboat some more
-- [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
 
 ## Very Minor
 - [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)

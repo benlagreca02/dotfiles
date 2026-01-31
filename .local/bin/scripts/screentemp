@@ -3,7 +3,7 @@
 
 # gammastep outpus to stderr???
 # Thanks Prof. Repka for the 2>&1 trick!
-temp=$(gammastep -p 2>&1 | grep "temperature" | cut -d: -f 3)
-echo "${temp# }/6500K"
-
+# temp=$(gammastep -p 2>&1 | grep "temperature" | cut -d: -f 3)
+# echo "${temp# }/6500K"
+hyprctl hyprsunset temperature
 
