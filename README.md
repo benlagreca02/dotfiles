@@ -29,15 +29,17 @@ issues. Whenver I have an issue, I immediatly address it (if its bad enough) or
 I simply add it to this giant list, sorted by vibes
 
 ## Major
-- [ ] Research power management stuff (save power when lid closed etc.)
-- [ ] essential package install script  (like LARBS)
-- [ ] Learn how to backup system (pacakges and system, not just dotfiles)
-- [ ] In kanshi, make docking/undocking genaric, for not just my system
-- [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely)
+- [ ] Add a brightness through hyprsunset gamma when connected to monitor that doesn't support it (desktop)
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
+- [ ] Research power management stuff (save power when lid closed etc.)
+- [ ] Learn how to backup system (pacakges and system, not just dotfiles)
+- [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely, specifically bluetooth notifications)
 
 ## Minor
+- [ ] Rice waybar better, I want icons on the right to be separated
+- [ ] In kanshi, make docking/undocking generic, for not just my system
+- [ ] essential package install script  (like LARBS)
 - [ ] Custom VIM colorscheme maybe
 - [ ] When docked, display brightness leaves weird gap in waybar (not there)
 - [ ] change around keybinds in newsboat some more
