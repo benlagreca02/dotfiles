@@ -6,7 +6,7 @@ git
 waybar
 hyprpaper
 hypridle
-ttc-iosevka
+hyprsunset
 cowsay 
 lolcat
 rofi
@@ -15,11 +15,10 @@ dolphin
 vlc
 dunst
 inotify-tools
-ttf-font-awesome
 bluez
 man
 blueman
-pulseaudio
+pipewire
 pavucontrol
 brightnessctl
 sof-firmware
@@ -30,12 +29,10 @@ gammastep
 hyprlock
 mpv
 yt-dlp
-ttf-iosevka-nerd
 discord
 fastfetch
 steam
 xpad
-noto-fonts-cjk
 the_silver_searcher
 tldr
 calibre
