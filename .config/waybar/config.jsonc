@@ -22,16 +22,17 @@
         "window-rewrite": {
             "class<firefox>": "", // Windows whose classes are "firefox"
             "title<.*youtube.*>": "",
-            "title<Picture-in-picture>": "",
+            "title<mpv>": "", 
+            "title<Picture-in-picture>": "",
             "title<.*Reddit.*>": "",
             "class<discord>": "", 
             "class<spotify>": "", 
-            "class<mpv>": "", 
             "class<kitty>": " ", // Note this doesn't actually match $TERMINAL like it should
             "class<steam>": "", // unverified
             "title<.*Dolphin.*>": "",
             "title<vim>": " ",
-            "title<vf>": " " // because I use my "vf" alias a lot
+            "title<vf>": " ", // because I use my "vf" alias a lot
+            "class<Minecraft.*>": ""
         }
     },
 
