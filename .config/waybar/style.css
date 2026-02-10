@@ -2,7 +2,7 @@
 
 * {
     border: none;
-    font-family: "Iosevka Term Semibold Extended";
+    font-family: "LilexNerdFont";
     font-size: 15px;
     color: #ffffff;
     border-radius: 10px;
@@ -20,22 +20,40 @@ window#waybar {
 
 /*-----module groups----*/
 .modules-right {
-	background-color: @MODULE_BACKGROUND;
-    margin: 4px 10px 0 0;
+    margin: 5px 10px 0 0;
 }
 .modules-center {
 	background-color: @MODULE_BACKGROUND;
-    margin: 4px 0 0 0;
+    margin: 5px 0 0 0;
 }
 .modules-left {
-    margin: 4px 0 0 10px;
+    margin: 5px 0 0 10px;
 	background-color: @MODULE_BACKGROUND;
 }
+/* All modules in the center */
+.modules-center > widget > *{
+    margin: 0px 1em 0px 1em;
+}
+
+/* All modules on the right */
+.modules-right > widget > * {
+	background-color: @MODULE_BACKGROUND;
+    margin: 0 0.25em;
+}
+
+
+
 /*-----modules indv----*/
 #workspaces button {
-    padding: 0px 5px;
     background-color: transparent;
 }
+
+/* jank fixes to make it centered */
+/* Youll need to adjust these if you chagne font/icons*/
+#network {
+    padding-right: 0.5em;
+}
+
 
 #workspaces button:hover {
     /* box-shadow: inherit; */
@@ -60,34 +78,20 @@ window#waybar {
     background-color: @MAIN_COLOR;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#temperature,
-#network,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#custom-power,
-
 /* Used for a few modules */
-#idle_inhibitor {
-    padding: 0 10px;
-}
 
-
-#mode {
-    color: #cc3436;
-    font-weight: bold;
+#pulseaudio {
+    padding: 0px 1.125em 0px 0.5em;
 }
 
 #custom-power {
     background-color: @MAIN_COLOR;
-    border-radius: 10px;
-    margin: 5px 5px;
-    padding: 1px 2px 1px 6px;
+    padding: 0px 0.25em 0px 0px;
+    border-radius: 20px;
+}
+
+#custom-hyprsunset {
+    padding-right: 0.25em;
 }
 
 #pulseaudio.muted {
@@ -107,3 +111,11 @@ window#waybar {
 #temperature.critical {
     color: #cc3436;
 }
+
+#idle_inhibitor { }
+
+#mode {
+    color: #cc3436;
+    font-weight: bold;
+}
+

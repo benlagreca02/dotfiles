@@ -1,13 +1,12 @@
 hyprland
 kitty
 sudo
-NetworkManager
+networkmanager
 git
 waybar
 hyprpaper
 hypridle
 hyprsunset
-cowsay 
 lolcat
 rofi
 newsboat
@@ -25,7 +24,6 @@ sof-firmware
 openssh
 spotify-launcher
 github-cli
-gammastep
 hyprlock
 mpv
 yt-dlp
@@ -40,7 +38,7 @@ tmux
 ranger
 python-pillow
 unzip
-gammastep
 kanshi
 nfs-utils
 htop
+vim

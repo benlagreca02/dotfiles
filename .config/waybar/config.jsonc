@@ -4,8 +4,8 @@
     "modules-right": [
         "network",
         "bluetooth",
-        "backlight",
-        "battery",
+        // "backlight",
+        // "battery",
         "pulseaudio",
         "custom/hyprsunset",
         "custom/power"
@@ -18,20 +18,20 @@
 
     "hyprland/workspaces": {
         "format": " {icon}<sup>{windows}</sup> ",
-        "window-rewrite-default": "?",
+        "window-rewrite-default": "",
         "window-rewrite": {
             "class<firefox>": "", // Windows whose classes are "firefox"
-            "title<.*youtube.*>": "",
+            "title<.*youtube.*>": "",
             "title<mpv>": "", 
             "title<Picture-in-picture>": "",
             "title<.*Reddit.*>": "",
-            "class<discord>": "", 
+            "class<discord>": "", 
             "class<spotify>": "", 
-            "class<kitty>": " ", // Note this doesn't actually match $TERMINAL like it should
-            "class<steam>": "", // unverified
+            "class<kitty>": "", // Note this doesn't actually match $TERMINAL like it should
+            "class<steam>": "",
             "title<.*Dolphin.*>": "",
-            "title<vim>": " ",
-            "title<vf>": " ", // because I use my "vf" alias a lot
+            "title<vim>": "",
+            "title<vf>": "", // because I use my "vf" alias a lot
             "class<Minecraft.*>": ""
         }
     },
@@ -53,21 +53,21 @@
     },
 
 
+    /* TODO I want to tweak these */
     "network": {
+        "min-length": 3,
         "format-wifi": "",
-        "format-ethernet": "{ifname} ",
+        "format-ethernet": "",
         "format-disconnected": "", 
         "max-length": 30,
         "tooltip-format-wifi": "{ipaddr}/{cidr} {essid}",
         "on-click": "$TERMINAL -e 'nmtui'"
     },
 
-
     // TODO
     // https://man.archlinux.org/man/extra/waybar/waybar-bluetooth.5.en
     "bluetooth":{
         "on-click": "blueman-manager",
-        // 
         "min-length": 3,
         "format-off": "<span color=\"gray\"></span>",
         "format-disabled": "<span color=\"red\"></span>",
@@ -105,6 +105,7 @@
 
     "pulseaudio": {
         "format": "{volume:3}% {icon}",
+        "min-length": 8,
         "format-bluetooth": "{volume:3}% {icon} {format_source}",
         "format-bluetooth-muted": "{volume:3}%  {format_source}",
         "format-muted": "   0% {icon}",
@@ -119,30 +120,25 @@
             "car": "",
             */
             // TODO find monospace version of these, and maybe more of them
-            "default": [" ", " ", " "]
+            "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
 
 
 	"custom/power": {
-		"format": " ",
+        "min-length": 3,
+		"format": "",
         "tooltip-format": "linux is kil?",
 		"on-click": "prompt_logoff"
 	},
 
-    // TODO this needs quite a bit of work yet
-            // "6000": "", 
-            // "default": ""
-    // Could combine with the brightness one?
 	"custom/hyprsunset": {
+        "min-length": 3,
         "tooltip-format": "click to toggle",
         "exec": "waybar-screentemp",
         "interval": 5,
         "format": "{}",
         "on-click": "toggle_nightlight"
-        // "exec": "get_curr_screen_temp" // custom script NEEDS REWRITE
-        // "restart-interval": 600,  // every 5 minutes
     }
-
 }
