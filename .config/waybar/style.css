@@ -41,31 +41,61 @@ window#waybar {
     margin: 0 0.25em;
 }
 
-
-
-/*-----modules indv----*/
-#workspaces button {
-    background-color: transparent;
-}
-
-/* jank fixes to make it centered */
-/* Youll need to adjust these if you chagne font/icons*/
+/*----- Right icons -----*/
+/* Lots of the "Padding right" is to fix weird icon spacing */
 #network {
     padding-right: 0.5em;
 }
 
+#backlight {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#battery {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#battery.charging {
+    color: #2dcc36;
+}
+
+#battery.warning:not(.charging) {
+	color: #e6e600;
+}
+
+#battery.critical:not(.charging) {
+    color: #cc3436;
+}
+
+#pulseaudio {
+    padding: 0px 0.75em 0px 0.5em;
+}
+
+#pulseaudio.muted {
+    color: #cc3436;
+}
+
+#custom-hyprsunset {
+    padding-right: 0.25em;
+}
+
+#custom-power {
+    background-color: @MAIN_COLOR;
+    padding: 0px 0.25em 0px 0px;
+    border-radius: 20px;
+}
+
+/* Workspaces config */
+#workspaces button {
+    background-color: transparent;
+}
 
 #workspaces button:hover {
-    /* box-shadow: inherit; */
-	/* background-color: rgba(0,153,153,1); */
-
-    /* Why does this go all white? */
     box-shadow: inherit;
     text-shadow: inherit;
     background: none;
-    /* To disable fade-in */
-    /*transition: none;  */
-
 	background-color: @HIGHLIGHT_COLOR;
 }
 
@@ -78,44 +108,10 @@ window#waybar {
     background-color: @MAIN_COLOR;
 }
 
-/* Used for a few modules */
-
-#pulseaudio {
-    padding: 0px 1.125em 0px 0.5em;
-}
-
-#custom-power {
-    background-color: @MAIN_COLOR;
-    padding: 0px 0.25em 0px 0px;
-    border-radius: 20px;
-}
-
-#custom-hyprsunset {
-    padding-right: 0.25em;
-}
-
-#pulseaudio.muted {
-    color: #cc3436;
-}
-
-#battery.charging {
-    color: #2dcc36;
-}
-#battery.warning:not(.charging) {
-	color: #e6e600;
-}
-#battery.critical:not(.charging) {
-    color: #cc3436;
-}
-
-#temperature.critical {
-    color: #cc3436;
-}
-
+/* OTHER */
 #idle_inhibitor { }
 
 #mode {
     color: #cc3436;
     font-weight: bold;
 }
-

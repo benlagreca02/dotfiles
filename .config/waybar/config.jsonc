@@ -4,8 +4,8 @@
     "modules-right": [
         "network",
         "bluetooth",
-        // "backlight",
-        // "battery",
+        "backlight",
+        "battery",
         "pulseaudio",
         "custom/hyprsunset",
         "custom/power"
@@ -81,12 +81,15 @@
 
 
     "backlight": {
+        "min-length": 8,
         "format": "{percent:3}% {icon}",
-        "format-icons": ["○","◔","◑","◕","●"]
+        // "format-icons": ["○","◔","◑","◕","●"],"󰃡"
+        "format-icons": ["󰃚","󰃛", "󰃜","󰃝","󰃞","󰃟","󰃠"]
     },
 
 
     "battery": {
+        "min-length": 8,
         "bat": "BAT0",
         "states": {
               "full": 95,

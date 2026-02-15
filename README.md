@@ -28,8 +28,18 @@ At this point, I've been daily driving the system for months with very few
 issues. Whenver I have an issue, I immediatly address it (if its bad enough) or
 I simply add it to this giant list, sorted by vibes
 
+# TODO 
+This system, in my opinion, is around 90% complete, and that last ten percent is
+pretty minor, like notifications taking you to the respective program, tweaking
+theme for blueman, and other "rices". Things I'd like to do at some point are in
+the list below
+
 ## Major
+- [ ] Tweak Rofi to look better
+- [ ] Re-rice Dunst
+- [ ] Blueman theme
 - [ ] Add a brightness through hyprsunset gamma when connected to monitor that doesn't support it (desktop)
+- [ ] Make dunst notificaiton clickable (and bring back to program like discord)
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
 - [ ] "edit configs" script with dmenu/rofi of some kind (can type "rofi" and rofi config will open in vim, distrotube has one)
 - [ ] Research power management stuff (save power when lid closed etc.)
@@ -37,10 +47,10 @@ I simply add it to this giant list, sorted by vibes
 - [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely, specifically bluetooth notifications)
 
 ## Minor
-- [ ] Rice waybar better, I want icons on the right to be separated
+- [ ] Custom Kitty colorscheme maybe
+- [ ] Custom VIM colorscheme maybe
 - [ ] In kanshi, make docking/undocking generic, for not just my system
 - [ ] essential package install script  (like LARBS)
-- [ ] Custom VIM colorscheme maybe
 - [ ] When docked, display brightness leaves weird gap in waybar (not there)
 - [ ] change around keybinds in newsboat some more
 
@@ -49,7 +59,6 @@ I simply add it to this giant list, sorted by vibes
 - [ ] Add screen mirror button  (FN F7)
 - [ ] Make scripts for color scheme changes (?) (HARD)
 - [ ] fix can't open newsboat from rofi (filepath issue I believe)
-- [ ] Fix everything to use _just_ the nerdfont version of iosevka, instead of the standalone package
 - [ ] make seprate "launch" scripts folder, and maybe add notify if not installed? (Potentially)
 - [ ] waybar newsboat icon for "unread new feeds" maybe?
 - [ ] Rofi/Dmenu script for selecting common SSH clients somehow (simmilar to web bookmarks potentially)
