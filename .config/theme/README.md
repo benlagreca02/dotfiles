@@ -2,6 +2,9 @@
 
 THIS ISN'T IMPLEMENTED THE WAY I WANT TO YET
 
+THIS IS ALSO VERY OUTDATED, I need to completely redo all of this and honestly I
+barely remember writing it.
+
 One day, I want to write a script to change themes and go though wallpapers, but
 thats in the distant future
 
