@@ -1,14 +1,15 @@
-hyprland
-kitty
 sudo
 networkmanager
-git
-waybar
+hyprland
+hyprshot
 hyprpaper
 hypridle
 hyprsunset
-lolcat
+waybar
 rofi
+kitty
+lolcat
+git
 newsboat
 dolphin
 vlc
@@ -44,3 +45,4 @@ htop
 vim
 rsync
 feh
+ttf-lilex-nerd
