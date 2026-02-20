@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+# PATH:$HOME/<config path>
+# Filepath MUST start with $HOME, its how to parse it
+configs=(
+"Config Script:$HOME/.local/bin/scripts/edit-config-selector"
+"Hyprland:$HOME/.config/hypr/hyprland.conf"
+"kitty config:$HOME/.config/kitty/kitty.conf"
+"bashrc:$HOME/.bashrc"
+"tmux.conf:$HOME/.config/tmux/tmux.conf"
+"Waybar config:$HOME/.config/waybar/config.jsonc"
+"Waybar style:$HOME/.config/waybar/style.css"
+)
+# menu=$(for line in ${configs[0]} do; )
+selection=$(for line in "${configs[@]}"; do
+    printf "%s\n" "$line"
+done | column -t -s ":" | rofi -dmenu)
+
+configPath="$HOME${selection#*$HOME}"
+
+$TERMINAL -e $EDITOR $configPath
