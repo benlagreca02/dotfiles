@@ -4,13 +4,22 @@
 # Filepath MUST start with $HOME, its how to parse it
 configs=(
 "Config Script:$HOME/.local/bin/scripts/edit-config-selector"
-"Hyprland:$HOME/.config/hypr/hyprland.conf"
 "kitty config:$HOME/.config/kitty/kitty.conf"
 "bashrc:$HOME/.bashrc"
 "tmux.conf:$HOME/.config/tmux/tmux.conf"
 "Waybar config:$HOME/.config/waybar/config.jsonc"
 "Waybar style:$HOME/.config/waybar/style.css"
 )
+
+# Recursively add all hyprland configs
+# "Hyprland:$HOME/.config/hypr/hyprland.conf"
+for f in $(find "$HOME/.config/hypr/"); do
+    [ -f "$f" ] || continue # skip folders
+    filename=$(basename "$f")
+    configs+=("$filename:$f")
+done
+
+
 # menu=$(for line in ${configs[0]} do; )
 selection=$(for line in "${configs[@]}"; do
     printf "%s\n" "$line"
@@ -18,4 +27,4 @@ done | column -t -s ":" | rofi -dmenu)
 
 configPath="$HOME${selection#*$HOME}"
 
-$TERMINAL -e $EDITOR $configPath
+$TERMINAL -e $EDITOR $configPath &

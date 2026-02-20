@@ -42,3 +42,5 @@ kanshi
 nfs-utils
 htop
 vim
+rsync
+feh
