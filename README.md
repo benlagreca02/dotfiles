@@ -39,17 +39,21 @@ the list below
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
 
 ## Theming
-I used to believe that, with respect to terminal colors, red should always be
-red, and blue should always be blue, but then I realized that that is just not
-worth it. But the typical pywal functionallity isn't enough for my taste... This
-is still a WIP but I'm pretty happy with it so far
-- [ ] Make script to interactively make new themes
-Make the following "theme compliant"
+Its pretty janky if you look under the hood, but I'm pretty proud of my themeing
+engine I've thrown together with lots of scripts, and pywal16. I still need
+to...
+- [ ] Add more themes!
+- [ ] Improve color picking (I hate the janky rofi selection)
+Make the following theme compliant:
+- [ ] dunst
 - [ ] bashrc ps1 prompt
 - [ ] vimairline
+- [ ] waybar calendar thingy
+- [ ] newsboat
 
 ## Minor 
 These are mostly astetic options, and some minorly functional things
+- [ ] Tooltips from hovering in firefox get corners cut off
 - [ ] Some kind of a "now playing" on waybar?
 - [ ] Make hyprland shadows less weird (I made them huge)
 - [ ] hyprsunset based on timezone sunset, instead of fixed time
