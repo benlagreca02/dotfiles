@@ -1,4 +1,4 @@
-@import '../theme/waybarColors.css';
+@import '../../.cache/wal/waybarColors.css';
 
 * {
     border: none;
@@ -14,7 +14,7 @@ window {
 }
 
 window#waybar {
-    /* Transparent background, whole of waybar*/
+    /* Transparent background for the whole of waybar*/
     background: rgba(0, 0, 0, 0);
 }
 
