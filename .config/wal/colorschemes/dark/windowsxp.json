@@ -1,0 +1,31 @@
+{
+  "checksum": "161f145d9c60bddc403655f892e24686",
+  "wallpaper": "/home/ben/Pictures/wallpapers/windowsxp.jpg",
+  "alpha": "75",
+  "special": {
+    "background": "#111509",
+    "foreground": "#c3c4c1",
+    "cursor": "#c3c4c1",
+    "primary": "#00CCFF",
+    "secondary": "#00FFCC",
+    "secondary_dim": "#00AA88"
+  },
+  "colors": {
+    "color0": "#111509",
+    "color1": "#225ae2",
+    "color2": "#55741c",
+    "color3": "#447bed",
+    "color4": "#70941d",
+    "color5": "#789eef",
+    "color6": "#9ab9f1",
+    "color7": "#93978d",
+    "color8": "#666c58",
+    "color9": "#7b91c6",
+    "color10": "#83a346",
+    "color11": "#92a7d0",
+    "color12": "#95b34f",
+    "color13": "#afbddc",
+    "color14": "#c2cee4",
+    "color15": "#c3c4c1"
+  }
+}

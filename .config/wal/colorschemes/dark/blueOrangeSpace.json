@@ -1,0 +1,31 @@
+{
+  "checksum": "b410ffb9bae949c035192df248a429a6",
+  "wallpaper": "/home/ben/Pictures/wallpapers/blueOrangeSpace.png",
+  "alpha": "75",
+  "special": {
+    "background": "#09060d",
+    "foreground": "#c1c0c2",
+    "cursor": "#c1c0c2",
+    "primary": "#FFFF00",
+    "secondary": "#1200FF",
+    "secondary_dim": "#000080"
+  },
+  "colors": {
+    "color0": "#09060d",
+    "color1": "#20202e",
+    "color2": "#213646",
+    "color3": "#6b321c",
+    "color4": "#613d2c",
+    "color5": "#7c5032",
+    "color6": "#974f22",
+    "color7": "#908a95",
+    "color8": "#5f5568",
+    "color9": "#373781",
+    "color10": "#3d6b8e",
+    "color11": "#9f5e44",
+    "color12": "#a26345",
+    "color13": "#b3764d",
+    "color14": "#b57954",
+    "color15": "#c1c0c2"
+  }
+}
