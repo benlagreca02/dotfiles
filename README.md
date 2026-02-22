@@ -31,6 +31,7 @@ the list below
 ## Major (Functional)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] make hyprsunset nightlight intensity adjustable easily
+- [ ] Make hyprland workspace 1 show up on main monitor _on boot_. 
 - [ ] Make dunst notificaiton clickable (and bring back to program like discord)
 - [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely, specifically bluetooth notifications)
 - [ ] Make hyprlock only show on one screen
