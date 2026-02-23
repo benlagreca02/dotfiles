@@ -1,7 +1,7 @@
 /* ROFI (app selector and more) color theme */
 
 /* Rofi colors specified in...  */
-@import "../theme/rofiColors"
+@import "~/.cache/wal/rofiColors"
 
 * {
     foreground:                  @myPrimary;

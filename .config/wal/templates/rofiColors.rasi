@@ -1,0 +1,15 @@
+
+
+/* in this template file, we have to "escape" the curly braces, since that's how
+ * wal find the placeholder color values */
+* {{
+    myPrimary: {primary};
+    mySecondary: {secondary};
+    dimSecondary: {secondary_dim}; 
+    /* Highlight as you search */
+    highlight: @mySecondary;
+    foreground: @myPrimary;
+    selected: @dimSecondary;
+    background: rgba (0,0,0, 50%);
+}}
+

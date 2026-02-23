@@ -11,6 +11,7 @@
 configs=(
     "this script:~/.local/bin/scripts/edit-config-selector"
     "kitty config:~/.config/kitty/kitty.conf"
+    "vimrc:~/.vimrc"
     "bashrc:~/.bashrc"
     "tmux.conf:~/.config/tmux/tmux.conf"
     "waybar config:~/.config/waybar/config.jsonc"
@@ -18,13 +19,14 @@ configs=(
     "dunst:~/.config/dunstrc"
     "newsboat:~/.config/newsboat/config"
     "important packages:~/.local/packages"
+    ""
 )
 
 # Folders here will, recursively, have their files added to the menu
 configFolders=(
     "~/.config/hypr"
     "~/.local/bin/scripts"
-    "~/.config/theme" # custom theming scripts and configs I'll work on eventually
+    "~/.config/wal"
 )
 
 for folder in "${configFolders[@]}"; do

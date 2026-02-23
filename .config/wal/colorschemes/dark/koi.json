@@ -1,0 +1,31 @@
+{
+  "checksum": "234de11ccd164c8c32645d0e2124a859",
+  "wallpaper": "/home/ben/Pictures/wallpapers/koi.jpg",
+  "alpha": "75",
+  "special": {
+    "background": "#070d11",
+    "foreground": "#c1c2c3",
+    "cursor": "#c1c2c3",
+    "primary": "#FF0000",
+    "secondary": "#FFFFFF",
+    "secondary_dim": "#808080"
+  },
+  "colors": {
+    "color0": "#070d11",
+    "color1": "#792a38",
+    "color2": "#35465c",
+    "color3": "#bd2333",
+    "color4": "#77485c",
+    "color5": "#4a5d70",
+    "color6": "#767581",
+    "color7": "#8b9396",
+    "color8": "#56616a",
+    "color9": "#ae4a5b",
+    "color10": "#4670a4",
+    "color11": "#be6871",
+    "color12": "#b7577f",
+    "color13": "#5485b5",
+    "color14": "#7c73c3",
+    "color15": "#c1c2c3"
+  }
+}

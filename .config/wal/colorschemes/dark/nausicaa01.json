@@ -1,0 +1,30 @@
+{
+    "wallpaper": "/home/ben/Pictures/wallpapers/nausicaa01.png",
+    "alpha": "75",
+    "special": {
+        "primary": "#33bbff",
+        "secondary": "#ffba51",
+        "secondary_dim": "#bf8b3d",
+        "background": "#010101",
+        "foreground": "#dddddd",
+        "cursor": "#cccccc"
+    },
+    "colors": {
+        "color0": "#1c1815",
+        "color1": "#9A6C56",
+        "color2": "#DE965A",
+        "color3": "#D6A75A",
+        "color4": "#395C81",
+        "color5": "#3D6184",
+        "color6": "#576E86",
+        "color7": "#b5b7be",
+        "color8": "#7e8085",
+        "color9": "#9A6C56",
+        "color10": "#DE965A",
+        "color11": "#D6A75A",
+        "color12": "#395C81",
+        "color13": "#3D6184",
+        "color14": "#576E86",
+        "color15": "#b5b7be"
+    }
+}

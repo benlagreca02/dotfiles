@@ -31,14 +31,31 @@ the list below
 ## Major (Functional)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] make hyprsunset nightlight intensity adjustable easily
-- [ ] Make script for color scheme changes (See note below)
+- [ ] Make hyprland workspace 1 show up on main monitor _on boot_. 
 - [ ] Make dunst notificaiton clickable (and bring back to program like discord)
 - [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely, specifically bluetooth notifications)
+- [ ] Make hyprlock only show on one screen
 - [ ] Add a brightness through hyprsunset gamma when connected to monitor that doesn't support it (desktop)
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
 
+## Theming
+Its pretty janky if you look under the hood, but I'm pretty proud of my themeing
+engine I've thrown together with lots of scripts, and pywal16. I still need
+to...
+- [ ] Add more themes!
+- [ ] Improve color picking (I hate the janky rofi selection)
+Make the following theme compliant:
+- [ ] dunst
+- [ ] bashrc ps1 prompt
+- [ ] vimairline
+- [ ] waybar calendar thingy
+- [ ] newsboat
+
 ## Minor 
 These are mostly astetic options, and some minorly functional things
+- [ ] Tooltips from hovering in firefox get corners cut off
+- [ ] Some kind of a "now playing" on waybar?
+- [ ] Make hyprland shadows less weird (I made them huge)
 - [ ] hyprsunset based on timezone sunset, instead of fixed time
 - [ ] Blueman theme should be dark mode (maybe find cool TUI alternative?)
 - [ ] Tweak Rofi to look better
@@ -62,29 +79,4 @@ These are mostly ideas, or things I might do
 - [ ] Rice Discord somehow
 - [ ] Rice spotify somehow (spicefify)
 - [ ] Rice newsboat looks
-
-## Colors 
-PyWal is cool, but I don't like that it overrides your colors.  Errors
-should _always_ be red, and successes should _always_ be green, regardless of
-your cool color profiles. I don't want PyWal to make them blue, and darker blue. 
-
-Right now, I assume a single wallpaper, and only have one "colorscheme" for
-hyprland and waybar configured in their respective config files. I used pywal to
-get a rough sense of the colors, but thats not really my focus right now, I'm
-more focused on getting everything "functional", then I'll go and get colors
-working much fancier later. I might do alternate "palletes" somehow, but thats
-for later. Function > fashion.
-
-The "dream" is to have a set of wallpapers, and on changing them, all colors get
-updated to match: BUT I have those colors custom defined. I don't like that
-pywall changes the colors of terminal and vim stuff by default.
-
-This goal would take a lot of scripting, but I need to learn anyways, so I'll
-do it one day hopefully.
-
-I'm thinking some kind of rofi/dmenu selection, which then goes and changes
-colors in the respective programs, most notably:
-- hyprland borders
-- waybar CSS
-- rofi
 
