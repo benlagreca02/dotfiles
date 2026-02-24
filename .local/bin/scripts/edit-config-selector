@@ -13,13 +13,16 @@ configs=(
     "kitty config:~/.config/kitty/kitty.conf"
     "vimrc:~/.vimrc"
     "bashrc:~/.bashrc"
+    "bash profile:~/.bash_profile"
     "tmux.conf:~/.config/tmux/tmux.conf"
     "waybar config:~/.config/waybar/config.jsonc"
     "waybar style:~/.config/waybar/style.css"
     "dunst:~/.config/dunstrc"
     "newsboat:~/.config/newsboat/config"
     "important packages:~/.local/packages"
-    ""
+    "kanshi:~/.config/kanshi/config"
+    "dolphinrc:~/.config/dolphinrc"
+    "discord:~/.config/discord/settings.json"
 )
 
 # Folders here will, recursively, have their files added to the menu

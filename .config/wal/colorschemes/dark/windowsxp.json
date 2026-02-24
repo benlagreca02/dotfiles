@@ -6,9 +6,9 @@
     "background": "#111509",
     "foreground": "#c3c4c1",
     "cursor": "#c3c4c1",
-    "primary": "#00CCFF",
-    "secondary": "#00FFCC",
-    "secondary_dim": "#00AA88"
+    "primary": "#88ae22",
+    "secondary": "#2565eb",
+    "secondary_dim": "#163d8d"
   },
   "colors": {
     "color0": "#111509",

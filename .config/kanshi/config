@@ -15,6 +15,7 @@ output "Dell Inc. S2318HN/NX NHD1J81M19BI" {
 
 profile docked {
     output $HOME_1 enable 
+    output $HOME_2 enable
     output eDP-1 disable
 
     exec hyprctl keyword source "$HOME/.config/hypr/workspaces/pc-or-docked.conf"
