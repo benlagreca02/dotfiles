@@ -30,6 +30,7 @@ window#waybar {
     margin: 5px 0 0 10px;
 	background-color: @MODULE_BACKGROUND;
 }
+
 /* All modules in the center */
 .modules-center > widget > *{
     margin: 0px 1em 0px 1em;
@@ -105,7 +106,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: @MAIN_COLOR;
+    background: linear-gradient(to bottom, @BACKGROUND_COLOR, @MAIN_COLOR);
 }
 
 /* OTHER */
