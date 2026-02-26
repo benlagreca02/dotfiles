@@ -42,7 +42,7 @@ the list below
 Its pretty janky if you look under the hood, but I'm pretty proud of my themeing
 engine I've thrown together with lots of scripts, and pywal16. I still need
 to...
-- [ ] Add more themes!
+- [ ] Add more themes! (and tweak to confirm all are readable when developing (hard time currently with git status and git diff messages on space theme)
 - [ ] Improve color picking (I hate the janky rofi selection)
 Make the following theme compliant:
 - [ ] dunst
