@@ -1,0 +1,114 @@
+#!/usr/bin/bash
+
+wallpaperDir="$HOME/Pictures/wallpapers"
+
+themeFolder="$HOME/.config/wal/colorschemes/dark/"
+
+
+add_to_special() {
+    local file="$1"
+    local key="$2"
+    local value="$3"
+    jq --arg k "$key" --arg v "$value" '.special[$k] = $v' "$file" > "$file.tmp" && mv "$file.tmp" "$file" && rm "$file.tmp"
+}
+
+# Input: #AABBCC
+# Output: A slightly dimmer version of AABBCC
+# Thank you copilot
+dim_color() {
+    hex=$1
+    color=${hex#"#"}
+    # copilot is not smart, but I am no smarter
+    hexR=${color%????} # First two
+    hexG=${color#??} ; hexG=${hexG%??}
+    hexB=${color#????} # First two
+
+    r=$(printf "%d" "0x$hexR") 
+    g=$(printf "%d" "0x$hexG") 
+    b=$(printf "%d" "0x$hexB")
+
+    dimPercent=90
+    
+    rDim=$(( r * $dimPercent / 100 ))
+    gDim=$(( g * $dimPercent / 100 ))
+    bDim=$(( b * $dimPercent / 100 ))
+
+    rOut=$(printf "%02X" "$rDim")
+    gOut=$(printf "%02X" "$gDim")
+    bOut=$(printf "%02X" "$bDim")
+    echo "#$rOut$gOut$bOut"
+}
+
+
+
+# TODO show the wallpapers in rofi
+# TODO clean this up so it just prints filename/theme name
+# TODO when making new theme, make it give a colorpicker, and calculate a dimmer
+# version for secondary, instead of making user enter another color
+
+# Prompt user to pick a wallpaper (just filename)
+wallpaperPath=$(find $wallpaperDir -maxdepth 1 -type f | rofi -dmenu)
+
+# [ -f "$wallpaperPath" ] || { notify-send "Script exiting" ; exit 0 }
+if [[ ! -f "$wallpaperPath" ]]; then
+    # Silently exit
+    exit 0
+fi
+
+
+# Check and see if there is already a theme with that name
+themeName=${wallpaperPath##*/}
+themeName=${themeName%.*}
+
+# If the theme exists already, apply it and quit
+if [[ -e "$themeFolder/$themeName.json" ]]; then
+    wal -f "$themeName" -o postWalLoad 
+    echo "$themeName" > "$HOME/.local/currtheme"
+    notify-send "Theme Applied" "$themeName"
+    exit 0
+fi
+
+notify-send "Creating Theme" "for '$themeName' wallpaper"
+
+# Clear out cache from wal
+wal -c
+
+# Temporarily move the templates so things don't break
+mv ~/.config/wal/templates/* ~/.config/wal/templates.bak/
+
+# Generate theme with wal
+# Lighten so I can still read text
+wal -a 75 -i "$wallpaperPath" --cols16 lighten --backend haishoku 
+
+# Get the name of the scheme
+themePath="$themeFolder$themeName.json"
+mv ~/.cache/wal/schemes/* "$themePath"
+
+# Open the picture to show the user
+imv -f "$wallpaperPath" &
+picPid=$!
+sleep 1
+
+notify-send "Pick primary color"
+notify-send "Pick secondary color"
+
+# Now we neeed to add "primary" and "secondary" colors
+primary=$(hyprpicker)
+secondary=$(hyprpicker)
+dimSecondary=$(dim_color "$secondary")
+
+notify-send "COLORS" "$primary $secondary $dimSecondary"
+
+kill "$picPid"
+
+add_to_special "$themePath" "primary" "$primary"
+add_to_special "$themePath" "secondary" "$secondary"
+add_to_special "$themePath" "secondary_dim" "$dimSecondary"
+
+# Move templates back so they'll really try to generate now
+mv ~/.config/wal/templates.bak/* ~/.config/wal/templates/
+
+wal -f "$themeName" -o postWalLoad
+echo "$themeName" > "$HOME/.local/currtheme"
+
+notify-send "Themeing" "Generated new theme for $themeName"

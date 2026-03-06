@@ -4,6 +4,8 @@
 # call scripts from other scripts
 # I could, and should probably put this in the bash_profile file
 export PATH="$PATH:/home/$USER/.local/bin/scripts"
+# These scripts are the system support scripts, that help the dotfile setup run
+export PATH="$PATH:/home/$USER/.local/bin/scripts/system/"
 
 # If NOT running interactively, stop here!
 [[ $- != *i* ]] && return

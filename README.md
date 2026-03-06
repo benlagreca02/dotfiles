@@ -29,16 +29,12 @@ theme for blueman, and other "rices". Things I'd like to do at some point are in
 the list below
 
 ## Major (Functional)
-- [ ] Kanshi doesn't appply configs on boot properly
+- [ ] Consider switching to use quickshell 
+- [ ] dunst notificaiton should focus program like discord when clicked (This may be impossible, switch to mako?)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] make hyprsunset nightlight intensity adjustable easily
-- [ ] Make hyprland workspace 1 show up on main monitor _on boot_.
-- [ ] Fix hyrpland workspaces numbering whne changing config (make kanshi force 1-5 on one monitor, and 6-9 on the other)
-- [ ] Make dunst notificaiton clickable (and bring back to program like discord)
-- [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely, specifically bluetooth notifications)
 - [ ] Make hyprlock only show on one screen (prompt I mean, wallpaper should be on all)
-- [ ] Add a brightness through hyprsunset gamma when connected to monitor that doesn't support it (desktop)
-- [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
+- [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (I think this is just how suspend works)
 
 ## Theming
 Its pretty janky if you look under the hood, but I'm pretty proud of my themeing
@@ -47,14 +43,18 @@ to...
 - [ ] Add more themes! (and tweak to confirm all are readable when developing (hard time currently with git status and git diff messages on space theme)
 - [ ] Improve color picking (I hate the janky rofi selection)
 Make the following theme compliant:
-- [ ] dunst
 - [ ] bashrc ps1 prompt
+- [ ] dunst
 - [ ] vimairline
 - [ ] waybar calendar thingy
 - [ ] newsboat
 
 ## Minor 
 These are mostly astetic options, and some minorly functional things
+- [ ] Add a brightness through hyprsunset gamma when connected to monitor that doesn't support it (desktop)
+- [ ] Fix hyrpland workspaces numbering whne changing config (make kanshi force 1-5 on one monitor, and 6-9 on the other)
+- [ ] Make hyprland workspace 1 show up on main monitor _on boot_.
+- [ ] Kanshi doesn't appply configs on boot properly sometimes
 - [ ] Tooltips from hovering in firefox get corners cut off
 - [ ] Some kind of a "now playing" on waybar?
 - [ ] Make hyprland shadows less weird (I made them huge)
@@ -62,9 +62,7 @@ These are mostly astetic options, and some minorly functional things
 - [ ] Blueman theme should be dark mode (maybe find cool TUI alternative?)
 - [ ] Tweak Rofi to look better
 - [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
-- [ ] Re-rice Dunst
 - [ ] Custom VIM colorscheme maybe
-- [ ] Custom Kitty colorscheme maybe
 - [ ] essential package install script  (like LARBS)
 - [ ] change around keybinds in newsboat some more
 
@@ -73,7 +71,6 @@ These are mostly ideas, or things I might do
 - [ ] Research power management stuff (save power when lid closed etc.)
 - [ ] In kanshi, make docking/undocking generic, for not just my system
 - [ ] Add screen mirror button  (FN F7)
-- [ ] fix can't open newsboat from rofi (filepath issue I believe)
 - [ ] make seprate "launch" scripts folder, and maybe add notify if not installed? (Potentially)
 - [ ] waybar newsboat icon for "unread new feeds" maybe?
 - [ ] screen rotation in tablet mode potentially?

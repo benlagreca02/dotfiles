@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+hyprctl dispatch focuswindow "class:^(discord)$" \
+  || hyprctl dispatch focuswindow "title:^(.*Discord.*)$"
+

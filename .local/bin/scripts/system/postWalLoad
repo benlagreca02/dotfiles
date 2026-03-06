@@ -1,0 +1,10 @@
+#!/usr/bin/sh
+
+# refresh kanshi
+# We have to do this becuawse kanshi loads some hyprland configs for what
+# workspaces go on what monitors. When you change themes it messes with it
+kanshi
+
+# trigger waybar reload (waybar-autoreload script just looks for modifications
+touch "$HOME/.config/waybar/config.jsonc"
+
