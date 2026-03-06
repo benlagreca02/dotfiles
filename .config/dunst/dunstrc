@@ -111,6 +111,8 @@
 
     # Defines color of the frame around the notification window.
     # My theme primary color
+
+    # TODO Make this read from pywal cache and add a template there
     frame_color = "#33bbff"
 
     # Size of gap to display between notifications - requires a compositor.
@@ -143,7 +145,6 @@
     # idle_threshold = 120
 
     ### Text ###
-    # font = Adwaita Mono 24
     font = Lilex Nerd Font Mono 18
 
     # The spacing between lines.  If the height is smaller than the
@@ -252,7 +253,7 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/rofi -dmenu dunst:
 
     # Browser for opening urls in context menu.
     browser = /usr/bin/xdg-open
@@ -290,10 +291,6 @@
     ### Wayland ###
     # These settings are Wayland-specific. They have no effect when using X11
 
-    # Set this to true to use X11 output on Wayland.
-    # I NEED THIS TO 
-    force_xwayland = true
-
     ### Legacy
 
     # Use the Xinerama extension instead of RandR for multi-monitor support.
@@ -325,7 +322,7 @@
     # TODO I should make this work like "normal" (clicking discord, burings to discord)
     mouse_left_click = close_current
     mouse_middle_click = do_action, close_current
-    mouse_right_click = close_all
+    mouse_right_click = do_adction, open_url
 
 # Experimental features that may or may not work correctly. Do not expect them
 # to have a consistent behaviour across releases.

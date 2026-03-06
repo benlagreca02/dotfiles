@@ -29,12 +29,14 @@ theme for blueman, and other "rices". Things I'd like to do at some point are in
 the list below
 
 ## Major (Functional)
+- [ ] Kanshi doesn't appply configs on boot properly
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] make hyprsunset nightlight intensity adjustable easily
-- [ ] Make hyprland workspace 1 show up on main monitor _on boot_. 
+- [ ] Make hyprland workspace 1 show up on main monitor _on boot_.
+- [ ] Fix hyrpland workspaces numbering whne changing config (make kanshi force 1-5 on one monitor, and 6-9 on the other)
 - [ ] Make dunst notificaiton clickable (and bring back to program like discord)
 - [ ] Dunst Can't close notifications sometimes (b.c. I can't focus them most likely, specifically bluetooth notifications)
-- [ ] Make hyprlock only show on one screen
+- [ ] Make hyprlock only show on one screen (prompt I mean, wallpaper should be on all)
 - [ ] Add a brightness through hyprsunset gamma when connected to monitor that doesn't support it (desktop)
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (maybe, have to verify)
 
