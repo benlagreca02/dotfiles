@@ -1,0 +1,31 @@
+{
+  "checksum": "4fb5c1647ba2acfc9b4f85423e0bcd5c",
+  "wallpaper": "/home/ben/Pictures/wallpapers/dandadan.png",
+  "alpha": "75",
+  "special": {
+    "background": "#0e0606",
+    "foreground": "#c2c0c0",
+    "cursor": "#c2c0c0",
+    "primary": "#2F2D2E",
+    "secondary": "#23211F",
+    "secondary_dim": "#1F1D1B"
+  },
+  "colors": {
+    "color0": "#0e0606",
+    "color1": "#781e1d",
+    "color2": "#c72926",
+    "color3": "#7d5157",
+    "color4": "#8e6d71",
+    "color5": "#d05652",
+    "color6": "#d98481",
+    "color7": "#958a8a",
+    "color8": "#695555",
+    "color9": "#a64847",
+    "color10": "#c1706f",
+    "color11": "#ba5e6c",
+    "color12": "#c4767f",
+    "color13": "#cd8c8a",
+    "color14": "#d9a9a8",
+    "color15": "#c2c0c0"
+  }
+}

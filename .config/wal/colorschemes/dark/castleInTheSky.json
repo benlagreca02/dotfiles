@@ -1,0 +1,31 @@
+{
+  "checksum": "21e07201df2bc4c593a6e148662d59e5",
+  "wallpaper": "/home/ben/Pictures/wallpapers/castleInTheSky.jpg",
+  "alpha": "75",
+  "special": {
+    "background": "#141408",
+    "foreground": "#c4c4c1",
+    "cursor": "#c4c4c1",
+    "primary": "#91CDF9",
+    "secondary": "#9F1A15",
+    "secondary_dim": "#8F1712"
+  },
+  "colors": {
+    "color0": "#141408",
+    "color1": "#714335",
+    "color2": "#456047",
+    "color3": "#446a67",
+    "color4": "#6e734a",
+    "color5": "#78876f",
+    "color6": "#84bbea",
+    "color7": "#97978c",
+    "color8": "#6b6b58",
+    "color9": "#af634b",
+    "color10": "#4baf54",
+    "color11": "#4db3ac",
+    "color12": "#aab656",
+    "color13": "#8ec374",
+    "color14": "#b2cade",
+    "color15": "#c4c4c1"
+  }
+}

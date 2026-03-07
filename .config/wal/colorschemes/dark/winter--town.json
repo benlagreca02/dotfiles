@@ -1,0 +1,31 @@
+{
+  "checksum": "766bf3a415d9c137c7f21d6b5a4dddf3",
+  "wallpaper": "/home/ben/Pictures/wallpapers/winter--town.jpg",
+  "alpha": "75",
+  "special": {
+    "background": "#080b14",
+    "foreground": "#c1c2c4",
+    "cursor": "#c1c2c4",
+    "primary": "#269CE4",
+    "secondary": "#FCBB0D",
+    "secondary_dim": "#E2A80B"
+  },
+  "colors": {
+    "color0": "#080b14",
+    "color1": "#173d74",
+    "color2": "#70422e",
+    "color3": "#295e98",
+    "color4": "#654d62",
+    "color5": "#258bd7",
+    "color6": "#7f6f80",
+    "color7": "#8c9097",
+    "color8": "#585d6b",
+    "color9": "#456aa1",
+    "color10": "#ab6749",
+    "color11": "#5785b7",
+    "color12": "#b350a8",
+    "color13": "#77a3c4",
+    "color14": "#c170c1",
+    "color15": "#c1c2c4"
+  }
+}
