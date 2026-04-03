@@ -83,10 +83,8 @@
     "backlight": {
         "min-length": 8,
         "format": "{percent:3}% {icon}",
-        // "format-icons": ["○","◔","◑","◕","●"],"󰃡"
-        "format-icons": ["󰃚","󰃛", "󰃜","󰃝","󰃞","󰃟","󰃠"]
+        "format-icons": ["󰃜", "󰃛", "󰃚","󰃞","󰃟","󰃝","󰃠"]
     },
-
 
     "battery": {
         "min-length": 8,
