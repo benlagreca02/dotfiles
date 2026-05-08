@@ -19,6 +19,8 @@
     "hyprland/workspaces": {
         "format": " {icon}<sup>{windows}</sup> ",
         "window-rewrite-default": "",
+        "persistent-workspaces": {
+        },
         "window-rewrite": {
             "class<firefox>": "", // Windows whose classes are "firefox"
             "title<.*youtube.*>": "",
@@ -140,6 +142,8 @@
         "exec": "waybar-screentemp",
         "interval": 5,
         "format": "{}",
-        "on-click": "toggle_nightlight"
+        "on-click": "toggle_nightlight",
+        "on-scroll-up": "hyprctl hyprsunset gamma +5%",
+        "on-scroll-down": "hyprctl hyprsunset gamma -5%"
     }
 }

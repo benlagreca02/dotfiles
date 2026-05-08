@@ -19,3 +19,6 @@ export LAUNCHER=rofi_launch
 # to do this... but whatever ( I don't even know if this is working)
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 
+# reload kanshi forcibly (someimtes it doesn't on boot)
+# This is a hack, I need to find a better way to do this
+kanshictl reload
