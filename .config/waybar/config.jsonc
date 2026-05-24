@@ -143,6 +143,7 @@
         "interval": 5,
         "format": "{}",
         "on-click": "toggle_nightlight",
+        "on-click-right": "hyprctl hyprsunset gamma 100%",
         "on-scroll-up": "hyprctl hyprsunset gamma +5%",
         "on-scroll-down": "hyprctl hyprsunset gamma -5%"
     }

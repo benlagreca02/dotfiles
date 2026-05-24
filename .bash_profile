@@ -15,9 +15,9 @@ export WEB_BROWSER=firefox
 export FEED_READER=newsboat_launch
 export LAUNCHER=rofi_launch
 
-# Do I really have to do this every time? I feel like this isn't the right way
-# to do this... but whatever ( I don't even know if this is working)
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+
+# TODO fix this... This doesn't really work like I want it to
+# Maybe now with LUA config there's a better way to do this...
 
 # reload kanshi forcibly (someimtes it doesn't on boot)
 # This is a hack, I need to find a better way to do this
