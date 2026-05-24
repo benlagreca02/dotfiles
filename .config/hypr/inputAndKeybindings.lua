@@ -59,6 +59,9 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot --clipboard-only -m
 -- Shift L for lock
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 
+-- M for signout
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("prompt_logoff"))
+
 -- WORKSPACE
 -- hl.bind(mainMod .. " + 1", hl.dsp.window.move_t(1))
 for i = 1, 9 do
