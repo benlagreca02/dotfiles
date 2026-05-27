@@ -32,7 +32,7 @@ the list below
 - [ ] Consider switching to use quickshell 
 - [ ] dunst notificaiton should focus program like discord when clicked (This may be impossible, switch to mako?)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
-- [ ] make hyprsunset nightlight intensity adjustable easily
+- [ ] make hyprsunset nightlight intensity adjustable easily (redness)
 - [ ] Make hyprlock only show on one screen (prompt I mean, wallpaper should be on all)
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (I think this is just how suspend works)
 
@@ -45,12 +45,11 @@ Make the following theme compliant:
 - [ ] bashrc ps1 prompt
 - [ ] dunst
 - [ ] vimairline
-- [ ] waybar calendar thingy
+- [ ] waybar calendar thingy highlight color
 
 ## Minor 
 These are mostly astetic options, and some minorly functional things
-- [ ] Add a brightness through hyprsunset gamma when connected to monitor that doesn't support it (desktop)
-- [ ] Fix hyrpland workspaces numbering whne changing config (make kanshi force 1-5 on one monitor, and 6-9 on the other)
+- [ ] In kanshi, make docking/undocking generic, for not just my system (maybe ditch in favor of lua hyprland stuff)
 - [ ] Make hyprland workspace 1 show up on main monitor _on boot_.
 - [ ] Kanshi doesn't appply configs on boot properly sometimes
 - [ ] Tooltips from hovering in firefox get corners cut off
@@ -67,7 +66,6 @@ These are mostly astetic options, and some minorly functional things
 ## Very Minor
 These are mostly ideas, or things I might do
 - [ ] Research power management stuff (save power when lid closed etc.)
-- [ ] In kanshi, make docking/undocking generic, for not just my system
 - [ ] Add screen mirror button  (FN F7)
 - [ ] make seprate "launch" scripts folder, and maybe add notify if not installed? (Potentially)
 - [ ] waybar newsboat icon for "unread new feeds" maybe?
