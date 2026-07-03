@@ -11,15 +11,6 @@ hl.config({
     },
 })
 
--- Monitor rule
--- hl.monitor({
-    -- output = "",
-    -- mode = "preferred",
-    -- position = "auto",
-    -- scale = "1",
--- })
-
-
 -- My home dock (that I never use) OR my PC
 function configureForDockedOrPC()
     local MAIN_MONITOR = "DP-1"
@@ -50,14 +41,24 @@ end
 
 -- standalone monitor
 function configureForUndocked()
+    local BUILTIN_DISPLAY = "eDP-1"
+
+    hl.monitor({
+        output = BUILTIN_DISPLAY,
+        mode = "1920x1080@60",
+        position = "0x0",
+        scale = 1.25,
+    })
+
+
     for i=1,9,1 do
-        -- hl.workspace_rule({workspace = i, monitor = , persistent = true})
+        hl.workspace_rule({workspace = i, monitor = BUILTIN_DISPLAY, persistent = true})
     end
-    hl.notification.create({ text = "UNDOCKED", timeout = 5000, icon = "ok" })
 end
 
+-- Determines which configuration to call
+-- Just uses monitor count
 function confMonitorCallback()
-
     -- Count monitors
     local mons = hl.get_monitors()
     local numMons = 0
@@ -65,13 +66,23 @@ function confMonitorCallback()
         numMons = numMons + 1
     end
 
+    local selected = ""
+
     if numMons >= 2 then
         configureForDockedOrPC()
+        selected = "Docked"
     else
-        configureForUndocked()
+       configureForUndocked()
+       selected = "Undocked"
     end
+
+    hl.notification.create({ text = selected, timeout = 5000, icon = "ok" })
 end
 
+
+-- DO NOT use monitor.layout_changed, since we change layout, it will recurse!
+hl.on("hyprland.start", confMonitorCallback)
 hl.on("monitor.added", confMonitorCallback)
 hl.on("monitor.removed", confMonitorCallback)
+hl.on("config.reloaded", confMonitorCallback)
 
