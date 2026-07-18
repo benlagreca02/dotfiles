@@ -21,15 +21,14 @@ to have the home folder somewhere else, but whatever.
 
 [This is the original guide I followed](https://www.atlassian.com/git/tutorials/dotfiles)
 
-
-# TODO 
-This system, in my opinion, is around 90% complete, and that last ten percent is
-pretty minor, like notifications taking you to the respective program, tweaking
-theme for blueman, and other "rices". Things I'd like to do at some point are in
-the list below
+# TODO
+This system is never truly complete, as it is always changing. I track
+things I'd like to change some day here. I drive this system daily without much
+issue, but whenever I get a minor annoyance, I track it here.
 
 ## Major (Functional)
-- [ ] Consider switching to use quickshell 
+- [ ] On boot, I get a 10th workspace (if multi-monitor, i get an 11th)
+- [ ] Consider switching to use quickshell (instead of waybar)
 - [ ] dunst notificaiton should focus program like discord when clicked (This may be impossible, switch to mako?)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
 - [ ] make hyprsunset nightlight intensity adjustable easily (redness)
@@ -44,22 +43,18 @@ to...
 Make the following theme compliant:
 - [ ] bashrc ps1 prompt
 - [ ] dunst
-- [ ] vimairline
+- [ ] vimairline (?)
 - [ ] waybar calendar thingy highlight color
 
 ## Minor 
 These are mostly astetic options, and some minorly functional things
-- [ ] In kanshi, make docking/undocking generic, for not just my system (maybe ditch in favor of lua hyprland stuff)
-- [ ] Make hyprland workspace 1 show up on main monitor _on boot_.
-- [ ] Kanshi doesn't appply configs on boot properly sometimes
-- [ ] Tooltips from hovering in firefox get corners cut off
-- [ ] Some kind of a "now playing" on waybar?
 - [ ] Make hyprland shadows less weird (I made them huge)
+- [ ] Tooltips from hovering in firefox get corners cut off
+- [ ] Some kind of a "now playing" on waybar? (might be easier in quickshell)
 - [ ] hyprsunset based on timezone sunset, instead of fixed time
 - [ ] Blueman theme should be dark mode (maybe find cool TUI alternative?)
 - [ ] Tweak Rofi to look better
 - [ ] Make dunst recognize spotify vs discord vs other notifs (not strictly necessary)
-- [ ] Custom VIM colorscheme maybe
 - [ ] essential package install script  (like LARBS)
 - [ ] change around keybinds in newsboat some more
 
