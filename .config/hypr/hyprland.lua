@@ -17,6 +17,22 @@ hl.config({
   }
 })
 
+hl.window_rule({
+    name="Pic In Picture",
+    match = {
+        title = "Picture-in-Picture"
+    },
+    float = true,
+    pin = true,
+    size = {"(monitor_w*0.2)", "(monitor_h*0.2)"},
+    move = {"(monitor_w*(1-0.225))", "(monitor_h*0.05)"},
+    no_initial_focus = true,
+    content = "video",
+    persistent_size = true,
+    keep_aspect_ratio = true,
+})
+
+
 BUILTIN_DISPLAY = "eDP-1"
 LAPTOP_OUTPUT = "HDMI-A-1"
 -- TODO will need to add another for laptop docked
@@ -39,14 +55,23 @@ function applyWorkspaces(monitors)
     if numMons == 2 then
         for i=1,5,1 do
             hl.workspace_rule({workspace = i, monitor = monitors[1], persistent = true})
+            if i == 1 then
+                hl.workspace_rule({workspace = i, monitor = monitors[1], persistent = true, default = true})
+            end
         end
         for i=6,9,1 do
             hl.workspace_rule({workspace = i, monitor = monitors[2], persistent = true})
+            if i == 6 then
+                hl.workspace_rule({workspace = i, monitor = monitors[1], persistent = true, default = true})
+            end
         end
         return
     else
         for i=1,9,1 do
             hl.workspace_rule({workspace = i, monitor = monitors[1], persistent = true})
+            if i == 1 then
+                hl.workspace_rule({workspace = i, monitor = monitors[1], persistent = true, default = true})
+            end
         end
     end
 end
