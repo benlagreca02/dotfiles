@@ -71,6 +71,9 @@ for i = 1, 9 do
     hl.bind(mainMod .. " + SHIFT + " .. i,     hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
+hl.bind(mainMod .. " + left", hl.dsp.focus({workspace = "e-1"}))
+hl.bind(mainMod .. " + right", hl.dsp.focus({workspace = "e+1"}))
+
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))

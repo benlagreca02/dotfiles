@@ -52,6 +52,7 @@ function applyWorkspaces(monitors)
         numMons = numMons + 1
     end
 
+    -- TWO MONITOR SETUP
     if numMons == 2 then
         for i=1,5,1 do
             hl.workspace_rule({workspace = i, monitor = monitors[1], persistent = true})
@@ -66,6 +67,8 @@ function applyWorkspaces(monitors)
             end
         end
         return
+
+    -- ONE MONITOR SETUP
     else
         for i=1,9,1 do
             hl.workspace_rule({workspace = i, monitor = monitors[1], persistent = true})
