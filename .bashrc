@@ -85,12 +85,12 @@ alias vf='vim $(fzf)'
 
 
 # just a funny thing for startup
-if [ "$os" == "Arch" ]; then   
-    # Just to verify its loading the right settings
-    echo "I use arch btw" | cowsay -f tux
-else
-    echo "wenk wenk" | cowsay -f tux
-fi
+# if [ "$os" == "Arch" ]; then   
+#     # Just to verify its loading the right settings
+#     echo "I use arch btw" | cowsay -f tux
+# else
+#     echo "wenk wenk" | cowsay -f tux
+# fi
 
 # PICO SDK path stuff
 # For rasberry pi pico development work
