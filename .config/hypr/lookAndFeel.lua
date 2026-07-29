@@ -16,7 +16,7 @@ hl.config({
         },
         resize_on_border = false,
         allow_tearing = false,
-        layout = dwindle,
+        layout = "dwindle",
     },
 
     decoration = {
@@ -31,6 +31,10 @@ hl.config({
     animations = {
         enabled = true,
     },
+
+    dwindle = {
+        force_split = 2,
+    }
 })
 
 
