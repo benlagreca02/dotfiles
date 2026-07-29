@@ -31,7 +31,7 @@ issue, but whenever I get a minor annoyance, I track it here.
 - [ ] Consider switching to use quickshell (instead of waybar)
 - [ ] dunst notificaiton should focus program like discord when clicked (This may be impossible, switch to mako?)
 - [ ] Learn how to backup system (pacakges and system, not just dotfiles)
-- [ ] make hyprsunset nightlight intensity adjustable easily (redness)
+- [ ] make hyprsunset nightlight intensity adjustable easily (redness) (might just wait until I switch to quickshell)
 - [ ] Make hyprlock only show on one screen (prompt I mean, wallpaper should be on all)
 - [ ] When docked and laptop closed, can't wake from suspend. Have to open laptop and hit power button (I think this is just how suspend works)
 
@@ -41,7 +41,6 @@ engine I've thrown together with lots of scripts, and pywal16. I still need
 to...
 - [ ] Add more themes! (and tweak to confirm all are readable when developing (hard time currently with git status and git diff messages on space theme)
 Make the following theme compliant:
-- [ ] bashrc ps1 prompt
 - [ ] dunst
 - [ ] vimairline (?)
 - [ ] waybar calendar thingy highlight color

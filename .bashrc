@@ -39,7 +39,8 @@ fi
 
 # if we can do a color prompt, do my crazy prompt
 if [ "$color_prompt" = yes ]; then
-    PS1="\[\033[38;5;45m\]\u@\H\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
+    # PS1="\[\033[38;5;45m\]\u@\H\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
+    PS1="\[\033[38;5;11m\]\u@\H\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;1m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
 else
     # Arch default, I just think its a nice plain one
     PS1='[\u@\h \W]\$'
@@ -86,9 +87,9 @@ alias vf='vim $(fzf)'
 # just a funny thing for startup
 if [ "$os" == "Arch" ]; then   
     # Just to verify its loading the right settings
-    echo "I use arch btw" | cowsay -f tux | lolcat
+    echo "I use arch btw" | cowsay -f tux
 else
-    echo "wenk wenk" | cowsay -f tux | lolcat
+    echo "wenk wenk" | cowsay -f tux
 fi
 
 # PICO SDK path stuff
